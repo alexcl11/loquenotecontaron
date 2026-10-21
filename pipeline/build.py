@@ -4,7 +4,8 @@ import numpy as np
 sys.path.insert(0,os.path.dirname(__file__))
 from specs import V
 vid=sys.argv[1];step=sys.argv[2]
-D=f'/home/claude/canal/out/{vid}';os.makedirs(D+'/tts',exist_ok=True)
+ROOT=os.path.dirname(os.path.abspath(__file__))
+D=f'{ROOT}/out/{vid}';os.makedirs(D+'/tts',exist_ok=True)
 segs=V[vid]
 SH='/tmp/claude-0/sherpa';S=SH+'/sherpa-onnx-v1.12.15-linux-x64-shared';K=SH+'/kokoro-multi-lang-v1_0'
 SR=44100
