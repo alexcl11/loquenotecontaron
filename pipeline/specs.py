@@ -248,3 +248,21 @@ V['05_fechas'] = [
       scene=[dict(type='bubble',q='¿Qué es lo último que tiraste por la fecha?',y=CTA_Y),
              dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1450,at='leo',color='blue')]),
 ]
+
+# ---- v2 ilustrada del pollo ----
+_P=V['04_pollo']
+def _seg(i,scene):d=dict(_P[i]);d['scene']=scene;return d
+V['04_pollo_v2']=[
+ _seg(0,[dict(type='illus',name='pollo_lavar',marks=dict(rep='repartiendo')),dict(type='stamp',text='✕  NO LO LIMPIAS',y=640,at='no')]),
+ _seg(1,[dict(type='illus',name='pollo_fuego'),dict(type='pill',text='¿QUÉ LAS MATA DE VERDAD?',y=640,at='mata')]),
+ _seg(2,[dict(type='illus',name='pollo_micro'),dict(type='pill',text='CAMPYLOBACTER',y=1390,at='campylobacter',color='green',size=44),dict(type='text',text='una de las gastroenteritis más comunes en Europa',y=1480,size=34,at='gastroenteritis',color='gray')]),
+ _seg(3,[dict(type='illus',name='pollo_salpica',marks=dict(fre='fregadero',enc='encimera',tab='tabla'))]),
+ _seg(4,[dict(type='illus',name='cocina_fondo'),dict(type='badge',name='USDA',full='Departamento de Agricultura de EE. UU. · estudio 2019',flag='🇺🇸',y=700),
+         dict(type='stat',value='60 %',label='bacterias en el fregadero',y=1010,at='6',color='red',size=150),
+         dict(type='stat',value='14 %',label='aún después de limpiarlo',y=1320,at='limpiarlo',color='amber',size=150)]),
+ _seg(5,[dict(type='illus',name='pollo_limon',marks=dict(vin='vinagre',lim='limón')),dict(type='stamp',text='✕  NO LAS MATAN',y=640,at='matan')]),
+ _seg(6,[dict(type='illus',name='pollo_cocinar',marks=dict(t70='70',r='rosadas')),dict(type='pill',text='70 °C EN EL CENTRO',y=640,at='70',color='green',size=40)]),
+ _seg(7,[dict(type='illus',name='pollo_manos',marks=dict(ens='ensalada',man='manos')),dict(type='pill',text='¿CÓMO? CON LAS MANOS',y=640,at='manos',color='red')]),
+ _seg(8,[dict(type='illus',name='pollo_solucion',marks=dict(tab='tabla',ens='ensalada')),dict(type='pill',text='🧼  LÁVATE LAS MANOS',y=640,at='lávate',color='green'),dict(type='pill',text='UNA TABLA PARA CADA COSA',y=1420,at='tabla',color='amber')]),
+ _seg(9,[dict(type='illus',name='cocina_fondo'),dict(type='bubble',q='¿Tú lavabas el pollo? Sé sincero',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1400,at='leo',color='blue')]),
+]
