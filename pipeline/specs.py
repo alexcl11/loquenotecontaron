@@ -266,3 +266,63 @@ V['04_pollo_v2']=[
  _seg(8,[dict(type='illus',name='pollo_solucion',marks=dict(tab='tabla',ens='ensalada')),dict(type='pill',text='🧼  LÁVATE LAS MANOS',y=640,at='lávate',color='green'),dict(type='pill',text='UNA TABLA PARA CADA COSA',y=1420,at='tabla',color='amber')]),
  _seg(9,[dict(type='illus',name='cocina_fondo'),dict(type='bubble',q='¿Tú lavabas el pollo? Sé sincero',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1400,at='leo',color='blue')]),
 ]
+
+# ---- v2 ilustradas: standby, LED, fregar, fechas ----
+def _v2(base,scenes):
+    out=[]
+    for i,d0 in enumerate(V[base]):
+        d=dict(d0);sc=scenes.get(i,'keep')
+        if sc is None:d.pop('scene',None)
+        elif sc!='keep':d['scene']=sc
+        out.append(d)
+    return out
+_cta=lambda q,y=1430:[dict(type='illus',name='salon_fondo'),dict(type='bubble',q=q,y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=y,at='leo',color='blue')]
+V['01_standby_v2']=_v2('01_standby',{
+ 0:[dict(type='illus',name='sb_led'),dict(type='stamp',text='✕  NO ES ESTA',y=640,at='no')],
+ 1:[dict(type='illus',name='sb_ladron'),dict(type='pill',text='EL LADRÓN ESTÁ EN OTRO SITIO',y=640,at='otro')],
+ 2:[dict(type='illus',name='salon_fondo'),dict(type='badge',name='IDAE',full='Instituto para la Diversificación y Ahorro de la Energía',flag='🇪🇸',y=720),
+    dict(type='stat',value='6,3 %',label='de la luz de un hogar, en espera',y=1060,at='6'),dict(type='pill',text='❄️  MÁS QUE EL AIRE ACONDICIONADO',y=1330,at='aire',color='blue')],
+ 3:[dict(type='illus',name='sb_sofa',marks=dict(apa='apagar')),dict(type='quote',text='"Apágala, que si no gasta"',y=640,at='que')],
+ 4:[dict(type='illus',name='sb_tele'),dict(type='pill',text='🇪🇺  LÍMITE UE EN ESPERA: 0,5 W',y=640,at='ley',color='blue'),dict(type='stat',value='1,10 €',label='al año',y=1330,at='1,10',color='green')],
+ 5:[dict(type='illus',name='sb_internet',marks=dict(int='internet')),dict(type='text',text='¿QUIÉN GASTA DE VERDAD?',y=640,size=64)],
+ 6:[dict(type='illus',name='sb_aparatos',marks=dict(rou='router',des='descodificador',imp='impresora',alt='altavoz',cad='cadena'))],
+ 7:[dict(type='illus',name='sb_euros'),dict(type='stat',value='DECENAS DE €',label='al año, por aparatos que no usas',y=1380,at='decenas',size=100)],
+ 8:[dict(type='illus',name='sb_regleta',marks=dict(reg='regleta',rou='router')),dict(type='pill',text='✓  REGLETA CON INTERRUPTOR',y=640,at='regleta',color='green')],
+ 9:_cta('¿Cuántas lucecitas ves desde donde estás?'),
+})
+V['02_led_v2']=_v2('02_led',{
+ 0:[dict(type='illus',name='led_sofa'),dict(type='stamp',text='✕  FALSO',y=640,at='falso',size=60)],
+ 1:[dict(type='illus',name='led_origen'),dict(type='pill',text='EL ORIGEN DEL MITO',y=640,at='historia')],
+ 2:[dict(type='illus',name='led_quote'),dict(type='quote',text='"No apagues, que encenderla consume mucho"',y=640,at='no')],
+ 3:[dict(type='illus',name='led_tubo',marks=dict(arr='arrancar',des='desgastaba')),dict(type='text',text='FLUORESCENTES ANTIGUOS',y=620,size=44,color='gray'),
+    dict(type='pill',text='⏳  HASTA 1 MINUTO',y=1250,at='minuto'),dict(type='pill',text='SE DESGASTABAN',y=1380,at='desgastaba',color='red')],
+ 4:[dict(type='illus',name='salon_fondo'),dict(type='versus',y=850,a=dict(icon='💡',title='Fluorescente',sub='antiguo',color='red'),b=dict(icon='💡',title='LED',sub='sin pico',color='green'),win='b',winAt='pico'),
+    dict(type='list',y=1240,gap=145,items=[dict(icon='⏱️',text='Vida = horas de uso',ok=True,at='horas'),dict(icon='🔁',text='Nº de encendidos',ok=False,at='interruptor')])],
+ 5:[dict(type='illus',name='led_switch',marks=dict(apa='apagar')),dict(type='pill',text='SALES 10 MIN  →  APAGA',y=640,at='10',color='green')],
+ 6:[dict(type='illus',name='salon_fondo'),dict(type='stat',value='≈ 5 cént.',label='LED de 9 W encendida 24 h',y=820,at='5',size=150),dict(type='donut',pct=9.6,label='del consumo eléctrico del hogar es iluminación',y=1270,at='iluminación',x=330)],
+ 7:[dict(type='illus',name='led_tubo_viejo'),dict(type='pill',text='⚠️  EXCEPCIÓN: FLUORESCENTES Y BAJO CONSUMO ANTIGUAS',y=1300,at='fluorescente',size=30)],
+ 8:_cta('¿Quién lo decía en tu casa?',1400),
+})
+V['03_fregar_v2']=_v2('03_fregar',{
+ 0:[dict(type='illus',name='fr_mano'),dict(type='stamp',text='✕  GASTAS 4 VECES MÁS',y=1420,at='4')],
+ 1:[dict(type='illus',name='fr_lavavajillas'),dict(type='pill',text='⚠️  EL ERROR DE CASI TODOS',y=640,at='casi',color='red')],
+ 2:[dict(type='illus',name='fr_tanques',marks=dict(a='60',b='10')),dict(type='badge',name='OCU',full='Organización de Consumidores y Usuarios',flag='🇪🇸',y=640),dict(type='pill',text='−80 % DE AGUA',y=1430,at='80',color='green',size=46)],
+ 3:None,
+ 4:[dict(type='illus',name='cocina_fondo'),dict(type='bars',y=980,h=460,title='ENERGÍA POR LAVADO (AGUA ELÉCTRICA)',items=[dict(label='A mano',v=2.5,text='2–2,5 kWh',color='red'),dict(label='Lavavajillas',v=1,text='0,7–1 kWh',color='green',at='doble')]),
+    dict(type='pill',text='🔥  EL AGUA CALIENTE ES LO QUE MÁS CUESTA',y=1380,at='grifo',size=30)],
+ 5:[dict(type='illus',name='fr_aclarar'),dict(type='stamp',text='✕  NO LOS ACLARES',y=1420,at='aclarar')],
+ 6:[dict(type='illus',name='fr_tips',marks=dict(res='restos',lle='llena',eco='eco'))],
+ 7:[dict(type='illus',name='cocina_fondo'),dict(type='versus',y=1000,a=dict(icon='🧑‍🤝‍🧑',title='1–2 personas',sub='con gas: casi empate',color='gray'),b=dict(icon='👨‍👩‍👧‍👦',title='3 o más',sub='gana el lavavajillas',color='green'),win='b',winAt='gana')],
+ 8:[dict(type='illus',name='cocina_fondo'),dict(type='bubble',q='¿Equipo a mano o equipo lavavajillas?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')],
+})
+V['05_fechas_v2']=_v2('05_fechas',{
+ 0:[dict(type='illus',name='fe_tirar',marks=dict(tir='tiras')),dict(type='stamp',text='✕  SIGUE SIENDO BUENO',y=640,at='buena')],
+ 1:[dict(type='illus',name='fe_etiquetas',marks=dict(a='dos',b='distingue'))],
+ 2:[dict(type='illus',name='cocina_fondo'),dict(type='stat',value='51 %',label='tira comida porque pasó la fecha',y=960,at='mitad',color='red',size=200),dict(type='text',text='Encuesta de Too Good To Go',y=1250,size=32,color='gray',at='encuesta')],
+ 3:[dict(type='illus',name='cocina_fondo'),dict(type='badge',name='AESAN',full='Agencia Española de Seguridad Alimentaria y Nutrición',flag='🇪🇸',y=900),dict(type='pill',text='SON COSAS DISTINTAS',y=1200,at='distintas')],
+ 4:[dict(type='illus',name='fe_nevera',marks=dict(cad='caducidad',no='pasada',con='congélalo')),dict(type='pill',text='CADUCIDAD = SEGURIDAD',y=1330,color='red',size=40,at='seguridad'),dict(type='pill',text='❄️  CONGÉLALO ANTES DE LA FECHA',y=1440,at='congélalo',color='blue')],
+ 5:[dict(type='illus',name='fe_despensa1',marks=dict(pre='preferente',seg='seguro',cru='crujiente')),dict(type='pill',text='✓  SIGUE SIENDO SEGURO',y=1330,at='seguro',color='green'),dict(type='text',text='puede perder sabor o textura',y=1430,size=34,color='gray',at='crujiente')],
+ 6:[dict(type='illus',name='fe_despensa2',marks=dict(arroz='arroz',pasta='pasta',legumbres='legumbres',harina='harina',galletas='galletas',conservas='conservas',aceite='aceite',miel='miel'))],
+ 7:[dict(type='illus',name='fe_sentidos',marks=dict(mir='míralo',hue='huélelo',pru='pruébalo')),dict(type='pill',text='📦  ENVASE CERRADO Y BIEN CONSERVADO',y=1430,at='envase',size=32)],
+ 8:[dict(type='illus',name='cocina_fondo'),dict(type='bubble',q='¿Qué es lo último que tiraste por la fecha?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1450,at='leo',color='blue')],
+})

@@ -13,6 +13,7 @@ Lienzo 1080×1920; los subtítulos ocupan y≈250–420; la zona útil de la esc
 
 | type | parámetros |
 | --- | --- |
+| illus | name, marks:{clave: palabra} — escena ilustrada animada (ver ILUSTRACION.md) |
 | tile | icon, x?, y, size?, glow? (red/green/amber/blue), dot? (piloto rojo), border?, xAt? (tacha el icono) |
 | stamp | text, y, size?, color? (por defecto red) — sello con flash, para el gancho ("✕ FALSO") |
 | pill | text, y, color? (amber/green/red/blue/purple/gray), size? |
@@ -40,4 +41,4 @@ Estructura que funciona (55–70 s, 9–11 segmentos):
 9. Qué hacer en su lugar (`list`).
 10. Pregunta a comentarios: `bubble` + pill "TE LEO EN COMENTARIOS 👇".
 
-Comprobar con `./preview.sh <id>` (hoja de fotogramas) antes de renderizar. Revisar que no se solapen elementos y que el texto se lea.
+Las escenas deben ser ilustradas: ver ILUSTRACION.md. Comprobar con `./preview.sh <id>` (hoja de fotogramas) antes de renderizar. Revisar que no se solapen elementos y que el texto se lea.

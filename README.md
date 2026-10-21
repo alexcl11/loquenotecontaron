@@ -14,6 +14,7 @@ Mitos del hogar y el ahorro, en vídeos verticales de ~60 s.
   - `build.py <id> tts|timeline` genera la voz, los tiempos y la mezcla de audio.
   - `engine.html` + `rec.js` renderizan los fotogramas (Playwright) a MP4.
 - `contenido/` — banco de ideas con su estado y registro de publicaciones.
+- `pipeline/ILUSTRACION.md` — kit de escenas animadas y cómo ampliarlo.
 - `logo/` — foto de perfil, logo horizontal y portada de YouTube.
 
 ## Reglas editoriales
