@@ -13,6 +13,21 @@ segs=V[vid]
 SH='/tmp/claude-0/sherpa';S=SH+'/sherpa-onnx-v1.12.15-linux-x64-shared';K=SH+'/kokoro-multi-lang-v1_0'
 SR=44100
 PAUSE={',':0.11,':':0.18,';':0.2,'.':0.27,'?':0.3,'!':0.28,'…':0.42,'|':0.2,'||':0.4}
+
+# ---- Pronunciación de siglas: como palabra o deletreadas en español ----
+# Al añadir siglas nuevas, decide cómo se dicen en España y añádelas aquí.
+PRON={
+ 'LED':'led','LEDs':'leds','IDAE':'idáe','OCU':'ocu','AESAN':'aesán','EFSA':'efsa','IVA':'iva','OMS':'o eme ese',
+ 'CNMC':'ce ene eme ce','REE':'erre e e','USDA':'u ese de a','CDC':'ce de ce','UE':'u e','PVPC':'pe uve pe ce',
+ 'DGT':'de ge te','SINAC':'sinac','INTCF':'i ene te ce efe','kWh':'kilovatios hora','TV':'tele','wifi':'güifi','Wi-Fi':'güifi','USB':'u ese be',
+}
+def speakable(text):
+    for k in sorted(PRON,key=len,reverse=True):
+        text=re.sub(r'(?<![\wÁÉÍÓÚÑáéíóúñ])'+re.escape(k)+r'(?![\wÁÉÍÓÚÑáéíóúñ])',PRON[k],text)
+    unk=[w for w in re.findall(r'\b[A-ZÁÉÍÓÚÑ]{2,}\b',text)]
+    if unk:
+        print('ERROR siglas sin pronunciación definida:',sorted(set(unk)),'-> añádelas a PRON en build.py');sys.exit(2)
+    return text
 def norm(w):return re.sub(r'[¿?¡!.,…:;"“”\'()«»|]','',w.lower())
 def chunks(text):
     text=text.replace('...','…');text=re.sub(r'(\d),(\d)',lambda m:m.group(1)+'\u201a'+m.group(2),text)
@@ -54,7 +69,7 @@ if step=='tts':
     env=dict(os.environ,LD_LIBRARY_PATH=S+'/lib')
     meta=[]
     for i,s in enumerate(segs):
-        cs=chunks(s['say']);seg=[]
+        cs=chunks(speakable(s['say']));seg=[]
         for k,c in enumerate(cs):
             out=f'{D}/tts/{i:02d}_{k:02d}.wav'
             subprocess.run([S+'/bin/sherpa-onnx-offline-tts',f'--kokoro-model={K}/model.onnx',f'--kokoro-voices={K}/voices.bin',f'--kokoro-tokens={K}/tokens.txt',f'--kokoro-data-dir={K}/espeak-ng-data','--kokoro-lang=es','--kokoro-length-scale=0.89','--sid=53','--num-threads=2',f'--output-filename={out}',c['text']],env=env,check=True,capture_output=True)

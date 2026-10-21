@@ -28,3 +28,11 @@ Truco del personaje: siempre detrás de algo (encimera, sofá, mesa) para no dib
 ## Voz
 
 `build.py` genera la voz por trozos según la puntuación (pausas controladas, sin silencios a mitad de frase). Escribe `say` con buena puntuación: comas donde se respira, puntos al cerrar idea, "…" para suspense, "¿…?" para preguntas. Se puede forzar una pausa con ` | ` (corta) o ` || ` (larga).
+
+## Siglas (pronunciación)
+
+El motor de voz lee las mayúsculas letra a letra ("LED" → "ele e de"). Por eso `build.py` tiene un diccionario `PRON` que convierte cada sigla en cómo se dice en España antes de generar la voz:
+- Las que se dicen como palabra van en minúsculas: LED → "led", IDAE → "idáe", OCU → "ocu", AESAN → "aesán".
+- Las que se deletrean van con los nombres de las letras en español: CNMC → "ce ene eme ce", USDA → "u ese de a".
+
+Si un `say` contiene unas siglas que no están en `PRON`, `build.py tts` se detiene con un error. Hay que decidir cómo se pronuncian en España (si se dicen como palabra o se deletrean) y añadirlas a `PRON` antes de seguir. En los subtítulos (`show`) las siglas se escriben normal, en mayúsculas.
