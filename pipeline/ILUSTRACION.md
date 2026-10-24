@@ -1,6 +1,6 @@
 # Escenas ilustradas (estilo obligatorio desde el 22/10/2026)
 
-Cada vídeo se cuenta con **escenas narrativas**: un personaje en una casa hace lo que dice la voz (lava el pollo, apaga la luz, tira el arroz…). Los gráficos (`stat`, `bars`, `versus`, `badge`…) van encima de la ilustración o sobre un fondo atenuado (`cocina_fondo`, `salon_fondo`). Como mínimo 6 de cada 10 escenas deben ser ilustradas con acción, no solo iconos.
+Cada vídeo se cuenta con **escenas narrativas**: un personaje en una casa hace lo que dice la voz (lava el pollo, apaga la luz, tira el arroz…). Los gráficos (`stat`, `bars`, `versus`, `badge`…) van encima de la ilustración o sobre un fondo atenuado (`cocina_fondo`, `salon_fondo`, `bano_fondo`). Como mínimo 6 de cada 10 escenas deben ser ilustradas con acción, no solo iconos.
 
 ## Cómo se usa en `specs.py`
 
@@ -18,6 +18,8 @@ dict(type='illus', name='pollo_lavar', marks=dict(rep='repartiendo'))
 | ill.js | `kitchen`, `counterFront`, `sink`, `faucet`, `waterStream`, **`person(o,t)` + `hands(o)`** (cintura arriba, brazos por IK: `lh`/`rh` = [x,y] de cada mano; `look`, `mouth` smile/o/worry/flat, `brow`, `shirt`, `apron`), `chicken(cook 0–1)`, `germ`, `burst`, `board`, `bowl`, `lemon`, `bottle`, `pan(fire)`, `thermo`, `steam`, `bubbles`, `labelTag`, `cam`/`camLerp` (zoom y paneo) |
 | ill2.js | `salon` (lamp, dark, tvOn), `tvLed`, `router`, `decoder`, `speaker`, `printer`, `stereo`, `shelf`, `sofa`, `powerStrip`, `coin`, `wallSwitch`, `tube` (fluorescente), `bulb`, `dishwasher(open, load)`, `tank`, `plate`, `spatula`, `fridge(open, frost)`, `flake`, `meatTray`, `packet` (arroz/pasta/legumbres/harina/galletas/conservas/aceite/miel), `bin`, `dateLabel`, `pantry` |
 | ill3.js | Escenas de los vídeos de standby, LED, fregar y fechas (ejemplos a copiar) |
+| ill4.js | **Baño**: `bathroom(t,{open})` (azulejos, espejo, toallero, ventana que se abre 0–1 con brisa), `vanityFront` (encimera del lavabo, delante del personaje), `basin(x)`. **Limpieza**: `cleanBottle(x,y,s,rot,kind)` (kind `lejia`/`amoniaco`/`salfuman`/`vinagre`, genéricas sin marca; devuelve la boca para verter), `pourStream`, `bucket(x,y,s,lvl,col)` (cubo de fregar), `gasCloud(x,y,r,t,a,col)` (nube tóxica), `hazeOverlay`, `tears`, `coughFx`, `glassCup`, `cloth`, `sparkle`. **Otros**: `smartphone(x,y,s,rot,ring,t)`, `headset(o)` (cascos de teleoperador sobre `person`), `houseFront(x,y,w,t,gas)` (fachada con ventana; `gas` la llena de nube). Fondo atenuado `bano_fondo` |
+| ill_20261027.js | Escenas del vídeo de la lejía (`lj_*`): verter dos productos, baño con gas, centralita de llamadas, casas, botellas con %, cloramina en la cara, receta segura, ventana + teléfono |
 
 Truco del personaje: siempre detrás de algo (encimera, sofá, mesa) para no dibujar piernas. Después de `person(o,t)` se dibujan los objetos que sostiene y luego `hands(o)`.
 
@@ -36,3 +38,5 @@ El motor de voz lee las mayúsculas letra a letra ("LED" → "ele e de"). Por es
 - Las que se deletrean van con los nombres de las letras en español: CNMC → "ce ene eme ce", USDA → "u ese de a".
 
 Si un `say` contiene unas siglas que no están en `PRON`, `build.py tts` se detiene con un error. Hay que decidir cómo se pronuncian en España (si se dicen como palabra o se deletrean) y añadirlas a `PRON` antes de seguir. En los subtítulos (`show`) las siglas se escriben normal, en mayúsculas.
+
+Nota: `preview.sh` monta la hoja en 5×2; con 11 escenas falla al escribir la hoja (los fotogramas en `out/<id>/prev/` sí se generan). Montarla a mano con `tile=6x2` y `-frames:v 1`.
