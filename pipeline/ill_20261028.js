@@ -30,7 +30,7 @@ ILL.hn_calor=(c,t)=>{const s=c._s,M=c._m;const cls=M.re?ease(E(t,M.re-0.3,0.6)):
  g.save();cam(1.7,860,1020);kitchen(t,{stove:false});
  const en=lerp(lerp(0.9,0.35,ease(hot)),0.35,0)+0.5*reh*0;const pulse=cls>0.5?0.75+0.25*Math.sin(t*10):1;
  ovenBody(t,{heat:cls>0.5?pulse:0.9,glow:lerp(0.9,0.4,ease(Math.max(hot,cold)))*(1-cls)+cls*pulse,energy:cls>0.5?Math.min(1,0.3+reh*0.8):en,food:cakeF(0.3,0.45)});
- counterFront();ovenDoor(t,{},op,0);
+ counterFront();ovenDoor(t,{},op,0.6);
  heatOut(780,990,990,t,hot*op,300);coldIn(800,1085,t,cold*op,1,240);
  labelTag('AIRE CALIENTE',885,800,hot*op,C.red);labelTag('AIRE FRÍO',650,1150,cold*op,C.blue);
  if(M.pag){for(let i=0;i<7;i++){const k=E(t,M.pag+i*0.12,1.1);if(k<=0||k>=1)continue;const [x,y]=arcPath(885,960,620+i*70,640,140,ease(k));coin(x,y,1,t*6+i);}}
@@ -57,7 +57,7 @@ ILL.hn_apagar=(c,t)=>{const s=c._s,M=c._m;const off=M.apa?ease(E(t,M.apa-0.2,0.5
  g.save();camLerp(t,s,5,[1.35,700,1000],[1.5,760,1000]);const G0=ovGeo({});
  const o=hnP({rh:[G0.x+30,G0.y+26],lh:[470,1150],look:[0.9,0],mouth:'smile'});
  const ck=lerp(0.45,1,ease(E(t,s+0.5,(c._e||s+6)-s-0.5)));
- hnScene(t,o,{heat:1-off,glow:lerp(1,0.6,off),energy:1-off,knob:lerp(1.6,0,off),food:cakeF(ck,0.8)},0,0);
+ hnScene(t,o,{heat:1-off,glow:lerp(1,0.6,off),energy:1-off,knob:lerp(1.6,0,off),food:cakeF(ck,0.8)},0,0.7);
  steam(G0.cx,G0.y+150,t,0.6*res);labelTag('−10 MIN',G0.cx,G0.y-40,off,C.green);
  g.restore();};
 // enciende la luz, mira por el cristal y abre solo al final

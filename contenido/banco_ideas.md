@@ -19,7 +19,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 13 | Electrodomésticos | Fregar a mano gasta menos agua que el lavavajillas | Mito | OCU | PROGRAMADO 2026-10-24 |
 | 14 | Electrodomésticos | Hay que aclarar los platos antes de meterlos | Mito | Fabricantes, OCU | PENDIENTE (tocado en el #13) |
 | 15 | Electrodomésticos | La nevera llena gasta más | Mito | OCU | PENDIENTE |
-| 16 | Electrodomésticos | Abrir el horno para mirar no pasa nada | Mito | IDAE | EN CURSO 2026-10-28 |
+| 16 | Electrodomésticos | Abrir el horno para mirar no pasa nada | Mito | IDAE | PROGRAMADO 2026-10-28 |
 | 17 | Electrodomésticos | Siempre hay que precalentar el horno | Depende | IDAE | PENDIENTE |
 | 18 | Electrodomésticos | Apagar el router por la noche ahorra mucho | Mito | IDAE | PENDIENTE |
 | 19 | Electrodomésticos | El microondas destruye los nutrientes | Mito | AESAN | PENDIENTE |

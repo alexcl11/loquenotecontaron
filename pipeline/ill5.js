@@ -32,8 +32,10 @@ function ovenBody(t,o={}){const G=ovGeo(o),{x,y,w,h}=G;const heat=o.heat??0,ligh
 function ovenDoor(t,o={},open=0,light=0){const G=ovGeo(o),{x,y,w,h,hinge,top}=G;const th=ease(open)*Math.PI/2*0.96;const dh=hinge-top;
  const ty=hinge-dh*Math.cos(th)+80*Math.sin(th);const sp=16*Math.sin(th);
  const outer=ty<hinge-4;
- g.fillStyle=outer?'#343945':'#4a505e';g.beginPath();g.moveTo(x,hinge);g.lineTo(x+w,hinge);g.lineTo(x+w+sp,ty);g.lineTo(x-sp,ty);g.closePath();g.fill();
- if(outer){const k=(hinge-ty)/dh;if(k>0.25){const wy0=ty+16*k,wy1=hinge-22*k;const ga=lerp(0.55,0.15,light);g.fillStyle=`rgba(8,10,16,${ga})`;rr(x+30,wy0+14*k,w-60,Math.max(2,wy1-wy0-14*k),10*k);g.fill();
+ const k=(hinge-ty)/dh,wy0=ty+16*k,wy1=hinge-22*k,win=outer&&k>0.25;
+ g.fillStyle=outer?'#343945':'#4a505e';g.beginPath();g.moveTo(x,hinge);g.lineTo(x+w,hinge);g.lineTo(x+w+sp,ty);g.lineTo(x-sp,ty);g.closePath();
+ if(win)g.roundRect(x+30,wy0+14*k,w-60,Math.max(2,wy1-wy0-14*k),10*k);g.fill('evenodd');
+ if(outer){if(win){const ga=lerp(0.55,0.12,light);g.fillStyle=`rgba(8,10,16,${ga})`;rr(x+30,wy0+14*k,w-60,Math.max(2,wy1-wy0-14*k),10*k);g.fill();
    g.fillStyle='rgba(255,255,255,0.07)';g.beginPath();g.moveTo(x+40,wy0+14*k);g.lineTo(x+110,wy0+14*k);g.lineTo(x+40,wy1);g.closePath();g.fill();}}
  else{g.fillStyle='#2a2e38';g.beginPath();g.moveTo(x+26,hinge+4);g.lineTo(x+w-26,hinge+4);g.lineTo(x+w-20+sp,ty-6);g.lineTo(x+20-sp,ty-6);g.closePath();g.fill();}
  // tirador
