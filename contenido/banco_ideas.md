@@ -6,7 +6,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | --- | --- | --- | --- | --- | --- |
 | 1 | Energía | Dejar el aire encendido todo el día gasta menos que apagarlo | Depende | IDAE | PENDIENTE |
 | 2 | Energía | Poner la calefacción a 30 °C calienta antes | Mito | IDAE | PENDIENTE |
-| 3 | Energía | Un grado más de calefacción apenas se nota en la factura | Mito | IDAE | PENDIENTE |
+| 3 | Energía | Un grado más de calefacción apenas se nota en la factura | Mito | IDAE | EN CURSO 2026-10-29 |
 | 4 | Energía | Los aparatos en standby no gastan | Depende | IDAE, REE | PROGRAMADO 2026-10-25 |
 | 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | IDAE, fabricantes | PENDIENTE |
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 |
