@@ -2,7 +2,7 @@
 
 - Tema: "Un grado más de calefacción apenas se nota en la factura" (bloque Energía; los 3 últimos fueron Cocina, Limpieza, Electrodomésticos). Incluye de paso el #2 (poner el termostato a tope no calienta antes), sin cerrarlo en el banco.
 - Fecha de publicación: 2026-10-29 18:00 Europe/Madrid
-- Estado: RENDER
+- Estado: PROGRAMADO
 - Vídeo: V['08_calefaccion'] · kit en pipeline/ill6.js + escenas en pipeline/ill_20261029.js
 
 ## Veredicto
