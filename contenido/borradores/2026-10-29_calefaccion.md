@@ -27,3 +27,8 @@ MITO. Según el IDAE, por cada grado que se sube la calefacción, el consumo de 
 - "Ahorre entre un 8 y un 13% de energía colocando válvulas termostáticas en radiadores o termostatos programables." (fuente 1)
 - "El termostato marca la temperatura a la que quieres llegar, no la velocidad a la que llega el calor." (fuente 3, con fabricantes)
 - NO se usa ninguna cifra en euros ni el total de varios grados (no está en las fuentes; solo se dice que cada grado "se suma").
+
+## Programación
+
+- Metricool: 2026-10-29 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=6384957384656765064
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@63fbf2e27090829ccd44bef89bb98339d3d7715f/videos/2026-10-29_calefaccion.mp4 (75,5 s)
