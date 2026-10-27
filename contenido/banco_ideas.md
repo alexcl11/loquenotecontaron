@@ -30,7 +30,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 24 | Cocina | Hay que lavar el pollo antes de cocinarlo | Mito | USDA, CDC | PROGRAMADO 2026-10-22 |
 | 25 | Cocina | Si quitas el moho, el resto se puede comer | Mito | AESAN | PENDIENTE |
 | 26 | Cocina | Lo descongelado nunca se puede volver a congelar | Depende | AESAN | PENDIENTE |
-| 27 | Cocina | La comida caliente estropea la nevera | Mito | AESAN | EN CURSO 2026-10-30 |
+| 27 | Cocina | La comida caliente estropea la nevera | Mito | AESAN | PROGRAMADO 2026-10-30 |
 | 28 | Cocina | "Consumir preferentemente" es lo mismo que caducidad | Mito | AESAN | PROGRAMADO 2026-10-26 |
 | 29 | Cocina | Aceite en el agua evita que la pasta se pegue | Mito | Divulgación culinaria | PENDIENTE |
 | 30 | Cocina | La sal hace que el agua hierva antes | Mito | Física básica | PENDIENTE |

@@ -63,7 +63,7 @@ function person(o,t){const x=o.x,y=o.y,s=o.s||1;const shirt=o.shirt||IL.shirt;
  g.fillStyle='rgba(240,120,110,0.25)';g.beginPath();g.arc(x-40*s,hy+24*s,10*s,0,7);g.arc(x+40*s,hy+24*s,10*s,0,7);g.fill();
  // brazos (después de dibujar objetos sostenidos se pinta la mano encima)
  const arms=[[-1,o.lh],[1,o.rh]];o._hands=[];
- arms.forEach(([sd,tg])=>{const sx=x+sd*98*s,sy=y-205*s+bob;const T=tg||[x+sd*120*s,y+20*s];const j=ik(sx,sy,T[0],T[1],120*s,112*s,1);
+ arms.forEach(([sd,tg])=>{const sx=x+sd*98*s,sy=y-205*s+bob;const T=tg||[x+sd*120*s,y+20*s];const j=ik(sx,sy,T[0],T[1],120*s,112*s,o.bend?o.bend[sd<0?0:1]:1);
   g.strokeStyle=shirt;g.lineCap='round';g.lineWidth=46*s;g.beginPath();g.moveTo(sx,sy);g.lineTo(j[0],j[1]);g.stroke();
   g.strokeStyle=IL.skin;g.lineWidth=34*s;g.beginPath();g.moveTo(j[0],j[1]);g.lineTo(j[2],j[3]);g.stroke();o._hands.push([j[2],j[3]]);});
 }

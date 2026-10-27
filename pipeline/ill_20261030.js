@@ -41,11 +41,11 @@ ILL.sb_tapers=(c,t)=>{const s=c._s,M=c._m;const t0=(M.rep||s+1)-0.2,P=1.05;const
  const fills=TX.map((_,i)=>u<0?0:(k>i?1:(k===i&&ph>0.7?ease((ph-0.7)/0.3):0)));
  let hand=[850,1010],rot=0,full=0;
  if(u>=0&&k<3){const tx=TX[k];if(ph<0.3){hand=[850,lerp(1010,1040,Math.sin(ph/0.3*Math.PI))];full=ph>0.15?1:0;}
-  else if(ph<0.7){const q=ease((ph-0.3)/0.4);hand=[lerp(850,tx,q),lerp(1010,995,q)-60*Math.sin(q*Math.PI)];full=1;}
+  else if(ph<0.7){const q=ease((ph-0.3)/0.4);hand=[lerp(850,tx,q),lerp(1010,995,q)+25*Math.sin(q*Math.PI)];full=1;}
   else{hand=[tx,995];rot=0.6*Math.sin((ph-0.7)/0.3*Math.PI);full=1-(ph-0.7)/0.3;}}
  else if(k>=3){const q=ease(cl((u-3)*2));hand=[lerp(690,850,q),lerp(995,1010,q)];}
  g.save();camLerp(t,s,5,[1.3,650,1040],[1.38,640,1050]);kitchen(t);
- const o=sbP({rh:hand,lh:[450,1150],look:[hand[0]>760?0.8:0.1,0.5],mouth:'smile'});person(o,t);ladle(hand[0],hand[1],rot,full);stockPot(870,1168,0.7,t,{steam:1});counterFront();
+ const o=sbP({rh:hand,lh:[450,1150],bend:[1,hand[0]<700?-1:1],look:[hand[0]>760?0.8:0.1,0.5],mouth:'smile'});person(o,t);ladle(hand[0],hand[1],rot,full);stockPot(870,1168,0.7,t,{steam:1});counterFront();
  TX.forEach((x,i)=>{tupper(x,1180,0.75,fills[i]);if(fills[i]>0.5)steam(x,1130,t,0.35);});hands(o);g.restore();
  labelTag('OLLA GRANDE: TARDA EN ENFRIARSE',540,640,E(t,s+0.3,0.4),C.red);
  if(M.hon)labelTag('✓  PEQUEÑOS Y POCO HONDOS',540,1440,E(t,M.hon,0.4),C.green);};
