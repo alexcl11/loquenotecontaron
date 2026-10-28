@@ -3,15 +3,15 @@ function btP(o){return Object.assign({x:510,y:1262,apron:false,shirt:'#2fa58f'},
 // gancho: en el sofá, esperando a que el móvil se apague
 ILL.bt_gancho=(c,t)=>{const s=c._s,M=c._m;const ap=M.apa?E(t,M.apa,0.3):0;
  g.save();camLerp(t,s,4,[1.15,540,1040],[1.45,520,1060]);salon(t,{lamp:0.6});salonDevices(t);
- const lv=lerp(0.04,0.01,E(t,s,2));const o=btP({x:520,rh:[580,1100],lh:[460,1105],look:[0.2,1],mouth:ap>0.5?'o':'flat',brow:ap>0.5?1:0});
- person(o,t);mobile(520,1078,0.6,0,{lvl:lv,off:ap>0.5,t});hands(o);sofa(...SOFA);g.restore();};
+ const lv=lerp(0.04,0.01,E(t,s,2));const o=btP({x:520,rh:[572,1120],lh:[468,1125],look:[0.2,1],mouth:ap>0.5?'o':'flat',brow:ap>0.5?1:0});
+ person(o,t);mobile(520,1100,0.5,0,{lvl:lv,off:ap>0.5,t});hands(o);sofa(...SOFA);g.restore();};
 // el consejo de toda la vida: "gástala hasta el final"
 ILL.bt_consejo=(c,t)=>{const s=c._s,M=c._m;const ac=M.aco?E(t,M.aco-0.2,0.4):0;const talk=M.dur?1-E(t,M.dur+0.4,0.3):1;
  g.save();cam(1.12,560,1040);salon(t,{lamp:1});salonDevices(t);
  const gO={x:400,y:1262,s:0.95,shirt:'#8b7cf6',hair:'#c9ccd6',apron:false,rh:[500+Math.sin(t*9)*14*talk,900],lh:[330,1190],look:[1,0],mouth:Math.sin(t*10)>0&&talk>0.5?'o':'smile'};
  bun(gO,t);person(gO,t);glasses(gO,t);hands(gO);const h=gO._hands[1];g.fillStyle=IL.skin;rr(h[0]-6,h[1]-46,12,36,6);g.fill();
- const hO=btP({x:690,rh:[745,1100],lh:[635,1105],look:ac>0.5?[0.2,1]:[-1,-0.1],mouth:ac>0.5?'worry':'smile',brow:ac>0.5?1:0});
- person(hO,t);mobile(690,1078,0.55,0,{lvl:0.35,t});hands(hO);sofa(260,1160,560);g.restore();};
+ const hO=btP({x:690,rh:[742,1120],lh:[638,1125],look:ac>0.5?[0.2,1]:[-1,-0.1],mouth:ac>0.5?'worry':'smile',brow:ac>0.5?1:0});
+ person(hO,t);mobile(690,1100,0.5,0,{lvl:0.35,t});hands(hO);sofa(260,1160,560);g.restore();};
 // efecto memoria: níquel-cadmio (antes) vs iones de litio (ahora)
 ILL.bt_memoria=(c,t)=>{const s=c._s,M=c._m;const gr=g.createLinearGradient(0,470,0,1600);gr.addColorStop(0,'#141c30');gr.addColorStop(1,'#0a0f1c');g.fillStyle=gr;g.fillRect(0,470,W,1150);
  const pl=E(t,s,0.5),pr=M.mov?E(t,M.mov-0.3,0.5):0;
@@ -37,8 +37,8 @@ ILL.bt_ciclo=(c,t)=>{const s=c._s,M=c._m;const hoy=M.hoy||s+99,noc=M.noc||s+99,m
   {lv=lerp(0.25,1,ease(E(t,noc,Math.max(0.8,man-noc-0.4))));chg=true;}else lv=1-b;}
  const done=t>sol-0.1?E(t,sol-0.1,0.4):0;if(done>0){txtR='1 CICLO';sub='';}
  g.save();cam(1.15,520,1040);salon(t,{lamp:1-night,dark:0.45*night});
- const o=btP({x:420,rh:[475,1100],lh:[365,1105],look:[0.2,1],mouth:'smile'});person(o,t);if(chg)cable(420,1135,150,1290,40);mobile(420,1078,0.55,0,{lvl:lv,chg,t});hands(o);sofa(...SOFA);
- if(night>0.5)zzz(480,880,t,night);g.restore();
+ const o=btP({x:420,rh:[472,1120],lh:[368,1125],look:[0.2,1],mouth:'smile'});person(o,t);if(chg)cable(420,1150,150,1290,40);mobile(420,1100,0.5,0,{lvl:lv,chg,t});hands(o);sofa(...SOFA);
+ g.restore();
  const rp=E(t,s,0.5);g.save();g.globalAlpha=rp;g.fillStyle='rgba(10,15,28,0.82)';g.beginPath();g.arc(800,830,175,0,7);g.fill();cycleRing(800,830,128,a,b,{done,txt:txtR,sub});g.restore();
  if(M.dia&&t<hoy-0.2)labelTag('AUNQUE SEA EN VARIOS DÍAS',540,1440,E(t,M.dia,0.4),C.amber);
  if(t>=hoy-0.2){labelTag('HOY · 75 %',800,1060,E(t,hoy,0.4),C.amber);if(M.noc)labelTag('🌙  CARGA',800,1130,E(t,noc,0.4)*(1-E(t,man-0.2,0.3)),C.gray);labelTag('MAÑANA · 25 %',800,1130,E(t,man,0.4),C.blue);}
@@ -55,8 +55,8 @@ ILL.bt_noche=(c,t)=>{const s=c._s,M=c._m;const op=M.opt||s+3;
 ILL.bt_calor=(c,t)=>{const s=c._s,M=c._m;const ca=M.cal?E(t,M.cal-0.2,0.8):0;const id=M.die?E(t,M.die-0.2,0.9):0;
  const val=lerp(lerp(24,38,ease(ca)),19,ease(id));const hot=cl(ca-id);
  g.save();cam(1.15,560,1040);salon(t,{lamp:0.8});
- const o=btP({x:330,rh:[385,1100],lh:[275,1105],look:[0.2,1],mouth:hot>0.5?'worry':'smile',brow:hot>0.5?1:0});person(o,t);cable(330,1135,120,1290,40);
- warmHalo(330,1070,lerp(40,170,hot),hot);mobile(330,1078,0.55,0,{lvl:0.6,chg:true,t});heatWaves(330,960,110,t,hot);hands(o);sofa(...SOFA);g.restore();
+ const o=btP({x:330,rh:[382,1120],lh:[278,1125],look:[0.2,1],mouth:hot>0.5?'worry':'smile',brow:hot>0.5?1:0});person(o,t);cable(330,1150,120,1290,40);
+ warmHalo(330,1100,lerp(40,190,hot),hot);g.save();g.globalAlpha=0.5*hot;g.fillStyle="#ff5a3c";rr(300,1040,60,120,10);g.fill();g.restore();mobile(330,1100,0.5,0,{lvl:0.6,chg:true,t});hands(o);sofa(...SOFA);g.restore();
  const X=830,Y=1330,H=560,lo=10,hi=40,yv=v=>Y-cl((v-lo)/(hi-lo))*H;
  g.fillStyle='rgba(10,15,28,0.8)';rr(650,640,380,860,34);g.fill();
  if(id>0){g.save();g.globalAlpha=id;g.fillStyle='rgba(62,207,110,0.28)';rr(X-120,yv(22),240,yv(16)-yv(22),10);g.fill();g.restore();}
@@ -75,6 +75,6 @@ ILL.bt_almohada=(c,t)=>{const s=c._s,M=c._m;const mj=M.mej||s+99;const k=E(t,mj-
  person(o,t);duvet(t);
  if(k<0.3)cable(780,1085,sk[0],sk[1],60);else if(ph){cable(ph[0],ph[1]+30,sk[0],sk[1],60);mobile(ph[0],ph[1],0.3,0.2,{lvl:0.7,chg:true,t});}
  else{cable(905,1088,sk[0],sk[1],50);mobile(905,1050,0.32,-0.06,{lvl:0.7,chg:true,t});}
- hands(o);g.restore();
+ if(k>0&&k<1){const h=o._hands[1];g.fillStyle=IL.skin;g.beginPath();g.arc(h[0],h[1],23,0,7);g.fill();}g.restore();
  if(M.alm)labelTag('✕  BAJO LA ALMOHADA',540,640,E(t,M.alm,0.4)*(1-E(t,mj,0.3)),C.red);if(M.sof)labelTag('✕  NI EN EL SOFÁ',540,720,E(t,M.sof,0.4)*(1-E(t,mj,0.3)),C.red);
  if(M.ven)labelTag('✓  SUPERFICIE FIRME Y VENTILADA',540,1440,E(t,M.ven,0.4),C.green);};

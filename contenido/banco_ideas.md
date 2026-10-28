@@ -26,7 +26,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 20 | Tecnología | Cargar el móvil al 100 % cada noche estropea la batería | Depende | Apple, Samsung | PENDIENTE |
 | 21 | Tecnología | Cerrar las apps en segundo plano ahorra batería | Mito | Apple, Google | PENDIENTE |
 | 22 | Tecnología | En modo avión el móvil carga más rápido | Verdad | Fabricantes | PENDIENTE |
-| 23 | Tecnología | Hay que descargar la batería del todo antes de cargarla | Mito | Apple, Samsung | EN CURSO 2026-10-31 |
+| 23 | Tecnología | Hay que descargar la batería del todo antes de cargarla | Mito | Apple, Samsung | PROGRAMADO 2026-10-31 |
 | 24 | Cocina | Hay que lavar el pollo antes de cocinarlo | Mito | USDA, CDC | PROGRAMADO 2026-10-22 |
 | 25 | Cocina | Si quitas el moho, el resto se puede comer | Mito | AESAN | PENDIENTE |
 | 26 | Cocina | Lo descongelado nunca se puede volver a congelar | Depende | AESAN | PENDIENTE |
