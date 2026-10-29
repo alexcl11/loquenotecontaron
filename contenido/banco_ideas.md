@@ -15,7 +15,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | PENDIENTE |
 | 10 | Energía | El termo eléctrico encendido todo el día gasta menos | Depende | IDAE | PENDIENTE |
 | 11 | Electrodomésticos | Lavar a 60 °C limpia mucho más que a 30 °C | Depende | OCU, IDAE | PENDIENTE |
-| 12 | Electrodomésticos | El programa eco tarda más, así que gasta más | Mito | OCU, fabricantes | EN CURSO 2026-11-01 |
+| 12 | Electrodomésticos | El programa eco tarda más, así que gasta más | Mito | OCU, fabricantes | PROGRAMADO 2026-11-01 |
 | 13 | Electrodomésticos | Fregar a mano gasta menos agua que el lavavajillas | Mito | OCU | PROGRAMADO 2026-10-24 |
 | 14 | Electrodomésticos | Hay que aclarar los platos antes de meterlos | Mito | Fabricantes, OCU | PENDIENTE (tocado en el #13) |
 | 15 | Electrodomésticos | La nevera llena gasta más | Mito | OCU | PENDIENTE |

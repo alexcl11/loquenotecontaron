@@ -12,3 +12,4 @@
 | 2026-10-29 | Un grado más de calefacción (#3) | videos/2026-10-29_calefaccion.mp4 | IG Reel + TikTok + YouTube Short | IDAE Guía Práctica de la Energía (3.ª ed.), IDAE FAQ calefacción, Selectra (fabricantes) |
 | 2026-10-30 | Comida caliente en la nevera (#27) | videos/2026-10-30_sobras.mp4 | IG Reel + TikTok + YouTube Short | AESAN campaña verano (reglas de oro), USDA FSIS Leftovers and Food Safety, Liebherr y Beko (fabricantes) |
 | 2026-10-31 | Descargar la batería del todo (#23) | videos/2026-10-31_bateria.mp4 | IG Reel + TikTok + YouTube Short | Apple (¿Por qué iones de litio?; Soporte: Cargar y mantener la batería del iPhone), Samsung Soporte (Curiosidades sobre la batería), Consumer (Eroski) |
+| 2026-11-01 | Programa eco: tarda más, gasta menos (#12) | videos/2026-11-01_eco.mp4 | IG Reel + TikTok + YouTube Short | OCU Programa Eco vs normal (14/07/2026, 600 lavavajillas), Consumer (Eroski), APPLiA España (fabricantes) |
