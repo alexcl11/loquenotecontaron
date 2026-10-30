@@ -53,7 +53,7 @@ ILL.ln_tramos=(c,t)=>{const s=c._s,M=c._m;ILL.salon_fondo(c,t);
 ILL.ln_pvpc=(c,t)=>{const s=c._s,M=c._m;const ca=M.cam?E(t,M.cam-0.2,0.6):0;const vv=LN_PV.map((v,i)=>cl(v+0.06*Math.sin(t*2+i)*ca));
  g.save();camLerp(t,s,4,[1.15,580,1050],[1.25,600,1030]);
  const o=lnP({x:440,lh:[560,1020],rh:[610,1165],look:[1,0.5],mouth:ca>0.5?'o':'flat',brow:ca>0.5?1:0});
- lnScene(t,o,{prog:'——',spin:0,p:0,water:0},{day:0.6,held:(o)=>pricePhone(o.lh[0]+20,o.lh[1]-80,0.9,0.12,vv,E(t,s+0.3,1.2))});
+ lnScene(t,o,{prog:'——',spin:0,p:0,water:0},{day:1,held:(o)=>pricePhone(o.lh[0]+20,o.lh[1]-80,0.9,0.12,vv,E(t,s+0.3,1.2))});
  g.restore();
  if(ca>0){g.save();g.globalAlpha=ca;g.fillStyle='rgba(20,29,48,0.92)';rr(110,520,860,330,30);g.fill();g.restore();hourChart(160,790,760,220,vv,ca,{});txt('PRECIO DE LA LUZ, HORA A HORA',540,560,30,'#c9d1e0',800,'center',ca);}
  labelTag('TARIFA REGULADA · PVPC',540,M.cam?1450:640,M.reg?E(t,M.reg-0.2,0.4):0,C.purple);};
@@ -95,7 +95,7 @@ ILL.ln_consejos=(c,t)=>{const s=c._s,M=c._m;const pr=M.pro?ease(E(t,M.pro-0.3,0.
  const k1=M.con?E(t,M.con-0.2,0.4):0,k2=M.per?E(t,M.per-0.2,0.4):0,k3=M.pv?E(t,M.pv-0.2,0.4):0;
  g.save();cam(1.15,600,1100);
  const o=lnP({x:460,reach:pr>0.02,rh:[lerp(610,LN_BTN[0],pr),lerp(1165,LN_BTN[1],pr)],lh:[k3>0?560:420,k3>0?1030:1165],look:pr>0.5?[0.8,0.9]:[1,0.4],mouth:'smile'});
- lnScene(t,o,{prog:pr>0.5?'DIFERIDO':'——',spin:0,p:0,water:0},{day:0.6,held:k3>0?(o)=>pricePhone(o.lh[0]+20,o.lh[1]-80,0.9,0.12,LN_PV,k3):null});
+ lnScene(t,o,{prog:pr>0.5?'DIFERIDO':'——',spin:0,p:0,water:0},{day:1,held:k3>0?(o)=>pricePhone(o.lh[0]+20,o.lh[1]-80,0.9,0.12,LN_PV,k3):null});
  g.restore();
- labelTag('① MIRA TU CONTRATO',540,600,k1,C.amber);labelTag('② PERIODOS: NOCHE O FINDE',540,680,k2,C.green);labelTag('③ PVPC: MIRA LOS PRECIOS DE MAÑANA',540,760,k3,C.purple);
+ labelTag('① MIRA TU CONTRATO',540,580,k1,C.amber);labelTag('② PERIODOS: NOCHE O FINDE',540,655,k2,C.green);labelTag('③ PVPC: MIRA LOS PRECIOS DE MAÑANA',540,730,k3,C.purple);
  if(pr>0.5)labelTag('⏲ PROGRAMA LA HORA',780,1460,E(t,M.pro,0.4),C.blue);};
