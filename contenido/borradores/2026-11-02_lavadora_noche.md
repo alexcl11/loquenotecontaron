@@ -2,7 +2,7 @@
 
 - Tema: "Pongo la lavadora de madrugada porque de noche la luz es más barata" (bloque Factura; los 3 últimos fueron Electrodomésticos, Tecnología, Cocina).
 - Fecha de publicación: 2026-11-02 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['12_noche'] · escenas en pipeline/ill_20261102.js · kit nuevo en pipeline/ill10.js
 
 ## Veredicto
