@@ -29,3 +29,8 @@ DEPENDE de tu contrato. Con precio único, todas las horas cuestan lo mismo: da 
 - "Con una oferta de tres periodos, la madrugada y el fin de semana suelen seguir siendo lo más barato" · "la hora más barata la marca tu contrato, no el mercado del día" (4)
 - Precios del PVPC del día siguiente: los publica e·sios, de Red Eléctrica (4).
 - NO se generaliza el dato de octubre a todo el año: se dice "en octubre" y "puede".
+
+## Programación
+
+- Metricool: 2026-11-02 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=-39572316147596501
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@3e5ee055cdc8eeb159cd1ffb50981317974874d0/videos/2026-11-02_lavadora_noche.mp4 (76,6 s)
