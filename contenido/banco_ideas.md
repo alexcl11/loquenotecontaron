@@ -42,7 +42,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 36 | Limpieza | Tender la ropa dentro de casa no tiene efectos | Mito | OCU | PENDIENTE |
 | 37 | Factura | Bajar la potencia contratada no ahorra nada | Depende | CNMC | PENDIENTE |
 | 38 | Factura | La tarifa regulada siempre es la más cara | Mito | CNMC | PENDIENTE |
-| 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | PENDIENTE |
+| 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | EN CURSO 2026-11-02 |
 | 40 | Factura | Las placas solares no compensan si vives en un piso | Depende | IDAE | PENDIENTE |
 
 Cuando queden menos de 14 PENDIENTE, añadir 20 temas nuevos del mismo nicho (hogar, energía, cocina, limpieza, factura, tecnología doméstica).
