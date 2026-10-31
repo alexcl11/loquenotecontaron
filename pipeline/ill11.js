@@ -19,7 +19,7 @@ function breadSlice(x,y,s,rot=0,o={}){g.save();g.translate(x,y);g.rotate(rot);g.
  g.fillStyle='#b8742e';breadPath();g.fill();g.save();g.translate(0,4);g.scale(0.84,0.84);g.fillStyle='#f1d9a6';breadPath();g.fill();g.restore();
  g.fillStyle='rgba(190,140,80,0.35)';for(let i=0;i<16;i++){g.beginPath();g.ellipse(-50+rnd(i+3)*100,-55+rnd(i+8)*110,3+rnd(i)*4,2+rnd(i+1)*3,0,0,7);g.fill();}
  if(o.mold)moldSpot(o.mx??44,o.my??-44,o.mr??22,o.mold,0,o.seed||0);
- if(o.hyp>0){g.save();g.translate(0,4);g.scale(0.84,0.84);breadPath();g.restore();g.clip();g.shadowColor='rgba(140,255,120,0.9)';g.shadowBlur=10;hyphae(o.hx??20,o.hyY??-50,140,130,o.hyp,3,MH.hy,3.5);}
+ if(o.hyp>0){g.save();g.translate(0,4);g.scale(0.84,0.84);breadPath();g.restore();g.clip();g.shadowColor='rgba(140,255,120,0.9)';g.shadowBlur=10;hyphae(o.hx??20,o.hyY??-50,170,140,o.hyp,3,MH.hy,4.5);}
  g.restore();}
 // tarro de mermelada genérico (base en y). o: lid (true = tapa puesta), mold 0–1 (mancha en la superficie), mcol; devuelve la superficie [x,y] en mundo
 function jamJar(x,y,s,o={}){g.save();g.translate(x,y);g.scale(s,s);

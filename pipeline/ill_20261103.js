@@ -2,11 +2,11 @@
 function mhP(o){return Object.assign({x:470,y:1200,shirt:'#3d7bff'},o);}
 function mhDim(a=0.62){g.fillStyle=`rgba(6,10,20,${a})`;g.fillRect(0,470,W,1150);}
 // gancho: quita el trozo con moho de la rebanada y se come el resto; luego se ven los hilos que quedan dentro
-ILL.mh_pan=(c,t)=>{const s=c._s,M=c._m;const SX=520,SY=1010,SS=1.15,CUT=18;
+ILL.mh_pan=(c,t)=>{const s=c._s,M=c._m;const SX=520,SY=1080,SS=1.15,CUT=18;
  const q=M.qui?E(t,M.qui-0.1,1.1):0;const grab=ease(cl(q/0.4)),move=ease(cl((q-0.4)/0.6));
- const bite=M.res?ease(E(t,M.res-0.1,0.5))*(1-ease(E(t,M.res+0.9,0.5))):0;const xr=M.pun?E(t,M.pun-0.2,1.2):0;
- g.save();camLerp(t,s,5,[1.35,560,1010],[1.45,560,1000]);kitchen(t);plate(790,1172,1.1);
- const sx=lerp(SX,SX-20,bite),sy=lerp(SY,SY-55,bite),sr=lerp(0,-0.25,bite);
+ const bite=M.res?ease(E(t,M.res-0.1,0.4))*(1-ease(E(t,M.res+0.5,0.4))):0;const xr=M.pun?E(t,M.pun-0.2,1.2):0;
+ const zk=M.pun?ease(E(t,M.pun-0.3,0.8)):0;g.save();const z0=lerp(1.35,1.45,ease(E(t,s,5)));cam(lerp(z0,2.0,zk),lerp(560,SX,zk),lerp(1005,SY-20,zk));kitchen(t);plate(790,1172,1.1);
+ const sx=lerp(SX,SX-15,bite),sy=lerp(SY,SY-35,bite),sr=lerp(0,-0.2,bite);
  const gp=[SX+(CUT+38)*SS,SY-20];const pc=q>0?[lerp(gp[0],790,move),lerp(gp[1],1150,move)-60*Math.sin(move*Math.PI)]:gp;
  const rh=q<=0?[650,1150]:(q<0.4?[lerp(650,gp[0]+10,grab),lerp(1150,gp[1],grab)]:(move<1?[pc[0]+10,pc[1]]:[lerp(800,650,ease(E(t,M.qui+1.1,0.5))),lerp(1150,1150,1)]));
  const o=mhP({lh:[sx-55,sy+70],rh,look:bite>0.3?[0.3,0.4]:(q>0&&q<1?[0.8,0.4]:[0.4,0.6]),mouth:bite>0.4?'o':(xr>0.3?'worry':'smile'),brow:xr>0.3?1:0});
@@ -15,7 +15,7 @@ ILL.mh_pan=(c,t)=>{const s=c._s,M=c._m;const SX=520,SY=1010,SS=1.15,CUT=18;
  else{breadSlice(sx,sy,SS,sr,{clip:CUT,side:'L',hyp:xr,hx:CUT-6,hyY:-56});
   g.save();g.translate(pc[0]-gp[0],pc[1]-gp[1]);breadSlice(SX,SY,SS,0,{clip:CUT,side:'R',mold:1});g.restore();}
  counterFront();hands(o);g.restore();
- if(M.pun)labelTag('LO QUE NO SE VE',540,1440,E(t,M.pun,0.4),C.red);};
+ if(M.pun)labelTag('LO QUE NO SE VE',540,595,E(t,M.pun,0.4),C.red);};
 // las "raíces" del moho bajo la lupa: hilos finos que bajan por debajo de la superficie del pan
 ILL.mh_raices=(c,t)=>{const s=c._s,M=c._m;g.save();cam(1.3,560,1000);kitchen(t);const o=mhP({lh:[465,1080],rh:[650,1150],look:[0.4,0.6]});person(o,t);breadSlice(520,1010,1.15,0,{mold:1});counterFront();hands(o);g.restore();mhDim(0.6);
  const LX=540,LY=1030,R=330,yS=LY-R*0.3;const hp=M.hil?ease(E(t,M.hil-0.3,1.3)):0;const dp=M.deb?ease(E(t,M.deb-0.3,1.4)):0;
@@ -33,7 +33,7 @@ ILL.mh_mermelada=(c,t)=>{const s=c._s,M=c._m;const JX=600,JS=1.1;
  const surf=[JX+10*JS,1178-120*JS];
  // cuchara: baja al tarro, recoge la mancha y sube
  let sh=[430,1120],srot=0.25;const dive=ease(cl(qu/0.45)),lift=ease(cl((qu-0.5)/0.5));
- if(qu>0){const top=[surf[0]-4,surf[1]-118];sh=qu<0.5?[lerp(430,top[0],dive),lerp(1120,top[1]+10,dive)]:[lerp(top[0],540,lift),lerp(top[1]+10,870,lift)];srot=lerp(0.25,0,dive)+lerp(0,0.35,lift);}
+ if(qu>0){const top=[surf[0]-4,surf[1]-118];sh=qu<0.5?[lerp(430,top[0],dive),lerp(1120,top[1]+10,dive)]:[lerp(top[0],390,lift),lerp(top[1]+10,1060,lift)];srot=lerp(0.25,0,dive)+lerp(0,0.15,lift);}
  const o=mhP({x:560,lh:sh,rh,look:qu>0.5?[0,-0.1]:[0.5,0.7],mouth:mn>0.5&&qu<0.5?'o':'smile',brow:mn>0.5&&qu<0.5?1:0});person(o,t);
  const onSpoon=qu>=0.45;
  jamJar(JX,1178,JS,{lid:ab<=0,mold:onSpoon?0:Math.max(0.35,mn)*(ab>0?1:0),mr:18});
@@ -63,7 +63,7 @@ ILL.mh_versus=(c,t)=>{const s=c._s,M=c._m;ILL.cocina_fondo(c,t);mhDim(0.25);cons
  if(M.bla)labelTag('BLANDO Y HÚMEDO: POR DENTRO',290,1290,E(t,M.bla,0.4),C.red);
  if(M.dur)labelTag('DURO Y SECO: LE CUESTA',790,1290,E(t,M.dur,0.4),C.green);};
 // excepciones: queso duro y curado, zanahoria, pimiento
-ILL.mh_excep=(c,t)=>{const s=c._s,M=c._m;const it=[[M.que,640,(x,y)=>cheeseWedge(x,y,0.9,1)],[M.zan,790,(x,y)=>carrot(x,y-24,0.85,0,1)],[M.pim,905,(x,y)=>bellPepper(x,y,0.95,1)]];
+ILL.mh_excep=(c,t)=>{const s=c._s,M=c._m;const it=[[M.que,630,(x,y)=>cheeseWedge(x,y,0.9,1)],[M.zan,805,(x,y)=>carrot(x,y-24,0.85,0,1)],[M.pim,935,(x,y)=>bellPepper(x,y,0.95,1)]];
  let last=-1;it.forEach(([m,x],i)=>{if(m&&t>m-0.2)last=i;});const tx=last>=0?it[last][1]-40:650;
  g.save();camLerp(t,s,5,[1.3,580,1040],[1.36,600,1040]);kitchen(t);board(560,1160,420,'#c98b4e');
  const o=mhP({lh:[380,1150],rh:last>=0?[Math.min(tx,690),1090]:[640,1150],look:last>=0?[0.8,0.5]:[0.2,0.2],mouth:'smile'});person(o,t);counterFront();
@@ -88,9 +88,9 @@ ILL.mh_cortar=(c,t)=>{const s=c._s,M=c._m;const BX=600,BY=1172,BS=1.4,CX=2,CY=-3
  let tip,rot;if(c2<=0){const a=W2(CX,-200),b=W2(CX,CY+4);tip=[a[0],lerp(a[1],b[1],c1)-12];rot=Math.PI/2;}else{const a=W2(170,CY),b=W2(CX+6,CY);rot=lerp(Math.PI/2,Math.PI,cl(c2*3));tip=[lerp(a[0],b[0],c2),a[1]-12];}
  if(off>0){const r=ease(off);tip=[tip[0]+60*r,tip[1]+20*r];}
  const ks=0.85,hx=tip[0]-Math.cos(rot)*190*ks,hy=tip[1]-Math.sin(rot)*190*ks;
- g.strokeStyle='#3d7bff';g.lineCap='round';g.lineWidth=46;g.beginPath();g.moveTo(1050,1330);g.lineTo(lerp(hx,1050,0.45),lerp(hy,1330,0.45));g.stroke();g.strokeStyle=IL.skin;g.lineWidth=32;g.beginPath();g.moveTo(lerp(hx,1050,0.45),lerp(hy,1330,0.45));g.lineTo(hx,hy);g.stroke();
+ const SH=[960,820],EL=[lerp(hx,SH[0],0.5)+30,lerp(hy,SH[1],0.5)-10];g.strokeStyle='#3d7bff';g.lineCap='round';g.lineWidth=40;g.beginPath();g.moveTo(SH[0]+200,SH[1]-120);g.lineTo(SH[0],SH[1]);g.lineTo(EL[0],EL[1]);g.stroke();g.strokeStyle=IL.skin;g.lineWidth=30;g.beginPath();g.moveTo(EL[0],EL[1]);g.lineTo(hx,hy);g.stroke();
  knife(hx,hy,rot,ks);g.fillStyle=IL.skin;g.beginPath();g.arc(hx,hy,20,0,7);g.fill();
- const LA=scr(L1[0]-6,L1[1]-60),LB=scr(L2[0]+70,(L2[1]+sp[1])/2);g.restore();
+ const LA=scr(BX+20*BS,BY-200*BS),LB=scr(BX+60*BS,BY+40*BS);g.restore();
  labelTag('2,5 cm',LA[0],LA[1],ga*(1-off),C.amber);labelTag('2,5 cm',LB[0],LB[1],gb*(1-off),C.amber);
  if(M.cuc)labelTag('✓  EL CUCHILLO, LEJOS DEL MOHO',540,1440,E(t,M.cuc,0.4),C.green);};
 // embutido curado: basta con raspar la superficie
