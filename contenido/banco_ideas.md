@@ -24,7 +24,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 18 | Electrodomésticos | Apagar el router por la noche ahorra mucho | Mito | IDAE | PENDIENTE |
 | 19 | Electrodomésticos | El microondas destruye los nutrientes | Mito | AESAN | PENDIENTE |
 | 20 | Tecnología | Cargar el móvil al 100 % cada noche estropea la batería | Depende | Apple, Samsung | PENDIENTE |
-| 21 | Tecnología | Cerrar las apps en segundo plano ahorra batería | Mito | Apple, Google | PENDIENTE |
+| 21 | Tecnología | Cerrar las apps en segundo plano ahorra batería | Mito | Apple, Google | EN CURSO 2026-11-04 |
 | 22 | Tecnología | En modo avión el móvil carga más rápido | Verdad | Fabricantes | PENDIENTE |
 | 23 | Tecnología | Hay que descargar la batería del todo antes de cargarla | Mito | Apple, Samsung | PROGRAMADO 2026-10-31 |
 | 24 | Cocina | Hay que lavar el pollo antes de cocinarlo | Mito | USDA, CDC | PROGRAMADO 2026-10-22 |
