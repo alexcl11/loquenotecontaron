@@ -11,7 +11,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | IDAE, fabricantes | PENDIENTE |
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 |
 | 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Depende | IDAE | PENDIENTE |
-| 8 | Energía | Ventilar en invierno tira el calor | Mito | IDAE | PENDIENTE |
+| 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | EN CURSO 2026-11-05 |
 | 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | PENDIENTE |
 | 10 | Energía | El termo eléctrico encendido todo el día gasta menos | Depende | IDAE | PENDIENTE |
 | 11 | Electrodomésticos | Lavar a 60 °C limpia mucho más que a 30 °C | Depende | OCU, IDAE | PENDIENTE |
