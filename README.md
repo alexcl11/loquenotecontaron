@@ -21,5 +21,5 @@ Mitos del hogar y el ahorro, en vídeos verticales de ~60 s.
 
 1. Cada dato se verifica en una fuente oficial (IDAE, OCU, AESAN, CNMC…) antes de guionizar.
 2. Gancho de corrección en los primeros 3 s, pregunta a comentarios al final.
-3. Duración 60–70 s. Publicación diaria a las 18:00 (Europe/Madrid).
+3. Duración 35–45 s (desde el 2/11/2026). Publicación diaria a las 18:00 (Europe/Madrid).
 4. Se declara como contenido con IA (voz sintética).

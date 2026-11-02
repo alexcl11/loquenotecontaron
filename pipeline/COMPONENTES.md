@@ -32,13 +32,13 @@ Lienzo 1080×1920; los subtítulos ocupan y≈250–420; la zona útil de la esc
 | checkmark / xmark | x?, y, r? |
 | arrow | x1, y1, x2, y2 |
 
-Estructura que funciona (55–70 s, 9–11 segmentos):
-1. Gancho de corrección: "Si haces X… [no consigues Y]" + `tile` + `stamp`.
-2. Bucle abierto: "Y lo que sí funciona…".
-3. Fuente oficial: `badge` + `stat`.
-4. Escena reconocible ("Seguro que…").
-5–8. Mecanismo, con una idea visual por segmento (`bars`, `versus`, `grid`, `list`).
-9. Qué hacer en su lugar (`list`).
-10. Pregunta a comentarios: `bubble` + pill "TE LEO EN COMENTARIOS 👇".
+Estructura que funciona (desde el 2/11/2026: 35–45 s, 6–7 segmentos). Motivo: el informe del 2/11 mostró que en Instagram se ven de media 16 s; vídeos más cortos = más porcentaje visto = más distribución.
+1. Gancho de corrección: "Si haces X… [no consigues Y]" + `tile`/`illus` + `stamp` (0–3 s).
+2. Pregunta temprana a comentarios (hacia el segundo 4–6), corta y de respuesta fácil: "¿Tú lo haces? Dímelo abajo" / "¿Eco o rápido?". Va como `pill` o `quote` encima de la escena.
+3. Fuente oficial + el dato clave (`badge` + `stat`), en una sola escena.
+4–5. El mecanismo, un solo dato por vídeo, una idea visual por segmento (ilustrada).
+6. Qué hacer en su lugar.
+7. Cierre corto que repite la pregunta (`bubble`), 3–4 s como mucho.
+Nada de escena "reconocible" larga ni datos secundarios: si no cabe en 45 s, es otro vídeo.
 
 Las escenas deben ser ilustradas: ver ILUSTRACION.md. Comprobar con `./preview.sh <id>` (hoja de fotogramas) antes de renderizar. Revisar que no se solapen elementos y que el texto se lea.
