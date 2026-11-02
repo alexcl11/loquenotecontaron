@@ -735,7 +735,7 @@ V['15_ventilar']=[
  dict(say="¿Y en euros? Selectra lo calculó con gas: cinco minutos de par en par, dos o tres veces al día… de cuatro a seis euros, en todo el invierno.",
       show="¿Y en euros? Selectra lo calculó con gas: 5 minutos de par en par, 2 o 3 veces al día… de 4 a 6 euros, en todo el invierno.",
       kw=["Selectra","par,","euros,"],
-      scene=[dict(type='illus',name='vn_coste',marks=dict(par='par',eur='euros,'))]),
+      scene=[dict(type='illus',name='vn_coste',marks=dict(par='par',eur='4'))]),
  dict(say="Con el oscilobatiente, ocho horas al día… unos dieciséis. Y sin contar las paredes frías.",
       show="Con el oscilobatiente, 8 horas al día… unos 16. Y sin contar las paredes frías.",
       kw=["oscilobatiente,","16.","paredes"],
