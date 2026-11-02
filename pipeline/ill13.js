@@ -12,7 +12,7 @@ function winterOut(x,y,w,h,t,snow=1){g.save();g.beginPath();g.rect(x,y,w,h);g.cl
 function winLeaf(hx,y,w,h,dir,open,tilt,t){const ow=w*(1-0.82*open),grow=34*open;const fx=hx+dir*ow;
  g.save();
  if(tilt>0){ // hueco arriba: la parte de arriba de la hoja se acerca y deja una rendija
-  const gp=26*tilt,tw=12*tilt;
+  const gp=40*tilt,tw=14*tilt;
   g.fillStyle='#4a372f';g.beginPath();g.moveTo(hx,y+gp);g.lineTo(fx+dir*tw,y+gp);g.lineTo(fx,y+h);g.lineTo(hx,y+h);g.closePath();g.fill();
   g.fillStyle='rgba(190,215,240,0.22)';g.beginPath();g.moveTo(hx+dir*9,y+gp+9);g.lineTo(fx-dir*9+dir*tw,y+gp+9);g.lineTo(fx-dir*9,y+h-9);g.lineTo(hx+dir*9,y+h-9);g.closePath();g.fill();
   g.fillStyle='rgba(255,255,255,0.12)';g.beginPath();g.moveTo(hx+dir*20,y+gp+14);g.lineTo(hx+dir*40,y+gp+14);g.lineTo(hx+dir*20,y+gp+70);g.closePath();g.fill();
@@ -44,14 +44,17 @@ function fogGlass(x,y,w,h,k,t){if(k<=0)return;g.save();g.beginPath();g.rect(x,y,
 function wallChill(cx,cy,k,t,R=420){if(k<=0)return;g.save();const gr=g.createRadialGradient(cx,cy,40,cx,cy,R*(0.5+0.5*k));gr.addColorStop(0,`rgba(120,190,255,${0.5*k})`);gr.addColorStop(1,'rgba(120,190,255,0)');g.fillStyle=gr;g.fillRect(cx-R,cy-R,2*R,2*R);
  g.strokeStyle=`rgba(200,235,255,${0.6*k})`;g.lineWidth=3;for(let i=0;i<9;i++){const a=rnd(i+3)*6.28,d=R*0.35+rnd(i+8)*R*0.4*k;const px=cx+Math.cos(a)*d,py=cy+Math.sin(a)*d;g.beginPath();g.moveTo(px-8,py);g.lineTo(px+8,py);g.moveTo(px,py-8);g.lineTo(px,py+8);g.stroke();}g.restore();}
 // flujo de calor (ondas naranjas) que va de (x0,y0) a (x1,y1): el calor que se escapa
-function heatFlow(x0,y0,x1,y1,t,a=1,n=5){if(a<=0)return;g.save();g.lineCap='round';for(let k=0;k<n;k++){const ph=(t*0.55+k/n)%1;const px=lerp(x0,x1,ph),py=lerp(y0,y1,ph)+Math.sin(ph*9+k)*10;
-  g.globalAlpha=a*Math.sin(ph*Math.PI)*0.9;g.strokeStyle=k%2?'#ff8a3a':'#ffb35a';g.lineWidth=10;g.beginPath();for(let j=0;j<8;j++){const q=j/7;const xx=px-(x1-x0)*0.08*q,yy=py-(y1-y0)*0.08*q+Math.sin(q*6+t*6+k)*7;j?g.lineTo(xx,yy):g.moveTo(xx,yy);}g.stroke();}g.restore();}
+function heatFlow(x0,y0,x1,y1,t,a=1,n=6){if(a<=0)return;g.save();g.lineCap='round';g.lineJoin='round';const dx=x1-x0,dy=y1-y0,L=Math.hypot(dx,dy),ux=dx/L,uy=dy/L,nx=-uy,ny=ux;
+ for(let k=0;k<n;k++){const ph=(t*0.45+k/n)%1;const off=((k%3)-1)*34;const cx=x0+dx*ph+nx*off,cy=y0+dy*ph+ny*off;
+  g.globalAlpha=a*Math.sin(ph*Math.PI)*0.95;g.strokeStyle=k%2?'#ff8a3a':'#ffb35a';g.lineWidth=9;g.beginPath();
+  for(let j=0;j<=10;j++){const q=j/10-0.5;const w=Math.sin(q*9+t*7+k)*9;const xx=cx+ux*q*90+nx*w,yy=cy+uy*q*90+ny*w;j?g.lineTo(xx,yy):g.moveTo(xx,yy);}g.stroke();
+  const hx=cx+ux*50,hy=cy+uy*50;g.fillStyle=g.strokeStyle;g.beginPath();g.moveTo(hx+ux*16,hy+uy*16);g.lineTo(hx+nx*12,hy+ny*12);g.lineTo(hx-nx*12,hy-ny*12);g.closePath();g.fill();}g.restore();}
 // cronómetro: anillo que se llena (p 0–1) con texto en el centro
 function stopwatch(x,y,r,p,label,col=C.blue,a=1){if(a<=0)return;g.save();g.globalAlpha*=cl(a);g.fillStyle='#f4f1ea';g.beginPath();g.arc(x,y,r,0,7);g.fill();g.fillStyle='#c9b28a';rr(x-r*0.18,y-r-r*0.3,r*0.36,r*0.24,4);g.fill();
  g.strokeStyle='#ddd6c6';g.lineWidth=r*0.16;g.beginPath();g.arc(x,y,r*0.78,0,7);g.stroke();if(p>0){g.strokeStyle=col;g.lineCap='round';g.beginPath();g.arc(x,y,r*0.78,-Math.PI/2,-Math.PI/2+Math.PI*2*cl(p));g.stroke();}
  if(label)txt(label,x,y+2,r*0.42,'#1b1e26',900,'center',1,r*1.3);g.restore();}
 // icono pequeño de ventana: mode 'open' (de par en par) | 'tilt' (oscilobatiente) | 'closed'
-function miniWin(x,y,s,mode,t){g.save();g.translate(x,y);g.scale(s,s);g.translate(-100,-120);winTwo(0,0,200,240,t,{open:mode==='open'?1:0,tilt:mode==='tilt'?1:0,snow:0.6});g.restore();}
+function miniWin(x,y,s,mode,t){g.save();g.fillStyle='rgba(255,226,150,0.10)';g.beginPath();g.arc(x,y,s*170,0,7);g.fill();g.restore();g.save();g.translate(x,y);g.scale(s,s);g.translate(-100,-120);winTwo(0,0,200,240,t,{open:mode==='open'?1:0,tilt:mode==='tilt'?1:0,snow:0.6});g.restore();}
 // plano de un piso visto desde arriba: salón (izq.), pasillo, dormitorio (der.). Ventanas en paredes opuestas.
 // o.wl / o.wr 0–1 = ventanas abiertas, o.doors 0–1 = puertas abiertas, o.flow 0–1 = corriente de aire
 function floorPlan(x,y,w,h,t,o={}){g.save();g.translate(x,y);const wt=16;
