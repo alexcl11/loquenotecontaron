@@ -2,7 +2,7 @@
 
 - Tema: "Lo que se descongela ya no se puede volver a congelar" (bloque Cocina / seguridad alimentaria; de los 6 anteriores solo 1 era de cocina).
 - Fecha de publicación: 2026-11-06 18:00 Europe/Madrid
-- Estado: RENDER (42,7 s)
+- Estado: PROGRAMADO
 - Vídeo: V['16_recongelar'] · escenas en pipeline/ill_20261106.js
 
 ## Veredicto (previsto → real)
@@ -27,3 +27,8 @@ DEPENDE. En crudo, la AESAN dice que no se vuelve a congelar; pero si se cocina 
 - Descongelar en la nevera es la forma más segura (4; AESAN 5 para establecimientos: "La descongelación debe hacerse en refrigeración").
 - AESAN (5): "No se pueden recongelar los alimentos, excepto si han sido transformados."
 - NO se usan cifras de tiempos de nevera ni de USDA.
+
+## Programación
+
+- Metricool: 2026-11-06 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=7597391574655061225
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@e809fe5ec758c155bca8293bfa405ea842333f5b/videos/2026-11-06_recongelar.mp4 (42,7 s)
