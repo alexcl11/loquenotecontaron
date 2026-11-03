@@ -2,7 +2,7 @@
 
 - Tema: "Lo que se descongela ya no se puede volver a congelar" (bloque Cocina / seguridad alimentaria; de los 6 anteriores solo 1 era de cocina).
 - Fecha de publicación: 2026-11-06 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: RENDER (42,7 s)
 - Vídeo: V['16_recongelar'] · escenas en pipeline/ill_20261106.js
 
 ## Veredicto (previsto → real)
