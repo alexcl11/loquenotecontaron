@@ -2,7 +2,7 @@
 
 - Tema: "El agua del grifo en España no es buena para beber" (bloque Cocina / seguridad alimentaria; de los 6 anteriores solo 2 eran de cocina: moho y recongelar).
 - Fecha de publicación: 2026-11-07 18:00 Europe/Madrid
-- Estado: RENDER (39,2 s)
+- Estado: PROGRAMADO
 - Vídeo: V['17_agua_grifo'] · escenas en pipeline/ill_20261107.js (kit nuevo pipeline/ill15.js)
 
 ## Veredicto (previsto → real)
@@ -24,3 +24,8 @@ MITO (se confirma). El 99,3 % de los boletines de análisis del agua de consumo 
 
 - 99,3 % de los análisis aptos para beber (2024) — fuente 1 (y 2).
 - Media hora de reposo + nevera para el sabor a cloro — fuente 2.
+
+## Programación
+
+- Metricool: 2026-11-07 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=2633850178390935549
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@2135dd1b59b4cc61336107a45ab349d971755009/videos/2026-11-07_agua_grifo.mp4 (39,2 s)
