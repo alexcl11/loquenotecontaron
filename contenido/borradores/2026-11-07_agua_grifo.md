@@ -2,7 +2,8 @@
 
 - Tema: "El agua del grifo en España no es buena para beber" (bloque Cocina / seguridad alimentaria; de los 6 anteriores solo 2 eran de cocina: moho y recongelar).
 - Fecha de publicación: 2026-11-07 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
+- Vídeo: V['17_agua_grifo'] · escenas en pipeline/ill_20261107.js (kit nuevo pipeline/ill15.js)
 
 ## Veredicto (previsto → real)
 
