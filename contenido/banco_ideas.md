@@ -35,7 +35,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 29 | Cocina | Aceite en el agua evita que la pasta se pegue | Mito | Divulgación culinaria | PENDIENTE |
 | 30 | Cocina | La sal hace que el agua hierva antes | Mito | Física básica | PENDIENTE |
 | 31 | Cocina | Tapar la olla no cambia nada | Mito | IDAE | PENDIENTE |
-| 32 | Cocina | El agua del grifo en España no es buena para beber | Mito | Ministerio de Sanidad (SINAC) | PENDIENTE |
+| 32 | Cocina | El agua del grifo en España no es buena para beber | Mito | Ministerio de Sanidad (SINAC) | EN CURSO 2026-11-07 |
 | 33 | Limpieza | Mezclar lejía con otros productos limpia más | Mito | Instituto Nacional de Toxicología | PROGRAMADO 2026-10-27 |
 | 34 | Limpieza | Más detergente lava mejor | Mito | OCU, fabricantes | PENDIENTE |
 | 35 | Limpieza | El vinagre desinfecta como la lejía | Mito | Ministerio de Sanidad | PENDIENTE |
