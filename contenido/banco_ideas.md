@@ -38,11 +38,12 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 32 | Cocina | El agua del grifo en España no es buena para beber | Mito | Ministerio de Sanidad (SINAC) | PROGRAMADO 2026-11-07 |
 | 33 | Limpieza | Mezclar lejía con otros productos limpia más | Mito | Instituto Nacional de Toxicología | PROGRAMADO 2026-10-27 |
 | 34 | Limpieza | Más detergente lava mejor | Mito | OCU, fabricantes | PENDIENTE |
-| 35 | Limpieza | El vinagre desinfecta como la lejía | Mito | Ministerio de Sanidad | PENDIENTE |
+| 35 | Limpieza | El vinagre desinfecta como la lejía | Mito | Ministerio de Sanidad | PENDIENTE (revisado 2026-11-05: la OCU dice que el vinagre de limpieza también mata bacterias; buscar fuente con cifra) |
 | 36 | Limpieza | Tender la ropa dentro de casa no tiene efectos | Mito | OCU | PENDIENTE |
 | 37 | Factura | Bajar la potencia contratada no ahorra nada | Depende | CNMC | PENDIENTE |
 | 38 | Factura | La tarifa regulada siempre es la más cara | Mito | CNMC | PENDIENTE |
 | 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | PROGRAMADO 2026-11-02 |
 | 40 | Factura | Las placas solares no compensan si vives en un piso | Depende | IDAE | PENDIENTE |
+| 41 | Limpieza | La lejía con agua caliente desinfecta más | Mito | Comunidad de Madrid (Salud), OCU | EN CURSO 2026-11-08 |
 
 Cuando queden menos de 14 PENDIENTE, añadir 20 temas nuevos del mismo nicho (hogar, energía, cocina, limpieza, factura, tecnología doméstica).
