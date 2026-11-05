@@ -2,7 +2,7 @@
 
 - Tema: "La lejía con agua caliente desinfecta más" (bloque Limpieza; de los 6 anteriores 3 ya eran de Cocina / seguridad alimentaria —moho, recongelar, agua del grifo— y ninguno de Limpieza, así que se varía el bloque).
 - Fecha de publicación: 2026-11-08 18:00 Europe/Madrid
-- Estado: INVESTIGANDO
+- Estado: GUION
 - Temas descartados en esta ejecución: #35 vinagre (OCU dice que el vinagre blanco de limpieza también mata bacterias en el baño; veredicto ambiguo, sin cifra fiable) y #34 detergente (sin fuente oficial con cifra abierta).
 
 ## Fuentes
