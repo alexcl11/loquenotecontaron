@@ -30,3 +30,5 @@ MITO (se confirma). La lejía se diluye siempre en agua fría; con agua caliente
 ## Programación
 
 - Vídeo 36,9 s · videos/2026-11-08_lejia_caliente.mp4
+- Metricool: 2026-11-08 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=4040130459194966793
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@eedf5d7e1c67533f9d6e9af5a55c6b8cae851e7e/videos/2026-11-08_lejia_caliente.mp4 (36,9 s)
