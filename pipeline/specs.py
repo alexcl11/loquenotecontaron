@@ -807,3 +807,30 @@ V['17_agua_grifo']=[
       kw=["grifo","botella?","comentarios."],
       scene=[_coc(),dict(type='bubble',q='¿Grifo o botella?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
+
+_ban=lambda:dict(type='illus',name='bano_fondo')
+V['18_lejia_caliente']=[
+ dict(say="¿Preparas la lejía con agua caliente para que desinfecte más? Pues es al revés.",
+      kw=["lejía","caliente","revés."],
+      scene=[dict(type='illus',name='lc_gancho',marks=dict(rev='revés')),
+             dict(type='stamp',text='✕  MITO',y=1450,at='revés')]),
+ dict(say="¿Tú la echas en agua caliente? Dímelo abajo.",
+      kw=["echas","caliente?","abajo."],
+      scene=[dict(type='illus',name='lc_pregunta',marks=dict(q='echas')),
+             dict(type='pill',text='¿LA ECHAS EN AGUA CALIENTE?',y=640,color='amber',size=40),
+             dict(type='pill',text='DÍMELO EN COMENTARIOS 👇',y=1440,at='Dímelo',color='blue')]),
+ dict(say="La Comunidad de Madrid lo deja claro: la lejía, siempre en agua fría. Con agua caliente… no desinfecta más.",
+      kw=["Madrid","fría.","más."],
+      scene=[_ban(),dict(type='badge',name='Comunidad de Madrid',full='Salud · Desinfección de superficies y espacios',flag='🇪🇸',y=720),
+             dict(type='versus',y=1100,a=dict(icon='🔥',title='Agua caliente',sub='no desinfecta más',color='red'),b=dict(icon='❄️',title='Agua fría',sub='siempre',color='green'),win='b',winAt='fría')]),
+ dict(say="¿Por qué? Con el calor, parte del cloro se evapora… se va con el vapor, y la mezcla pierde fuerza.",
+      kw=["calor,","evapora…","fuerza."],
+      scene=[dict(type='illus',name='lc_evapora',marks=dict(cal='calor',eva='evapora',fue='fuerza'))]),
+ dict(say="Lo correcto: veinte mililitros de lejía, en un litro de agua fría. Y prepárala el mismo día: no la guardes para mañana.",
+      show="Lo correcto: 20 ml de lejía, en un litro de agua fría. Y prepárala el mismo día: no la guardes para mañana.",
+      kw=["20","litro","mismo"],
+      scene=[dict(type='illus',name='lc_receta',marks=dict(lit='litro',mis='mismo',gua='guardes'))]),
+ dict(say="¿Y tú, la preparas fría o caliente? Te leo en comentarios.",
+      kw=["fría","caliente?","comentarios."],
+      scene=[_ban(),dict(type='bubble',q='¿La preparas fría o caliente?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
+]
