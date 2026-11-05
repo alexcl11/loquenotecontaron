@@ -2,7 +2,7 @@
 
 - Tema: "La lejía con agua caliente desinfecta más" (bloque Limpieza; de los 6 anteriores 3 ya eran de Cocina / seguridad alimentaria —moho, recongelar, agua del grifo— y ninguno de Limpieza, así que se varía el bloque).
 - Fecha de publicación: 2026-11-08 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Temas descartados en esta ejecución: #35 vinagre (OCU dice que el vinagre blanco de limpieza también mata bacterias en el baño; veredicto ambiguo, sin cifra fiable) y #34 detergente (sin fuente oficial con cifra abierta).
 
 ## Fuentes
@@ -17,3 +17,16 @@
    - No guardar la dilución de un día para otro.
 3. (Contexto) Maldita Ciencia, «Por qué hay que mezclar la lejía con agua fría (y no caliente)»: https://maldita.es/malditaciencia/20210916/lejia-coronavirus-agua-fria-desinfeccion/
 - Vídeo: V['18_lejia_caliente'] · escenas en pipeline/ill_20261108.js (kit nuevo pipeline/ill16.js)
+
+## Veredicto (previsto → real)
+
+MITO (se confirma). La lejía se diluye siempre en agua fría; con agua caliente no desinfecta más porque parte del cloro se evapora (Comunidad de Madrid, OCU). Dilución 1:50: 20 ml en 1 litro de agua fría, preparada el mismo día.
+
+## Cifras que se usan
+
+- 20 ml de lejía en 1 litro de agua fría — fuente 1.
+- (Sin otras cifras.)
+
+## Programación
+
+- Vídeo 36,9 s · videos/2026-11-08_lejia_caliente.mp4
