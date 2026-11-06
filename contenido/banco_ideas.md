@@ -12,7 +12,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 |
 | 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Depende | IDAE | PENDIENTE |
 | 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | PROGRAMADO 2026-11-05 |
-| 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | EN CURSO 2026-11-09 |
+| 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | PROGRAMADO 2026-11-09 |
 | 10 | Energía | El termo eléctrico encendido todo el día gasta menos | Depende | IDAE | PENDIENTE |
 | 11 | Electrodomésticos | Lavar a 60 °C limpia mucho más que a 30 °C | Depende | OCU, IDAE | PENDIENTE |
 | 12 | Electrodomésticos | El programa eco tarda más, así que gasta más | Mito | OCU, fabricantes | PROGRAMADO 2026-11-01 |

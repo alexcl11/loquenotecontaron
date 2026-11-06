@@ -2,7 +2,7 @@
 
 - Tema: "Bajar persianas y cortinas por la noche no cambia nada" (bloque Energía; de los 6 anteriores 3 son de Cocina / seguridad alimentaria —moho, recongelar, agua del grifo— y el último fue de Limpieza, así que se varía el bloque).
 - Fecha de publicación: 2026-11-09 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: RENDER
 
 ## Fuentes
 
