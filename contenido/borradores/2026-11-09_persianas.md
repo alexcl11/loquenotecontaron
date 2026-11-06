@@ -2,7 +2,7 @@
 
 - Tema: "Bajar persianas y cortinas por la noche no cambia nada" (bloque Energía; de los 6 anteriores 3 son de Cocina / seguridad alimentaria —moho, recongelar, agua del grifo— y el último fue de Limpieza, así que se varía el bloque).
 - Fecha de publicación: 2026-11-09 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 
 ## Fuentes
 
@@ -20,3 +20,5 @@ MITO (se confirma). Por las ventanas se va entre el 25 y el 30 % del calor que n
 
 - 25–30 % de las necesidades de calefacción se deben a pérdidas por ventanas — fuente 1.
 - (Sin otras cifras.)
+
+- Vídeo: V['19_persianas'] · escenas en pipeline/ill_20261109.js (kit nuevo pipeline/ill17.js)
