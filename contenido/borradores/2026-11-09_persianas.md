@@ -2,7 +2,7 @@
 
 - Tema: "Bajar persianas y cortinas por la noche no cambia nada" (bloque Energía; de los 6 anteriores 3 son de Cocina / seguridad alimentaria —moho, recongelar, agua del grifo— y el último fue de Limpieza, así que se varía el bloque).
 - Fecha de publicación: 2026-11-09 18:00 Europe/Madrid
-- Estado: RENDER
+- Estado: PROGRAMADO
 
 ## Fuentes
 
@@ -22,3 +22,9 @@ MITO (se confirma). Por las ventanas se va entre el 25 y el 30 % del calor que n
 - (Sin otras cifras.)
 
 - Vídeo: V['19_persianas'] · escenas en pipeline/ill_20261109.js (kit nuevo pipeline/ill17.js)
+
+## Programación
+
+- Vídeo 40,0 s · videos/2026-11-09_persianas.mp4
+- Metricool: 2026-11-09 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=-4587643258290617854
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@88c01e8f31a4a8bba79a60c9b50c37a6e6de8bfc/videos/2026-11-09_persianas.mp4
