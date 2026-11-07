@@ -7,11 +7,11 @@ function toStove(t,o={}){stockPot(...TO_POT,t,{lid:o.lid||0,steam:0});burner(TO_
 ILL.to_fondo=(c,t)=>{ILL.cocina_fondo(c,t);};
 // gancho: agua hirviendo sin tapa, la tapa en la encimera; «total, da igual»
 ILL.to_gancho=(c,t)=>{const s=c._s,M=c._m;const sh=M.tot?Math.sin(Math.PI*E(t,M.tot-0.1,1.1)):0;const no=M.no?E(t,M.no-0.2,0.4):0;
- g.save();camLerp(t,s,5,[1.15,650,1000],[1.28,700,990]);kitchen(t);
+ g.save();camLerp(t,s,5,[1.12,620,1000],[1.2,640,990]);kitchen(t);
  const o=toP({rh:sh>0.05?[lerp(760,720,sh),lerp(1120,1000,sh)]:[760,1120],lh:[lerp(520,500,sh),lerp(1150,1010,sh)],look:no>0.5?[0.8,0.1]:[0,0.1],mouth:no>0.5?'o':'smile',brow:no>0.5?1:0});
- person(o,t);toStove(t,{st:1});counterFront();lidRest(420,1182,0.75);hands(o);
+ person(o,t);toStove(t,{st:1});counterFront();lidRest(400,1182,0.75);hands(o);
  heatOut(830,940,990,t,0.5+0.5*no,300);
- const [px,py]=scr(TO_POT[0],980),[lx,ly]=scr(420,1150);g.restore();
+ const [px,py]=scr(TO_POT[0],980),[lx,ly]=scr(400,1150);g.restore();
  labelTag('SIN TAPA',Math.min(px,880),Math.max(py-170,640),E(t,s+0.4,0.4),C.red);
  labelTag('LA TAPA, AQUÍ',Math.max(lx,220),ly+120,E(t,s+0.9,0.4),C.blue);
  labelTag('«TOTAL, DA IGUAL»',540,1440,M.tot?E(t,M.tot,0.4)*(1-E(t,(M.no||s+99)-0.2,0.3)):0,C.amber);};
@@ -29,8 +29,8 @@ ILL.to_escapa=(c,t)=>{const s=c._s,M=c._m;const es=M.esc?E(t,M.esc-0.3,0.6):0.3;
  heatOut(810,960,990,t,es,360);
  const [px,py]=scr(TO_POT[0],1150);g.restore();
  labelTag('🔥 EL CALOR SE VA CON EL VAPOR',540,650,M.esc?E(t,M.esc,0.4):0,C.red);
- costMeter(150,1330,220,fu,C.red);
- labelTag('MÁS FUEGO = MÁS GASTO',600,1440,fu,C.red);};
+ costMeter(1000,1390,200,fu,C.red);
+ labelTag('MÁS FUEGO = MÁS GASTO',540,1440,fu,C.red);};
 // con la tapa, el calor se queda dentro
 ILL.to_tapar=(c,t)=>{const s=c._s,M=c._m;const kt=(M.tap||s+0.8);const t0=kt-0.6,land=kt+0.3;
  const mv=ease(E(t,t0,land-t0));const on=t>=land;const back=ease(E(t,land+0.6,0.5));const qu=M.que?E(t,M.que-0.2,0.6):0;const ap=M.apr?E(t,M.apr-0.2,0.5):0;
@@ -46,13 +46,13 @@ ILL.to_tapar=(c,t)=>{const s=c._s,M=c._m;const kt=(M.tap||s+0.8);const t0=kt-0.6
  g.restore();
  labelTag('🍲 CON TAPA',540,650,on?E(t,land,0.4):0,C.amber);
  labelTag('EL CALOR SE QUEDA DENTRO',540,735,qu,C.green);
- costMeter(150,1330,220,on?1-0.65*ap:0,C.green);
- labelTag('LO APROVECHAS MEJOR',600,1440,ap,C.green);};
+ costMeter(1000,1390,200,on?1-0.65*ap:0,C.green);
+ labelTag('LO APROVECHAS MEJOR',540,1440,ap,C.green);};
 // qué hacer: el fondo de la olla, un poco más grande que el fuego
 ILL.to_tamano=(c,t)=>{const s=c._s,M=c._m;ILL.cocina_fondo(c,t);g.fillStyle='rgba(6,10,20,0.25)';g.fillRect(0,470,W,1150);
- const a1=ease(E(t,s+0.2,0.5)),a2=M.gra?ease(E(t,M.gra-0.3,0.5)):0;const B=1255;
- if(a1>0){g.save();g.globalAlpha=a1;g.fillStyle='#151b28';rr(150,B+6,300,16,6);g.fill();stockPot(300,B-14,0.45,t,{lid:1});burner(300,B,230,t,1);sideLick(246,354,B-14,140,t,1);g.restore();}
- if(a2>0){g.save();g.globalAlpha=a2;g.fillStyle='#151b28';rr(630,B+6,300,16,6);g.fill();stockPot(780,B-14,0.75,t,{lid:1});burner(780,B,150,t,0.8);trappedHeat(780,B-80,190,110,t,0.8);g.restore();}
- labelTag('IDAE: EL FONDO, UN POCO MÁS GRANDE',540,650,M.fon?E(t,M.fon-0.2,0.4):0,C.amber);
- labelTag('✕ PEQUEÑA: EL CALOR SE ESCAPA',300,1360,a1>0.9?E(t,s+0.8,0.4):0,C.red);
- labelTag('✓ UN POCO MÁS GRANDE',780,1440,a2>0.9?E(t,M.gra+0.2,0.4):0,C.green);};
+ const a1=ease(E(t,s+0.2,0.5)),a2=M.gra?ease(E(t,M.gra-0.3,0.5)):0;const B=1250;
+ if(a1>0){g.save();g.globalAlpha=a1;g.fillStyle='#151b28';rr(110,B+6,360,18,6);g.fill();stockPot(290,B-16,0.7,t,{lid:1});burner(290,B,330,t,1);sideLick(206,374,B-16,220,t,1);g.restore();}
+ if(a2>0){g.save();g.globalAlpha=a2;g.fillStyle='#151b28';rr(610,B+6,360,18,6);g.fill();stockPot(790,B-16,1.0,t,{lid:1});burner(790,B,200,t,0.8);trappedHeat(790,B-110,250,140,t,0.8);g.restore();}
+ labelTag('IDAE: EL FONDO, UN POCO MÁS GRANDE',540,700,M.fon?E(t,M.fon-0.2,0.4):0,C.amber);
+ labelTag('✕ PEQUEÑA: EL CALOR SE ESCAPA',300,1345,a1>0.9?E(t,s+0.8,0.4):0,C.red);
+ labelTag('✓ UN POCO MÁS GRANDE',790,1430,a2>0.9?E(t,M.gra+0.2,0.4):0,C.green);};

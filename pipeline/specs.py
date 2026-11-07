@@ -870,7 +870,7 @@ V['20_tapa_olla']=[
  dict(say="¿Pones el agua a hervir sin tapa, porque total, da igual? Pues no da igual.",
       kw=["tapa,","igual?","no"],
       scene=[dict(type='illus',name='to_gancho',marks=dict(tot='total',no='Pues')),
-             dict(type='stamp',text='✕  MITO',y=1300,at='Pues')]),
+             dict(type='stamp',text='✕  MITO',y=1440,at='Pues')]),
  dict(say="¿Tú la tapas… o la dejas destapada? Dímelo abajo.",
       kw=["tapas…","destapada?","abajo."],
       scene=[dict(type='illus',name='to_pregunta',marks=dict(q='Dímelo')),
