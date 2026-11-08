@@ -14,7 +14,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | PROGRAMADO 2026-11-05 |
 | 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | PROGRAMADO 2026-11-09 |
 | 10 | Energía | El termo eléctrico encendido todo el día gasta menos | Depende | IDAE | PENDIENTE |
-| 11 | Electrodomésticos | Lavar a 60 °C limpia mucho más que a 30 °C | Depende | OCU, IDAE | EN CURSO 2026-11-11 |
+| 11 | Electrodomésticos | Lavar a 60 °C limpia mucho más que a 30 °C | Depende | OCU, IDAE | PROGRAMADO 2026-11-11 |
 | 12 | Electrodomésticos | El programa eco tarda más, así que gasta más | Mito | OCU, fabricantes | PROGRAMADO 2026-11-01 |
 | 13 | Electrodomésticos | Fregar a mano gasta menos agua que el lavavajillas | Mito | OCU | PROGRAMADO 2026-10-24 |
 | 14 | Electrodomésticos | Hay que aclarar los platos antes de meterlos | Mito | Fabricantes, OCU | PENDIENTE (tocado en el #13) |
