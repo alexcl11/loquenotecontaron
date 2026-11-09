@@ -40,7 +40,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 34 | Limpieza | Más detergente lava mejor | Mito | OCU, fabricantes | PENDIENTE |
 | 35 | Limpieza | El vinagre desinfecta como la lejía | Mito | Ministerio de Sanidad | PENDIENTE (revisado 2026-11-05: la OCU dice que el vinagre de limpieza también mata bacterias; buscar fuente con cifra) |
 | 36 | Limpieza | Tender la ropa dentro de casa no tiene efectos | Mito | OCU | PENDIENTE |
-| 37 | Factura | Bajar la potencia contratada no ahorra nada | Mito (OCU: 34 % con potencia de más, 88 €/año) | OCU, CNMC | EN CURSO 2026-11-12 |
+| 37 | Factura | Bajar la potencia contratada no ahorra nada | Mito (OCU: 34 % con potencia de más, 88 €/año) | OCU, CNMC | PROGRAMADO 2026-11-12 |
 | 38 | Factura | La tarifa regulada siempre es la más cara | Mito | CNMC | PENDIENTE |
 | 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | PROGRAMADO 2026-11-02 |
 | 40 | Factura | Las placas solares no compensan si vives en un piso | Depende | IDAE | PENDIENTE |
