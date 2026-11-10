@@ -22,7 +22,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 16 | Electrodomésticos | Abrir el horno para mirar no pasa nada | Mito | IDAE | PROGRAMADO 2026-10-28 |
 | 17 | Electrodomésticos | Siempre hay que precalentar el horno | Depende | IDAE | PENDIENTE |
 | 18 | Electrodomésticos | Apagar el router por la noche ahorra mucho | Mito | IDAE | PENDIENTE |
-| 19 | Electrodomésticos | El microondas destruye los nutrientes | Mito | AESAN | PENDIENTE |
+| 19 | Electrodomésticos | El microondas destruye los nutrientes | Mito | AESAN | EN CURSO 2026-11-13 |
 | 20 | Tecnología | Cargar el móvil al 100 % cada noche estropea la batería | Depende | Apple, Samsung | PENDIENTE |
 | 21 | Tecnología | Cerrar las apps en segundo plano ahorra batería | Mito | Apple, Google | PROGRAMADO 2026-11-04 |
 | 22 | Tecnología | En modo avión el móvil carga más rápido | Verdad | Fabricantes | PENDIENTE |
