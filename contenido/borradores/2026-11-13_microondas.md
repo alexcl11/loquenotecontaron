@@ -25,3 +25,8 @@ MITO (previsto Mito → real Mito). La FDA (agencia de alimentos y medicamentos 
 
 - Sin cifra: veredicto FDA (no quita más nutrientes que cocinar normal; puede conservar más) — fuente 1.
 - 77 % del ácido fólico perdido por las espinacas cocidas en el fuego (estudios de Cornell, citados por Tufts) — fuente 2.
+
+## Programación
+
+- Metricool: 2026-11-13 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=4573411266287452906
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@80235517e9051ebd5262be3ffb20e1f00fcf4f24/videos/2026-11-13_microondas.mp4 (44,8 s)
