@@ -19,7 +19,7 @@ PAUSE={',':0.11,':':0.18,';':0.2,'.':0.27,'?':0.3,'!':0.28,'…':0.42,'|':0.2,'|
 PRON={
  'LED':'led','LEDs':'leds','IDAE':'idáe','OCU':'ocu','AESAN':'aesán','EFSA':'efsa','IVA':'iva','OMS':'o eme ese',
  'CNMC':'ce ene eme ce','REE':'erre e e','USDA':'u ese de a','CDC':'ce de ce','UE':'u e','PVPC':'pe uve pe ce',
- 'DGT':'de ge te','SINAC':'sinac','INTCF':'i ene te ce efe','kWh':'kilovatios hora','TV':'tele','wifi':'güifi','Wi-Fi':'güifi','USB':'u ese be',
+ 'DGT':'de ge te','SINAC':'sinac','INTCF':'i ene te ce efe','kWh':'kilovatios hora','TV':'tele','wifi':'güifi','Wi-Fi':'güifi','USB':'u ese be','FDA':'efe de a',
 }
 def speakable(text):
     for k in sorted(PRON,key=len,reverse=True):
