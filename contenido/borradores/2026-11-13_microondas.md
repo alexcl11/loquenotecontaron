@@ -2,7 +2,7 @@
 
 - Tema: "El microondas destruye los nutrientes" (bloque Cocina / seguridad alimentaria; de los 6 anteriores solo 2 son de Cocina: agua del grifo y tapa de la olla → este tiene que serlo).
 - Fecha de publicación: 2026-11-13 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['23_microondas']
 
 ## Veredicto (previsto → real)
