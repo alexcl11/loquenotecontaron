@@ -2,7 +2,7 @@
 
 - Tema: "La sal hace que el agua hierva antes" (bloque Cocina; de los 6 anteriores solo 2 son de Cocina: tapa de la olla y microondas → este tiene que serlo). Alternativa #29 (aceite en la pasta) descartada por ahora: la única fuente de referencia abierta (Consumer, 2001) recomienda precisamente añadir aceite; sin fuente fiable que lo desmienta.
 - Fecha de publicación: 2026-11-14 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['24_sal_hervir']
 
 ## Veredicto (previsto → real)
