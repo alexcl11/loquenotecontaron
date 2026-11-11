@@ -1,13 +1,16 @@
 // ===== Escenas: la sal y el agua que hierve (2026-11-14) · kit en ill22.js (usa stockPot/toStove de ill7.js/ill_20261110.js, potCut de ill21.js, waterJug de ill15.js, potLid/burner/trappedHeat de ill18.js, scr de ill_20261029.js, qMarks de ill14.js, wallClock de ill5.js) =====
+const SL_W='#6fa8dc';
+// olla con agua (no caldo) en el fuego, como toStove
+function slStove(t,st=1){stockPot(...TO_POT,t,{lid:0,steam:0,soup:SL_W});burner(TO_POT[0],1170,170,t,0.8);steamPlume(TO_POT[0],1010,200,t,st,360);steam(TO_POT[0],1010,t,st*0.8);}
 function slP(o){return Object.assign({x:620,y:1200,shirt:'#3d7bff'},o);}
 // gancho: echa sal a la olla y espera mirando el reloj, impaciente
 ILL.sl_gancho=(c,t)=>{const s=c._s,M=c._m;const ec=M.ech?E(t,M.ech-0.3,0.4):0;const no=M.no?E(t,M.no-0.1,0.4):0;const pe=M.pel?E(t,M.pel-0.1,0.4):0;
  g.save();camLerp(t,s,5,[1.25,700,1000],[1.32,720,990]);kitchen(t);
- const tilt=ec*(1-no*0.8);const hx=lerp(760,810,ec),hy=lerp(1100,930,ec);
+ const tilt=ec*(1-no*0.8);const hx=lerp(760,790,ec),hy=lerp(1100,910,ec);
  const o=slP({rh:[hx,hy],lh:[520,1150],look:no>0.5?[0,0.1]:[0.8,0.2],mouth:pe>0.3?'worry':(no>0.5?'o':'smile'),brow:no>0.5?1:0});
- person(o,t);toStove(t,{st:0.5});counterFront();
- const sp=saltBox(hx+20,hy-10,0.75,lerp(0,-2.1,tilt));hands(o);
- if(tilt>0.6)saltFall(sp[0],sp[1],990,t,cl((tilt-0.6)*3),20,20);
+ person(o,t);slStove(t,0.5);counterFront();
+ const sp=saltBox(hx+10,hy-10,0.75,lerp(0,2.0,tilt));hands(o);
+ if(tilt>0.6)saltFall(sp[0],sp[1],1000,t,cl((tilt-0.6)*3),20,20);
  const [px,py]=scr(TO_POT[0],980);g.restore();
  labelTag('«ASÍ HIERVE ANTES»',540,660,ec*(1-no),C.amber);
  labelTag('⏱️ TARDA UN PELÍN MÁS',540,660,pe,C.red);};
@@ -16,7 +19,7 @@ ILL.sl_pregunta=(c,t)=>{const s=c._s,M=c._m;const up=ease(E(t,s,0.6));
  g.save();cam(1.4,660,940);kitchen(t);
  const hx=lerp(760,790,up),hy=lerp(1120,880,up);
  const o=slP({rh:[hx,hy],lh:[520,1150],look:[0,0.1],mouth:'smile',brow:M.q&&t>M.q?1:0});
- person(o,t);toStove(t,{st:0.8});counterFront();saltBox(hx+8,hy-20,0.8,-0.15*up);hands(o);g.restore();};
+ person(o,t);slStove(t,0.8);counterFront();saltBox(hx+8,hy-20,0.8,-0.15*up);hands(o);g.restore();};
 // fuente: olla en corte con sal y el termómetro que sube un poco por encima de 100
 ILL.sl_fuente=(c,t)=>{const s=c._s,M=c._m;ILL.cocina_fondo(c,t);const su=M.sub?ease(E(t,M.sub-0.2,1.2)):0;const no=M.no?E(t,M.no-0.2,0.4):0;
  const wy=potCut(400,1440,420,330,t,{lvl:0.72,boil:0.25+0.75*su});
@@ -46,9 +49,9 @@ ILL.sl_tapa=(c,t)=>{const s=c._s,M=c._m;const kt=(M.tap||s+2.5);const t0=kt-0.6,
  const hold=[lerp(790,TO_KNOB[0],mv),lerp(870,TO_KNOB[1],mv)];
  const rh=on?[lerp(TO_KNOB[0],760,back),lerp(TO_KNOB[1],1130,back)]:hold;
  const o=slP({rh,lh:[520,1150],look:on?[0.6,0.1]:[0.8,-0.2],mouth:'smile'});
- person(o,t);stockPot(...TO_POT,t,{lid:on?1:0});burner(TO_POT[0],1170,170,t,0.8);
+ person(o,t);stockPot(...TO_POT,t,{lid:on?1:0,soup:SL_W});burner(TO_POT[0],1170,170,t,0.8);
  if(!on){steamPlume(TO_POT[0],1010,200,t,0.6,300);steam(TO_POT[0],1010,t,0.6*(1-mv));}
- counterFront();saltBox(430,1135,0.6,0);if(!on)potLid(hold[0],hold[1],0.75,lerp(-0.25,0,mv));
+ counterFront();saltBox(1035,1110,0.6,0);if(!on)potLid(hold[0],hold[1],0.75,lerp(-0.25,0,mv));
  trappedHeat(TO_POT[0],1085,190,110,t,on?0.8*E(t,land,0.5):0);hands(o);
  g.restore();
  labelTag('🧂 LA SAL, POR EL SABOR',540,660,sab,C.amber);
