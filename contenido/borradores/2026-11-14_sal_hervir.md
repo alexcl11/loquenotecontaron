@@ -2,7 +2,7 @@
 
 - Tema: "La sal hace que el agua hierva antes" (bloque Cocina; de los 6 anteriores solo 2 son de Cocina: tapa de la olla y microondas → este tiene que serlo). Alternativa #29 (aceite en la pasta) descartada por ahora: la única fuente de referencia abierta (Consumer, 2001) recomienda precisamente añadir aceite; sin fuente fiable que lo desmienta.
 - Fecha de publicación: 2026-11-14 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['24_sal_hervir']
 
 ## Veredicto (previsto → real)
@@ -23,3 +23,9 @@ MITO (previsto Mito → real Mito). La sal disuelta SUBE un poco el punto de ebu
 
 - 29 g de sal por kilo de agua (≈1 litro) → el punto de ebullición sube solo 0,5 °C — fuente 1.
 - Sin cifra: la diferencia de tiempo son segundos, si acaso — fuente 2.
+
+Nota: en el guion «29 gramos por litro» (la fuente dice por kg de agua; 1 kg de agua ≈ 1 litro).
+
+## Vídeo
+
+- videos/2026-11-14_sal_hervir.mp4 · 40,9 s · 7 segmentos (pregunta temprana en el s 5,7)
