@@ -29,3 +29,8 @@ Nota: en el guion «29 gramos por litro» (la fuente dice por kg de agua; 1 kg d
 ## Vídeo
 
 - videos/2026-11-14_sal_hervir.mp4 · 40,9 s · 7 segmentos (pregunta temprana en el s 5,7)
+
+## Programación
+
+- Metricool: 2026-11-14 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=3953819390194371840
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@2e46d1b570f76c7558d544217269af99d7ec0745/videos/2026-11-14_sal_hervir.mp4 (40,9 s)
