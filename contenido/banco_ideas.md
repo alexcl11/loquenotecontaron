@@ -8,7 +8,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 2 | Energía | Poner la calefacción a 30 °C calienta antes | Mito | IDAE | PENDIENTE |
 | 3 | Energía | Un grado más de calefacción apenas se nota en la factura | Mito | IDAE | PROGRAMADO 2026-10-29 |
 | 4 | Energía | Los aparatos en standby no gastan | Depende | IDAE, REE | PROGRAMADO 2026-10-25 |
-| 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | IDAE, fabricantes | PENDIENTE |
+| 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | Reglamento (UE) 2019/1782, Comisión Europea, Endesa | EN CURSO 2026-11-15 |
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 |
 | 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Depende | IDAE | PENDIENTE |
 | 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | PROGRAMADO 2026-11-05 |
