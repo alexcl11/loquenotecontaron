@@ -8,7 +8,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 2 | Energía | Poner la calefacción a 30 °C calienta antes | Mito | IDAE | PENDIENTE |
 | 3 | Energía | Un grado más de calefacción apenas se nota en la factura | Mito | IDAE | PROGRAMADO 2026-10-29 |
 | 4 | Energía | Los aparatos en standby no gastan | Depende | IDAE, REE | PROGRAMADO 2026-10-25 |
-| 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | Reglamento (UE) 2019/1782, Comisión Europea, Endesa | EN CURSO 2026-11-15 |
+| 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | Reglamento (UE) 2019/1782, Comisión Europea, Endesa | PROGRAMADO 2026-11-15 |
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 |
 | 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Depende | IDAE | PENDIENTE |
 | 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | PROGRAMADO 2026-11-05 |
@@ -37,7 +37,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 31 | Cocina | Tapar la olla no cambia nada | Mito | IDAE | PROGRAMADO 2026-11-10 |
 | 32 | Cocina | El agua del grifo en España no es buena para beber | Mito | Ministerio de Sanidad (SINAC) | PROGRAMADO 2026-11-07 |
 | 33 | Limpieza | Mezclar lejía con otros productos limpia más | Mito | Instituto Nacional de Toxicología | PROGRAMADO 2026-10-27 |
-| 34 | Limpieza | Más detergente lava mejor | Mito | OCU, fabricantes | PENDIENTE |
+| 34 | Limpieza | Más detergente lava mejor | Mito | OCU, fabricantes | PENDIENTE (revisado 2026-11-12: la OCU confirma «no por usar más saldrán mejor las manchas», pero sin cifra fiable para el dato clave) |
 | 35 | Limpieza | El vinagre desinfecta como la lejía | Mito | Ministerio de Sanidad | PENDIENTE (revisado 2026-11-05: la OCU dice que el vinagre de limpieza también mata bacterias; buscar fuente con cifra) |
 | 36 | Limpieza | Tender la ropa dentro de casa no tiene efectos | Mito | OCU | PENDIENTE |
 | 37 | Factura | Bajar la potencia contratada no ahorra nada | Mito (OCU: 34 % con potencia de más, 88 €/año) | OCU, CNMC | PROGRAMADO 2026-11-12 |
