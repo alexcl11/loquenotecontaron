@@ -31,7 +31,7 @@ ILL.es_regla=(c,t)=>{const s=c._s,M=c._m;ILL.cocina_fondo(c,t);const ap=E(t,s+0.
  const LX=540,LY=1065,R=205;
  lens(LX,LY,R,ap,(Rr)=>{g.fillStyle='#1a3456';g.fillRect(LX-Rr,LY-Rr,2*Rr,2*Rr);
   // pared del congelador arriba y el hielo que cuelga
-  const wy=LY-130;g.fillStyle='#aab4c4';g.fillRect(LX-Rr,LY-Rr,2*Rr,wy-(LY-Rr));g.fillStyle='#8592a6';g.fillRect(LX-Rr,wy-10,2*Rr,10);txt('PARED DEL CONGELADOR',LX-40,wy-40,22,'#2a3040',800,'center',1,300);
+  const wy=LY-130;g.fillStyle='#aab4c4';g.fillRect(LX-Rr,LY-Rr,2*Rr,wy-(LY-Rr));g.fillStyle='#8592a6';g.fillRect(LX-Rr,wy-10,2*Rr,10);txt('PARED',LX-40,wy-26,24,'#2a3040',900,'center',1,200);
   const th=3*PX*gr;if(th>1){g.fillStyle='rgba(222,239,255,0.96)';g.beginPath();g.moveTo(LX-Rr,wy);
    for(let i=0;i<=24;i++){const xx=LX-Rr+i*(2*Rr/24);g.lineTo(xx,wy+th*(0.92+0.08*Math.sin(i*1.7)));}g.lineTo(LX+Rr,wy);g.closePath();g.fill();
    g.strokeStyle='rgba(255,255,255,0.9)';g.lineWidth=4;g.lineCap='round';for(let i=0;i<5;i++){const xx=LX-150+i*60;g.beginPath();g.moveTo(xx,wy+th*0.3);g.lineTo(xx+26,wy+th*0.3);g.stroke();}}

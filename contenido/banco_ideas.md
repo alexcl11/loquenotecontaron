@@ -45,6 +45,6 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | PROGRAMADO 2026-11-02 |
 | 40 | Factura | Las placas solares no compensan si vives en un piso | Depende | IDAE | PENDIENTE |
 | 41 | Limpieza | La lejía con agua caliente desinfecta más | Mito | Comunidad de Madrid (Salud), OCU | PROGRAMADO 2026-11-08 |
-| 42 | Electrodomésticos | El hielo del congelador no afecta al consumo («así enfría más») | Mito (IDAE: descongelar antes de 3 mm, ahorro de hasta el 30 %) | IDAE Guía Práctica de la Energía, OCU | EN CURSO 2026-11-16 |
+| 42 | Electrodomésticos | El hielo del congelador no afecta al consumo («así enfría más») | Mito (IDAE: descongelar antes de 3 mm, ahorro de hasta el 30 %) | IDAE Guía Práctica de la Energía, OCU | PROGRAMADO 2026-11-16 |
 
 Cuando queden menos de 14 PENDIENTE, añadir 20 temas nuevos del mismo nicho (hogar, energía, cocina, limpieza, factura, tecnología doméstica).
