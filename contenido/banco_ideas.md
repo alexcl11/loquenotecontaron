@@ -18,10 +18,10 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 12 | Electrodomésticos | El programa eco tarda más, así que gasta más | Mito | OCU, fabricantes | PROGRAMADO 2026-11-01 |
 | 13 | Electrodomésticos | Fregar a mano gasta menos agua que el lavavajillas | Mito | OCU | PROGRAMADO 2026-10-24 |
 | 14 | Electrodomésticos | Hay que aclarar los platos antes de meterlos | Mito | Fabricantes, OCU | PENDIENTE (tocado en el #13) |
-| 15 | Electrodomésticos | La nevera llena gasta más | Mito | OCU | PENDIENTE |
+| 15 | Electrodomésticos | La nevera llena gasta más | Mito | OCU | PENDIENTE (revisado 2026-11-13: la OCU solo dice «aprovecha al máximo el volumen, sin comprimir»; sin cifra fiable) |
 | 16 | Electrodomésticos | Abrir el horno para mirar no pasa nada | Mito | IDAE | PROGRAMADO 2026-10-28 |
 | 17 | Electrodomésticos | Siempre hay que precalentar el horno | Depende | IDAE | PENDIENTE |
-| 18 | Electrodomésticos | Apagar el router por la noche ahorra mucho | Mito | IDAE | PENDIENTE |
+| 18 | Electrodomésticos | Apagar el router por la noche ahorra mucho | Mito | IDAE | PENDIENTE (revisado 2026-11-13: Repsol da 5–10 W y ~44 kWh/año, pero el ahorro en euros solo aparece en cálculos de prensa; buscar fuente oficial con €) |
 | 19 | Electrodomésticos | El microondas destruye los nutrientes | Mito | FDA, Tufts | PROGRAMADO 2026-11-13 |
 | 20 | Tecnología | Cargar el móvil al 100 % cada noche estropea la batería | Depende | Apple, Samsung | PENDIENTE |
 | 21 | Tecnología | Cerrar las apps en segundo plano ahorra batería | Mito | Apple, Google | PROGRAMADO 2026-11-04 |
@@ -45,5 +45,6 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | PROGRAMADO 2026-11-02 |
 | 40 | Factura | Las placas solares no compensan si vives en un piso | Depende | IDAE | PENDIENTE |
 | 41 | Limpieza | La lejía con agua caliente desinfecta más | Mito | Comunidad de Madrid (Salud), OCU | PROGRAMADO 2026-11-08 |
+| 42 | Electrodomésticos | El hielo del congelador no afecta al consumo («así enfría más») | Mito (IDAE: descongelar antes de 3 mm, ahorro de hasta el 30 %) | IDAE Guía Práctica de la Energía, OCU | EN CURSO 2026-11-16 |
 
 Cuando queden menos de 14 PENDIENTE, añadir 20 temas nuevos del mismo nicho (hogar, energía, cocina, limpieza, factura, tecnología doméstica).
