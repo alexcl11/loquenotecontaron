@@ -35,3 +35,7 @@ Ver pipeline/specs.py V['27_aceite_pasta'].
 
 - videos/2026-11-17_aceite_pasta.mp4 · 36,6 s · 7 segmentos (pregunta temprana hacia el s 5,2–8,5)
 - Kit nuevo: pipeline/ill25.js (botella de aceite, manchas/capa de aceite, espaguetis en la olla, cuchara de palo, manojo de espaguetis, plato de pasta con salsa)
+
+## Programación
+
+- Metricool: 2026-11-17 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=2202369063697730398
