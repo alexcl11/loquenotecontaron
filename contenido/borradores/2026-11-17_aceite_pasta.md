@@ -2,7 +2,7 @@
 
 - Tema: "Echar aceite al agua evita que la pasta se pegue" (bloque Cocina). De los 6 anteriores (lavar a 60, potencia, microondas, sal, cargador, escarcha) solo 2 son de Cocina → este tiene que ser de Cocina / seguridad alimentaria. El #29 es el único PENDIENTE del bloque.
 - Fecha de publicación: 2026-11-17 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['27_aceite_pasta']
 
 ## Veredicto (previsto → real)
