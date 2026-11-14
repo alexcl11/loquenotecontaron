@@ -2,7 +2,7 @@
 
 - Tema: "Echar aceite al agua evita que la pasta se pegue" (bloque Cocina). De los 6 anteriores (lavar a 60, potencia, microondas, sal, cargador, escarcha) solo 2 son de Cocina → este tiene que ser de Cocina / seguridad alimentaria. El #29 es el único PENDIENTE del bloque.
 - Fecha de publicación: 2026-11-17 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['27_aceite_pasta']
 
 ## Veredicto (previsto → real)
@@ -30,3 +30,8 @@ MITO. Según el fabricante (Barilla), el aceite en el agua no evita que la pasta
 ## Guion
 
 Ver pipeline/specs.py V['27_aceite_pasta'].
+
+## Vídeo
+
+- videos/2026-11-17_aceite_pasta.mp4 · 36,6 s · 7 segmentos (pregunta temprana hacia el s 5,2–8,5)
+- Kit nuevo: pipeline/ill25.js (botella de aceite, manchas/capa de aceite, espaguetis en la olla, cuchara de palo, manojo de espaguetis, plato de pasta con salsa)
