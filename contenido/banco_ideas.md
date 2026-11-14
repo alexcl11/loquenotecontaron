@@ -32,7 +32,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 26 | Cocina | Lo descongelado nunca se puede volver a congelar | Depende | AESAN | PROGRAMADO 2026-11-06 |
 | 27 | Cocina | La comida caliente estropea la nevera | Mito | AESAN | PROGRAMADO 2026-10-30 |
 | 28 | Cocina | "Consumir preferentemente" es lo mismo que caducidad | Mito | AESAN | PROGRAMADO 2026-10-26 |
-| 29 | Cocina | Aceite en el agua evita que la pasta se pegue | Mito | Divulgación culinaria | PENDIENTE |
+| 29 | Cocina | Aceite en el agua evita que la pasta se pegue | Mito | Barilla (fabricante), EROSKI Consumer | EN CURSO 2026-11-17 |
 | 30 | Cocina | La sal hace que el agua hierva antes | Mito | U. de Illinois (Física), Live Science | PROGRAMADO 2026-11-14 |
 | 31 | Cocina | Tapar la olla no cambia nada | Mito | IDAE | PROGRAMADO 2026-11-10 |
 | 32 | Cocina | El agua del grifo en España no es buena para beber | Mito | Ministerio de Sanidad (SINAC) | PROGRAMADO 2026-11-07 |
