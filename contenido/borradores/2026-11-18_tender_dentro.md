@@ -3,7 +3,7 @@
 - Tema: "Tender la ropa dentro de casa no tiene efectos" (bloque Limpieza / hogar). De los 6 anteriores (potencia, microondas, sal, cargador, escarcha, aceite en la pasta) 3 son de Cocina → se varía el bloque. Últimos bloques: Energía, Electrodomésticos, Cocina → Limpieza (último Limpieza: 2026-11-08).
 - Descartado antes de empezar: #2 (calefacción a 30 °C) ya se contó dentro del vídeo #3 del 2026-10-29 («límite, no acelerador»).
 - Fecha de publicación: 2026-11-18 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['28_tender_dentro']
 
 ## Veredicto (previsto → real)
@@ -33,3 +33,8 @@ No se encontró una fuente oficial española con cifra; se usa la universidad (f
 ## Guion
 
 Ver pipeline/specs.py V['28_tender_dentro'].
+
+## Vídeo
+
+- videos/2026-11-18_tender_dentro.mp4 · 40,5 s · 7 segmentos (pregunta temprana hacia el s 4,7–7,9)
+- Kit nuevo: pipeline/ill26.js (tendedero de pie `dryRack`, prendas colgadas `hangItem`, vapor `vaporTo`, puerta de habitación `roomDoor`, aspa `xBadge`)

@@ -39,7 +39,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 33 | Limpieza | Mezclar lejía con otros productos limpia más | Mito | Instituto Nacional de Toxicología | PROGRAMADO 2026-10-27 |
 | 34 | Limpieza | Más detergente lava mejor | Mito | OCU, fabricantes | PENDIENTE (revisado 2026-11-12: la OCU confirma «no por usar más saldrán mejor las manchas», pero sin cifra fiable para el dato clave) |
 | 35 | Limpieza | El vinagre desinfecta como la lejía | Mito | Ministerio de Sanidad | PENDIENTE (revisado 2026-11-05: la OCU dice que el vinagre de limpieza también mata bacterias; buscar fuente con cifra) |
-| 36 | Limpieza | Tender la ropa dentro de casa no tiene efectos | Mito | Univ. de Manchester, Manchester City Council | EN CURSO 2026-11-18 |
+| 36 | Limpieza | Tender la ropa dentro de casa no tiene efectos | Mito | Univ. de Manchester, Manchester City Council | PROGRAMADO 2026-11-18 |
 | 37 | Factura | Bajar la potencia contratada no ahorra nada | Mito (OCU: 34 % con potencia de más, 88 €/año) | OCU, CNMC | PROGRAMADO 2026-11-12 |
 | 38 | Factura | La tarifa regulada siempre es la más cara | Mito | CNMC | PENDIENTE |
 | 39 | Factura | Poner la lavadora de noche siempre es más barato | Depende | CNMC, REE | PROGRAMADO 2026-11-02 |
