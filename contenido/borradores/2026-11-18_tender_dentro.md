@@ -3,7 +3,7 @@
 - Tema: "Tender la ropa dentro de casa no tiene efectos" (bloque Limpieza / hogar). De los 6 anteriores (potencia, microondas, sal, cargador, escarcha, aceite en la pasta) 3 son de Cocina → se varía el bloque. Últimos bloques: Energía, Electrodomésticos, Cocina → Limpieza (último Limpieza: 2026-11-08).
 - Descartado antes de empezar: #2 (calefacción a 30 °C) ya se contó dentro del vídeo #3 del 2026-10-29 («límite, no acelerador»).
 - Fecha de publicación: 2026-11-18 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['28_tender_dentro']
 
 ## Veredicto (previsto → real)
