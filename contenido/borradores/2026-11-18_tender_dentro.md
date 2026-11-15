@@ -38,3 +38,7 @@ Ver pipeline/specs.py V['28_tender_dentro'].
 
 - videos/2026-11-18_tender_dentro.mp4 · 40,5 s · 7 segmentos (pregunta temprana hacia el s 4,7–7,9)
 - Kit nuevo: pipeline/ill26.js (tendedero de pie `dryRack`, prendas colgadas `hangItem`, vapor `vaporTo`, puerta de habitación `roomDoor`, aspa `xBadge`)
+
+## Programación
+
+- Metricool: 2026-11-18 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=2666633547063971172
