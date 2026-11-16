@@ -46,7 +46,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 40 | Factura | Las placas solares no compensan si vives en un piso | Depende | IDAE | PENDIENTE |
 | 41 | Limpieza | La lejía con agua caliente desinfecta más | Mito | Comunidad de Madrid (Salud), OCU | PROGRAMADO 2026-11-08 |
 | 42 | Electrodomésticos | El hielo del congelador no afecta al consumo («así enfría más») | Mito (IDAE: descongelar antes de 3 mm, ahorro de hasta el 30 %) | IDAE Guía Práctica de la Energía, OCU | PROGRAMADO 2026-11-16 |
-| 43 | Electrodomésticos | Un electrodoméstico con la letra C es poco eficiente; lo bueno es A+++ | Mito (desde el 1/03/2021 la escala es A–G sin «+»; un A+++ puede ser ahora B, C o inferior) | MITECO, Comisión Europea | EN CURSO 2026-11-19 |
+| 43 | Electrodomésticos | Un electrodoméstico con la letra C es poco eficiente; lo bueno es A+++ | Mito (desde el 1/03/2021 la escala es A–G sin «+»; un A+++ puede ser ahora B, C o inferior) | MITECO, Comisión Europea | PROGRAMADO 2026-11-19 |
 | 44 | Cocina | Las tablas de madera son menos higiénicas que las de plástico | Depende | AESAN, USDA | PENDIENTE |
 | 45 | Cocina | Si huele bien, el huevo está bueno (y hay que lavar los huevos) | Mito | AESAN | PENDIENTE |
 | 46 | Cocina | El arroz cocido sobrante se puede dejar fuera hasta la cena | Mito (Bacillus cereus) | AESAN, EFSA | PENDIENTE |
