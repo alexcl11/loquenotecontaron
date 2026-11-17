@@ -2,6 +2,32 @@
 # Each segment: say (TTS), show (captions, defaults to say), kw (highlight words), scene (list of components) or None to continue
 CTA_Y = 1050
 
+# ---- Prueba A/B de formato (desde el 17/11/2026) ----------------------------------------------
+# A = corto (el actual desde el 6/11): 35–45 s, 6–7 segmentos, UN dato.
+# B = largo (el de antes del 6/11, ya con el gancho nuevo): 60–75 s, 9–11 segmentos, hasta TRES datos con fuente.
+# Los dos formatos usan el MISMO gancho (creencia equivocada + su coste) y las mismas reglas de ritmo,
+# para que lo único que cambie sea la duración y la cantidad de datos. Ver COMPONENTES.md.
+# `ritmo.py` lee estos límites. gap_max = segundos máximos sin cambio visual ni dato nuevo.
+FORMATOS = {
+    'A': dict(dur=(30, 50), seg=(6, 7),  datos=1, gap_max=4.5, gap_aviso=3.5, tras_gancho_min=2),
+    'B': dict(dur=(55, 80), seg=(9, 11), datos=3, gap_max=4.5, gap_aviso=3.5, tras_gancho_min=3),
+}
+# Formato de cada vídeo. Cada vídeo NUEVO (n.º 31 en adelante) declara el suyo justo debajo de su V[...]:
+#   FMT['31_tema'] = 'A'   # o 'B'
+# y lo anota en contenido/publicados.md (columna Formato).
+FMT = {}
+
+def formato_de(vid):
+    """Histórico: n.º 01–15 = B (largo, hasta el 5/11); 16–30 = A (corto, desde el 6/11). Del 31 en adelante, explícito."""
+    if vid in FMT:
+        return FMT[vid]
+    n = int(vid[:2])
+    if n <= 15:
+        return 'B'
+    if n <= 30:
+        return 'A'
+    raise KeyError(f"{vid}: declara FMT['{vid}'] = 'A' o 'B' justo debajo de su V[...] en specs.py")
+
 V = {}
 
 V['01_standby'] = [
