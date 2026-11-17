@@ -5,11 +5,12 @@
 import sys,json,subprocess,wave,re,os
 import numpy as np
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-from specs import V
+from specs import V, VOZ, VOZ_DEFECTO
 vid=sys.argv[1];step=sys.argv[2]
 ROOT=os.path.dirname(os.path.abspath(__file__))
 D=f'{ROOT}/out/{vid}';os.makedirs(D+'/tts',exist_ok=True)
 segs=V[vid]
+SID=VOZ.get(vid,VOZ_DEFECTO)  # voz del vídeo (por defecto 53 = em_santa)
 SH='/tmp/claude-0/sherpa';S=SH+'/sherpa-onnx-v1.12.15-linux-x64-shared';K=SH+'/kokoro-multi-lang-v1_0'
 SR=44100
 PAUSE={',':0.11,':':0.18,';':0.2,'.':0.27,'?':0.3,'!':0.28,'…':0.42,'|':0.2,'||':0.4}
@@ -72,7 +73,7 @@ if step=='tts':
         cs=chunks(speakable(s['say']));seg=[]
         for k,c in enumerate(cs):
             out=f'{D}/tts/{i:02d}_{k:02d}.wav'
-            subprocess.run([S+'/bin/sherpa-onnx-offline-tts',f'--kokoro-model={K}/model.onnx',f'--kokoro-voices={K}/voices.bin',f'--kokoro-tokens={K}/tokens.txt',f'--kokoro-data-dir={K}/espeak-ng-data','--kokoro-lang=es','--kokoro-length-scale=0.89','--sid=53','--num-threads=2',f'--output-filename={out}',c['text']],env=env,check=True,capture_output=True)
+            subprocess.run([S+'/bin/sherpa-onnx-offline-tts',f'--kokoro-model={K}/model.onnx',f'--kokoro-voices={K}/voices.bin',f'--kokoro-tokens={K}/tokens.txt',f'--kokoro-data-dir={K}/espeak-ng-data','--kokoro-lang=es','--kokoro-length-scale=0.89',f'--sid={SID}','--num-threads=2',f'--output-filename={out}',c['text']],env=env,check=True,capture_output=True)
             seg.append(dict(file=out,**c))
         meta.append(seg)
     json.dump(meta,open(f'{D}/tts/chunks.json','w'),ensure_ascii=False)

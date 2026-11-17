@@ -28,6 +28,13 @@ def formato_de(vid):
         return 'A'
     raise KeyError(f"{vid}: declara FMT['{vid}'] = 'A' o 'B' justo debajo de su V[...] en specs.py")
 
+# ---- Prueba de voz (preparada el 17/11/2026, NO activa) ----------------------------------------
+# Voz de cada vídeo (id de Kokoro). Por defecto 53 = em_santa (la voz de siempre).
+# Para la prueba de voz se declara debajo del V[...] del vídeo: VOZ['NN_tema'] = 42   # 42 = pf_dora
+# Ids: 28 ef_dora, 29 em_alex, 42 pf_dora, 43 pm_alex, 44 pm_santa, 53 em_santa.
+VOZ_DEFECTO = 53
+VOZ = {}
+
 V = {}
 
 V['01_standby'] = [
