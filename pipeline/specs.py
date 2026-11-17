@@ -31,9 +31,15 @@ def formato_de(vid):
 # ---- Prueba de voz (preparada el 17/11/2026, NO activa) ----------------------------------------
 # Voz de cada vídeo (id de Kokoro). Por defecto 53 = em_santa (la voz de siempre).
 # Para la prueba de voz se declara debajo del V[...] del vídeo: VOZ['NN_tema'] = 42   # 42 = pf_dora
-# Ids: 28 ef_dora, 29 em_alex, 42 pf_dora, 43 pm_alex, 44 pm_santa, 53 em_santa.
+# Ids: 28 ef_dora (mujer, español), 29 em_alex, 42 pf_dora (portuguesa, descartada), 53 em_santa (hombre).
+# Un vídeo se declara con PERSONAJE['NN_tema'] = 'M' (mujer: voz 28 + pelo largo) o 'H' (hombre: voz 53).
+# Sin declarar = 'H' (como hasta ahora). VOZ['NN_tema'] = id fuerza una voz concreta.
 VOZ_DEFECTO = 53
 VOZ = {}
+PERSONAJE = {}
+VOZ_PERSONAJE = {'H': 53, 'M': 28}
+def personaje_de(vid): return PERSONAJE.get(vid, 'H')
+def voz_de(vid): return VOZ.get(vid, VOZ_PERSONAJE[personaje_de(vid)])
 
 V = {}
 
@@ -1238,3 +1244,4 @@ V['30_arroz']=[
       kw=["fuera","nevera?","comentarios."],
       scene=[_coc(),dict(type='bubble',q='¿Fuera 🍚 o a la nevera 🧊?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
+

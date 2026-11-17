@@ -5,12 +5,12 @@
 import sys,json,subprocess,wave,re,os
 import numpy as np
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
-from specs import V, VOZ, VOZ_DEFECTO
+from specs import V, voz_de, personaje_de
 vid=sys.argv[1];step=sys.argv[2]
 ROOT=os.path.dirname(os.path.abspath(__file__))
 D=f'{ROOT}/out/{vid}';os.makedirs(D+'/tts',exist_ok=True)
 segs=V[vid]
-SID=VOZ.get(vid,VOZ_DEFECTO)  # voz del vídeo (por defecto 53 = em_santa)
+SID=voz_de(vid)  # voz del vídeo: H=53 em_santa, M=28 ef_dora
 SH='/tmp/claude-0/sherpa';S=SH+'/sherpa-onnx-v1.12.15-linux-x64-shared';K=SH+'/kokoro-multi-lang-v1_0'
 SR=44100
 PAUSE={',':0.11,':':0.18,';':0.2,'.':0.27,'?':0.3,'!':0.28,'…':0.42,'|':0.2,'||':0.4}
@@ -130,7 +130,7 @@ if step=='timeline':
             for ii,it in enumerate(c.get('items',[])):
                 it['_t']=res(it.get('at'),c['_t']+ii*0.25)
                 if 'xAt' in it:it['_x']=res(it['xAt'],it['_t'])
-    json.dump(dict(T=T,segs=tl,scenes=scenes),open(f'{D}/timeline.json','w'),ensure_ascii=False)
+    json.dump(dict(T=T,segs=tl,scenes=scenes,personaje=personaje_de(vid)),open(f'{D}/timeline.json','w'),ensure_ascii=False)
     N=int(T*SR);out=np.zeros(N)
     for st,a in voice:
         k=int(st*SR);e=min(N,k+len(a));out[k:e]+=a[:e-k]
