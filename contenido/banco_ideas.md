@@ -49,7 +49,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 43 | Electrodomésticos | Un electrodoméstico con la letra C es poco eficiente; lo bueno es A+++ | Mito (desde el 1/03/2021 la escala es A–G sin «+»; un A+++ puede ser ahora B, C o inferior) | MITECO, Comisión Europea | PROGRAMADO 2026-11-19 |
 | 44 | Cocina | Las tablas de madera son menos higiénicas que las de plástico | Depende | AESAN, USDA | PENDIENTE |
 | 45 | Cocina | Si huele bien, el huevo está bueno (y hay que lavar los huevos) | Mito | AESAN | PENDIENTE |
-| 46 | Cocina | El arroz cocido sobrante se puede dejar fuera hasta la cena | Mito (Bacillus cereus) | AESAN, EFSA | PENDIENTE |
+| 46 | Cocina | El arroz cocido sobrante se puede dejar fuera hasta la cena | Mito (Bacillus cereus) | AESAN, EFSA | EN CURSO 2026-11-20 |
 | 47 | Cocina | Descongelar la carne en la encimera es lo normal | Mito | AESAN, USDA | PENDIENTE |
 | 48 | Cocina | El alcohol se evapora entero al cocinar | Mito | USDA (tabla de retención) | PENDIENTE |
 | 49 | Cocina | Las bayetas se limpian solas al secarse | Mito | AESAN, OCU | PENDIENTE |
