@@ -23,9 +23,9 @@ ILL.sn_pregunta=(c,t)=>{const s=c._s,M=c._m;const up=ease(E(t,(M.cu||s)-0.3,0.6)
  person(o,t);counterFront();tupper(hx+10,hy+28,0.85,0.85,1,C.blue,SN_FOOD);hands(o);g.restore();
  if(M.q)qMarks(540,760,t,E(t,M.q,0.4));};
 // fuente: semana de 7 días; 3 o 4 en verde, del 5 al 7 en rojo
-ILL.sn_fuente=(c,t)=>{const s=c._s,M=c._m;ILL.cocina_fondo(c,t);const ap=E(t,s+0.6,0.5);const tr=M.tre||s+4,cu=M.cua||s+5,nv=M.nev||s+6;
+ILL.sn_fuente=(c,t)=>{const s=c._s,M=c._m;ILL.cocina_fondo(c,t);const es=M.est||s+0.6;const ap=E(t,es,0.5);const tr=M.tre||s+4,cu=M.cua||s+5,nv=M.nev||s+6;
  const D=[1,2,3,4,5,6,7].map(n=>({n,sub:'DÍA'}));
- dayCells(110,930,190,170,4,D,i=>{const a=ap>0?E(t,s+0.6+i*0.08,0.4):0;
+ dayCells(110,930,190,170,4,D,i=>{const a=ap>0?E(t,es+i*0.08,0.4):0;
   if(i<3)return {a,fill:E(t,tr-0.2+i*0.12,0.3),col:C.green};
   if(i===3)return {a,fill:E(t,cu-0.2,0.3),col:C.green};
   return {a,fill:E(t,nv-0.1+(i-4)*0.12,0.3),col:C.red,x:E(t,nv+0.2+(i-4)*0.12,0.4)};});

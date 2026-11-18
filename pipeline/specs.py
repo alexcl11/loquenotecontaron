@@ -1245,7 +1245,7 @@ V['31_sobras_navidad']=[
  dict(say="El departamento de agricultura de Estados Unidos, el USDA, lo deja claro: las sobras, de tres a cuatro días en la nevera.",
       show="El Departamento de Agricultura de Estados Unidos, el USDA, lo deja claro: las sobras, de 3 a 4 días en la nevera.",
       kw=["USDA,","3","4"],
-      scene=[dict(type='illus',name='sn_fuente',marks=dict(cla='claro',tre='3',cua='4',nev='nevera')),
+      scene=[dict(type='illus',name='sn_fuente',marks=dict(est='Estados',cla='claro',tre='3',cua='4',nev='nevera')),
              dict(type='badge',name='USDA',full='Departamento de Agricultura de EE. UU. · FSIS',flag='🇺🇸',y=720)],pause=0.5),
  dict(say="Pasado ese plazo, el riesgo de intoxicación sube… aunque la nevera esté bien fría.",
       kw=["plazo,","riesgo","sube…"],

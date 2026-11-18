@@ -3,7 +3,7 @@
 - Tema: "Las sobras de Navidad aguantan una semana en la nevera" (bloque Cocina / seguridad alimentaria, Prio 1, temporada). De los 6 anteriores (cargador, escarcha, aceite pasta, tender dentro, etiqueta, arroz) solo 2 son de Cocina → este tiene que ser de Cocina; #64 es el de menor Prio de cocina.
 - Formato: B (el anterior, 2026-11-20 arroz, fue A)
 - Fecha de publicación: 2026-11-21 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['31_sobras_navidad']
 
 ## Veredicto (previsto → real)
@@ -40,3 +40,7 @@ Ver pipeline/specs.py V['31_sobras_navidad'] (formato B, 10 segmentos; pregunta 
 
 - Kit nuevo: pipeline/ill29.js (bandeja de asado, casillas de calendario, pegatina de fecha, rotulador, ondas de olor, barra de riesgo).
 - Escenas: pipeline/ill_20261121.js (`sn_*`), 9 de 10 segmentos ilustrados.
+
+## Vídeo
+
+- videos/2026-11-21_sobras_navidad.mp4 · 62,0 s · formato B · 10 segmentos · ritmo.py OK (hueco máx. 2,8 s; 10 pulsos entre el s 3 y el 10)

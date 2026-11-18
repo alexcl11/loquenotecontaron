@@ -78,7 +78,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 61 | Factura | Si cambias de compañía de luz, te quedas sin suministro unos días | Mito | CNMC | PENDIENTE | 2 |
 | 62 | Factura | Los fines de semana toda la luz es más barata | Depende (según tarifa y periodos) | CNMC | PENDIENTE | 2 |
 | 63 | Factura | El bono social eléctrico es solo para quien no trabaja | Mito (a verificar requisitos vigentes) | Ministerio para la Transición Ecológica, CNMC | PENDIENTE | 3 |
-| 64 | Cocina | Las sobras de Navidad aguantan una semana en la nevera | Mito (USDA FSIS y Clínica Mayo: 3 o 4 días; congeladas 3 o 4 meses) | USDA FSIS, Clínica Mayo | EN CURSO 2026-11-21 | 1 |
+| 64 | Cocina | Las sobras de Navidad aguantan una semana en la nevera | Mito (USDA FSIS y Clínica Mayo: 3 o 4 días; congeladas 3 o 4 meses) | USDA FSIS, Clínica Mayo | PROGRAMADO 2026-11-21 | — |
 | 65 | Cocina | El pavo o el pollo está hecho cuando el jugo sale transparente | Mito (temperatura interna) | USDA FSIS, AESAN | PENDIENTE | 2 |
 | 66 | Cocina | El horno con ventilador gasta más | Depende | OCU, IDAE | PENDIENTE | 2 |
 | 67 | Cocina | La olla exprés no ahorra energía | Mito (a verificar con cifra) | IDAE, OCU | PENDIENTE | 2 |
