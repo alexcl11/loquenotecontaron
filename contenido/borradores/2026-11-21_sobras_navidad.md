@@ -3,7 +3,7 @@
 - Tema: "Las sobras de Navidad aguantan una semana en la nevera" (bloque Cocina / seguridad alimentaria, Prio 1, temporada). De los 6 anteriores (cargador, escarcha, aceite pasta, tender dentro, etiqueta, arroz) solo 2 son de Cocina → este tiene que ser de Cocina; #64 es el de menor Prio de cocina.
 - Formato: B (el anterior, 2026-11-20 arroz, fue A)
 - Fecha de publicación: 2026-11-21 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['31_sobras_navidad']
 
 ## Veredicto (previsto → real)
@@ -31,3 +31,12 @@ Nota: no he encontrado una página de la AESAN con un plazo en días para las so
 - Apoyo 1: las bacterias no cambian el olor ni el sabor (USDA; Clínica Mayo) — sin cifra.
 - Apoyo 2: congeladas, 3 o 4 meses (USDA FSIS; Clínica Mayo).
 - Cálculo: lo que sobra el 24 → hasta el 27 o el 28 (24 + 3 o 4 días), no hasta Nochevieja.
+
+## Guion
+
+Ver pipeline/specs.py V['31_sobras_navidad'] (formato B, 10 segmentos; pregunta temprana hacia el s 4,2).
+
+## Escenas
+
+- Kit nuevo: pipeline/ill29.js (bandeja de asado, casillas de calendario, pegatina de fecha, rotulador, ondas de olor, barra de riesgo).
+- Escenas: pipeline/ill_20261121.js (`sn_*`), 9 de 10 segmentos ilustrados.
