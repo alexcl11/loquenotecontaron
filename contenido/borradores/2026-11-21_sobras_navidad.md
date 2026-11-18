@@ -44,3 +44,7 @@ Ver pipeline/specs.py V['31_sobras_navidad'] (formato B, 10 segmentos; pregunta 
 ## Vídeo
 
 - videos/2026-11-21_sobras_navidad.mp4 · 62,0 s · formato B · 10 segmentos · ritmo.py OK (hueco máx. 2,8 s; 10 pulsos entre el s 3 y el 10)
+
+## Programación
+
+- Metricool: 2026-11-21 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=5044890802233624165
