@@ -65,7 +65,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 48 | Cocina | El alcohol se evapora entero al cocinar | Mito | USDA (tabla de retención) | PENDIENTE | 3 |
 | 49 | Cocina | Las bayetas se limpian solas al secarse | Mito | AESAN, OCU | PENDIENTE | 4 |
 | 50 | Energía | Purgar los radiadores no sirve de nada | Mito (a verificar) | IDAE, OCU | PENDIENTE | 1 |
-| 51 | Energía | Encender y apagar la calefacción gasta más que dejarla encendida a poca temperatura | Depende | IDAE, OCU | PENDIENTE | 1 |
+| 51 | Energía | Encender y apagar la calefacción gasta más que dejarla encendida a poca temperatura | Mito (OCU: apagarla por la noche ahorra hasta un 67 %) | OCU, Maldita | EN CURSO 2026-11-22 | 1 |
 | 52 | Energía | Con 24–25 °C en casa se está «normal»; la temperatura recomendada es otra | Mito (a verificar: IDAE/MITECO dan un rango) | IDAE, MITECO | PENDIENTE | 1 |
 | 53 | Energía | Poner muebles o cortinas delante del radiador no pasa nada | Mito | IDAE, OCU | PENDIENTE | 2 |
 | 54 | Energía | La manta eléctrica gasta una fortuna | Mito (a verificar con vatios y coste) | OCU, fabricantes | PENDIENTE | 2 |
