@@ -39,3 +39,7 @@ Ver pipeline/specs.py V['32_calefaccion_noche'] (formato A, 7 segmentos; pregunt
 ## Vídeo
 
 - videos/2026-11-22_calefaccion_noche.mp4 · 44,9 s · formato A · 7 segmentos · ritmo.py OK (hueco máx. 3,4 s; 11 pulsos entre el s 3 y el 10)
+
+## Programación
+
+- Metricool: 2026-11-22 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=-1013581673370532441
