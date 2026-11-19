@@ -1273,3 +1273,36 @@ V['31_sobras_navidad']=[
       scene=[_coc(),dict(type='bubble',q='¿3 días 🧊 o una semana 📅?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
 FMT['31_sobras_navidad']='B'
+
+_dor=lambda:dict(type='illus',name='cn_fondo')
+V['32_calefaccion_noche']=[
+ dict(say="¿Dejas la calefacción puesta toda la noche, para no gastar más al volver a calentar la casa? Te sale más caro.",
+      kw=["noche,","calentar","caro."],
+      scene=[dict(type='illus',name='cn_gancho',marks=dict(dej='Dejas',noc='noche',cal='calentar',car='caro')),
+             dict(type='stamp',text='✕  SALE MÁS CARO',y=1440,at='caro')]),
+ dict(say="¿Tú la apagas o la dejas puesta? Dímelo abajo.",
+      kw=["apagas","puesta?","abajo."],
+      scene=[dict(type='illus',name='cn_pregunta',marks=dict(apa='apagas',pue='puesta',q='Dímelo')),
+             dict(type='pill',text='¿LA APAGAS O LA DEJAS PUESTA?',y=640,color='amber',size=40),
+             dict(type='pill',text='DÍMELO EN COMENTARIOS 👇',y=1440,at='Dímelo',color='blue')]),
+ dict(say="Lo ha calculado la OCU: apagarla del todo por la noche puede ahorrar hasta un sesenta y siete por ciento.",
+      show="Lo ha calculado la OCU: apagarla del todo por la noche puede ahorrar hasta un 67 %.",
+      kw=["OCU:","apagarla","67"],
+      scene=[dict(type='illus',name='cn_fuente',marks=dict(apa='apagarla',aho='ahorrar',pct='67')),
+             dict(type='badge',name='OCU',full='Organización de Consumidores y Usuarios',flag='🇪🇸',y=720),
+             dict(type='stat',value='hasta 67 %',y=1370,at='67',color='green',size=120),
+             dict(type='text',text='de ahorro si la apagas del todo por la noche',y=1480,size=40,at='67')],pause=0.4),
+ dict(say="¿Por qué? Con la casa caliente toda la noche, el calor se escapa sin parar por paredes y ventanas… y la caldera trabaja para reponerlo.",
+      kw=["escapa","ventanas…","reponerlo."],
+      scene=[dict(type='illus',name='cn_fuga',marks=dict(cal='caliente',esc='escapa',par='paredes',ven='ventanas',cdr='caldera',rep='reponerlo'))]),
+ dict(say="Apagada, la casa se enfría poco a poco y pierde menos calor. Por la mañana recuperas la temperatura… y aun así, sale más barato.",
+      kw=["menos","mañana","barato."],
+      scene=[dict(type='illus',name='cn_curva',marks=dict(apa='Apagada',enf='enfría',men='menos',man='mañana',rec='recuperas',bar='barato'))]),
+ dict(say="Prográmala: que se apague al acostarte, y que se encienda un rato antes de levantarte. Si hay mayores o niños pequeños, una hora antes, o bájala sin apagarla.",
+      kw=["Prográmala:","acostarte,","levantarte."],
+      scene=[dict(type='illus',name='cn_programa',marks=dict(pro='Prográmala',aco='acostarte',enc='encienda',lev='levantarte',may='mayores',hor='hora',baj='bájala'))],pause=0.5),
+ dict(say="¿Y tú, la apagas o la dejas puesta? Te leo en comentarios.",
+      kw=["apagas","puesta?","comentarios."],
+      scene=[_dor(),dict(type='bubble',q='¿La apagas 🌙 o la dejas puesta 🔥?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
+]
+FMT['32_calefaccion_noche']='A'
