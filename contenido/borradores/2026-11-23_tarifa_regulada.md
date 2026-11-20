@@ -3,7 +3,7 @@
 - Tema: "La tarifa regulada siempre es la más cara" (bloque Factura, Prio 1, dinero directo). En los 6 anteriores hay 3 de Cocina (aceite pasta, arroz, sobras de Navidad) → no obliga a cocina. Prio 1 empatados: se varía de bloque respecto a los 2 anteriores (Cocina, Energía) → Factura; #38 es el primero.
 - Formato: B (el anterior, 2026-11-22 calefacción de noche, fue A)
 - Fecha de publicación: 2026-11-23 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['33_tarifa_regulada']
 
 ## Veredicto (previsto → real)
@@ -28,3 +28,16 @@ MITO (con matiz). Según la OCU (mayo de 2026), para un hogar de 4,6 kW y 3.500 
 - Apoyo 1: la oferta más cara analizada, 1.027 € (+45 %); la mejor fija, 659 € (−7 %) (OCU).
 - Apoyo 2: el bono social exige estar en el PVPC (OCU).
 - Cálculo: 813 − 708 = 105 € más al año con una oferta «normal» del libre.
+
+## Guion
+
+Ver pipeline/specs.py V['33_tarifa_regulada'] (formato B, 10 segmentos; pregunta temprana hacia el s 6,2).
+
+## Escenas
+
+- Kit nuevo: pipeline/ill31.js (tarjeta de tarifa regulada/libre/bono social, columna de monedas con cifra, lista de ofertas para el móvil, eslabón).
+- Escenas: pipeline/ill_20261123.js (`tr_*`), 9 de 10 segmentos ilustrados.
+
+## Vídeo
+
+- videos/2026-11-23_tarifa_regulada.mp4 · 66,2 s · formato B · 10 segmentos · ritmo.py OK (hueco máx. 4,3 s, aviso; 11 pulsos entre el s 3 y el 10)
