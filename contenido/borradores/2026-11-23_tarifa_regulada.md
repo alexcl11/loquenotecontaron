@@ -3,7 +3,7 @@
 - Tema: "La tarifa regulada siempre es la más cara" (bloque Factura, Prio 1, dinero directo). En los 6 anteriores hay 3 de Cocina (aceite pasta, arroz, sobras de Navidad) → no obliga a cocina. Prio 1 empatados: se varía de bloque respecto a los 2 anteriores (Cocina, Energía) → Factura; #38 es el primero.
 - Formato: B (el anterior, 2026-11-22 calefacción de noche, fue A)
 - Fecha de publicación: 2026-11-23 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['33_tarifa_regulada']
 
 ## Veredicto (previsto → real)
