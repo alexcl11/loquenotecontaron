@@ -41,3 +41,7 @@ Ver pipeline/specs.py V['33_tarifa_regulada'] (formato B, 10 segmentos; pregunta
 ## Vídeo
 
 - videos/2026-11-23_tarifa_regulada.mp4 · 66,2 s · formato B · 10 segmentos · ritmo.py OK (hueco máx. 4,3 s, aviso; 11 pulsos entre el s 3 y el 10)
+
+## Programación
+
+- Metricool: 2026-11-23 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=5631678217505492469
