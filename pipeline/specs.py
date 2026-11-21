@@ -1350,3 +1350,33 @@ V['33_tarifa_regulada']=[
       scene=[_coc(),dict(type='bubble',q='¿Regulada ⚖️ o libre 🏷️?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
 FMT['33_tarifa_regulada']='B'
+
+V['34_descongelar_encimera']=[
+ dict(say="¿Descongelas la carne en la encimera? Te arriesgas a una intoxicación.",
+      kw=["encimera?","arriesgas","intoxicación."],
+      scene=[dict(type='illus',name='dc_gancho',marks=dict(dej='Descongelas',ant='encimera',arr='arriesgas')),
+             dict(type='stamp',text='✕  RIESGO DE INTOXICACIÓN',y=1440,at='intoxicación',size=70)]),
+ dict(say="¿Tú la dejas fuera? Dímelo abajo.",
+      kw=["fuera?","abajo."],
+      scene=[dict(type='illus',name='dc_pregunta',marks=dict(q='Dímelo',fu='fuera')),
+             dict(type='pill',text='¿LA DEJAS FUERA?',y=640,color='amber',size=40),
+             dict(type='pill',text='DÍMELO EN COMENTARIOS 👇',y=1440,at='Dímelo',color='blue')]),
+ dict(say="Lo recuerda la AESAN: entre cinco y sesenta y cinco grados, los microorganismos pueden reproducirse más rápido.",
+      show="Lo recuerda la AESAN: entre 5 y 65 grados, los microorganismos pueden reproducirse más rápido.",
+      kw=["AESAN:","5","65"],
+      scene=[dict(type='illus',name='dc_fuente',marks=dict(ent='entre',gra='grados',rep='reproducirse')),
+             dict(type='badge',name='AESAN',full='Agencia Española de Seguridad Alimentaria y Nutrición',flag='🇪🇸',y=720)],pause=0.4),
+ dict(say="En la encimera, la superficie se descongela primero, y suelta una capa de agua que favorece a las bacterias… mientras el centro sigue helado.",
+      kw=["superficie","agua","helado."],
+      scene=[dict(type='illus',name='dc_capas',marks=dict(sup='superficie',agu='agua',bac='bacterias',cen='centro'))]),
+ dict(say="Mejor en la nevera: sácala del congelador la noche antes, y ponla en un plato, en la parte más fría.",
+      kw=["nevera:","noche","plato,"],
+      scene=[dict(type='illus',name='dc_nevera',marks=dict(nev='nevera',noc='noche',pla='plato',fri='fría'))]),
+ dict(say="¿Con prisa? Al microondas, en descongelar… y a cocinarla enseguida.",
+      kw=["microondas,","cocinarla","enseguida."],
+      scene=[dict(type='illus',name='dc_prisa',marks=dict(mic='microondas',des='descongelar',coc='cocinarla'))],pause=0.5),
+ dict(say="¿Y tú, encimera o nevera? Te leo en comentarios.",
+      kw=["encimera","nevera?","comentarios."],
+      scene=[_coc(),dict(type='bubble',q='¿Encimera 🥩 o nevera 🧊?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
+]
+FMT['34_descongelar_encimera']='A'

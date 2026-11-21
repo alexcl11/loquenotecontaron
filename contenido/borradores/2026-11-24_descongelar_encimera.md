@@ -3,7 +3,7 @@
 - Tema: "Descongelar la carne en la encimera es lo normal" (bloque Cocina / seguridad alimentaria, Prio 2). En los 6 anteriores de publicados.md (tender dentro, etiqueta, arroz, sobras de Navidad, calefacción de noche, tarifa regulada) hay solo 2 de Cocina → toca Cocina; menor Prio entre los de Cocina = 2 (#47, #65, #66, #67, #71); se elige #47 (fuentes españolas y gancho de riesgo; #65 y #71 se guardan para más cerca de Navidad).
 - Formato: A (el anterior, 2026-11-23 tarifa regulada, fue B)
 - Fecha de publicación: 2026-11-24 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['34_descongelar_encimera']
 
 ## Veredicto (previsto → real)
@@ -28,3 +28,12 @@ Previsto «Mito» → real: MITO. La AESAN recomienda descongelar en la parte m�
 
 - Dato clave: entre 5 y 65 °C los microorganismos se reproducen más rápido (AESAN, cita recogida por Maldita).
 - Sin más cifras: el mecanismo (superficie primero + capa de agua) es cualitativo (Consumer); la solución (nevera, parte más fría, en un plato; con prisa microondas y cocinar enseguida) sin números.
+
+## Guion
+
+Ver pipeline/specs.py V['34_descongelar_encimera'] (formato A, 7 segmentos; pregunta temprana en el s 4,7).
+
+## Escenas
+
+- Kit nuevo: pipeline/ill32.js (`meatSection`, `tempBand`, `steakInPan`).
+- Escenas: pipeline/ill_20261124.js (`dc_*`), 6 de 7 segmentos ilustrados.
