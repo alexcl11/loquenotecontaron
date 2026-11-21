@@ -61,7 +61,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 44 | Cocina | Las tablas de madera son menos higiénicas que las de plástico | Depende | AESAN, USDA | PENDIENTE | 4 |
 | 45 | Cocina | Si huele bien, el huevo está bueno (y hay que lavar los huevos) | Mito | AESAN | PENDIENTE | 3 |
 | 46 | Cocina | El arroz cocido sobrante se puede dejar fuera hasta la cena | Mito (Bacillus cereus) | AESAN, EFSA | PROGRAMADO 2026-11-20 | — |
-| 47 | Cocina | Descongelar la carne en la encimera es lo normal | Mito | AESAN, USDA | PENDIENTE | 2 |
+| 47 | Cocina | Descongelar la carne en la encimera es lo normal | Mito | AESAN, USDA | EN CURSO 2026-11-24 | 2 |
 | 48 | Cocina | El alcohol se evapora entero al cocinar | Mito | USDA (tabla de retención) | PENDIENTE | 3 |
 | 49 | Cocina | Las bayetas se limpian solas al secarse | Mito | AESAN, OCU | PENDIENTE | 4 |
 | 50 | Energía | Purgar los radiadores no sirve de nada | Mito (a verificar) | IDAE, OCU | PENDIENTE | 1 |
