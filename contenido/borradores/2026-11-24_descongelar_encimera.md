@@ -3,7 +3,7 @@
 - Tema: "Descongelar la carne en la encimera es lo normal" (bloque Cocina / seguridad alimentaria, Prio 2). En los 6 anteriores de publicados.md (tender dentro, etiqueta, arroz, sobras de Navidad, calefacción de noche, tarifa regulada) hay solo 2 de Cocina → toca Cocina; menor Prio entre los de Cocina = 2 (#47, #65, #66, #67, #71); se elige #47 (fuentes españolas y gancho de riesgo; #65 y #71 se guardan para más cerca de Navidad).
 - Formato: A (el anterior, 2026-11-23 tarifa regulada, fue B)
 - Fecha de publicación: 2026-11-24 18:00 Europe/Madrid
-- Estado: ESCENAS
+- Estado: PROGRAMADO
 - Vídeo: V['34_descongelar_encimera']
 
 ## Veredicto (previsto → real)
@@ -37,3 +37,7 @@ Ver pipeline/specs.py V['34_descongelar_encimera'] (formato A, 7 segmentos; preg
 
 - Kit nuevo: pipeline/ill32.js (`meatSection`, `tempBand`, `steakInPan`).
 - Escenas: pipeline/ill_20261124.js (`dc_*`), 6 de 7 segmentos ilustrados.
+
+## Vídeo
+
+- videos/2026-11-24_descongelar_encimera.mp4 · 41,1 s · formato A · 7 segmentos · ritmo.py OK (hueco máx. 3,2 s; 10 pulsos entre el s 3 y el 10)
