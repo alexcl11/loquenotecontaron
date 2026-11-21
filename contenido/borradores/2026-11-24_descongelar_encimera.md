@@ -41,3 +41,8 @@ Ver pipeline/specs.py V['34_descongelar_encimera'] (formato A, 7 segmentos; preg
 ## Vídeo
 
 - videos/2026-11-24_descongelar_encimera.mp4 · 41,1 s · formato A · 7 segmentos · ritmo.py OK (hueco máx. 3,2 s; 10 pulsos entre el s 3 y el 10)
+
+## Programación
+
+- Metricool: 2026-11-24 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=-6332809993926391441
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@86e11247c733f09ad8e50d43f729778f246a829c/videos/2026-11-24_descongelar_encimera.mp4 (41,1 s)
