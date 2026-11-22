@@ -45,3 +45,7 @@ Ver pipeline/specs.py V['35_luces_navidad'] (formato B, 10 segmentos; pregunta t
 
 - videos/2026-11-25_luces_navidad.mp4 · 70,4 s · formato B · 10 segmentos · ritmo.py OK (hueco máx. 3,6 s, aviso; 10 pulsos entre el s 3 y el 10)
 - Selectra no se presenta como «fuente oficial» (se usa `pill` «CÁLCULO DE SELECTRA», no `badge`).
+
+## Programación
+
+- Metricool: 2026-11-25 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=-7578292856730662799
