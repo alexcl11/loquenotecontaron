@@ -3,7 +3,7 @@
 - Tema: "Las luces LED de Navidad disparan la factura" (bloque Energía, Prio 1, temporada de Navidad + dinero). En los 6 anteriores hay 3 de Cocina (arroz, sobras de Navidad, descongelar) → no obliga a cocina. Prio 1 empatados: se varía de bloque respecto a los 2 anteriores (Factura, Cocina); entre los de Energía se elige #56 en vez de #2/#7/#50/#52 porque el 22/11 ya fue de calefacción y es el de temporada más inmediata (se ponen las luces a finales de noviembre).
 - Formato: B (el anterior, 2026-11-24 descongelar, fue A)
 - Fecha de publicación: 2026-11-25 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: ESCENAS
 - Vídeo: V['35_luces_navidad']
 
 ## Veredicto (previsto → real)
@@ -31,3 +31,12 @@ MITO. Con luces LED, la decoración de Navidad cuesta céntimos: según la OCU, 
 - Apoyo 2: toda la Navidad (6/12–7/1, 6 h/día): LED 10 céntimos vs incandescentes 1,23 €; hasta 12 veces más (Selectra).
 - Cálculo (Selectra): 5 W × 6 h × 33 días ÷ 1.000 = 0,99 kWh → unos 10 céntimos.
 - Qué hacer: cambiar las antiguas, ahorro cercano al 99 % (OCU). Matiz de seguridad (OCU).
+
+## Guion
+
+Ver pipeline/specs.py V['35_luces_navidad'] (formato B, 10 segmentos; pregunta temprana hacia el s 5,3). PRON nueva: CE → «ce».
+
+## Escenas
+
+- Kit nuevo: pipeline/ill33.js (árbol de Navidad genérico, guirnalda LED/antigua, bombillas en primer plano, enchufe sobrecargado, etiquetas CE/IP44, caja).
+- Escenas: pipeline/ill_20261125.js (`lz_*`), 10 de 10 segmentos con escena ilustrada (2 sobre `lz_fondo`).
