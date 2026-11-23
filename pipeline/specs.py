@@ -1432,3 +1432,35 @@ V['35_luces_navidad']=[
       scene=[_lzf(),dict(type='bubble',q='¿LED ✨ o de las de antes 💡?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
 FMT['35_luces_navidad']='B'
+
+_vef=lambda:dict(type='illus',name='ve_fondo')
+V['36_ventanas_empanadas']=[
+ dict(say="¿Te levantas con los cristales chorreando y piensas que es normal? Esa agua acaba en moho en tu pared.",
+      kw=["chorreando","normal?","moho"],
+      scene=[dict(type='illus',name='ve_gancho',marks=dict(cri='cristales',nor='normal',mo='moho')),
+             dict(type='stamp',text='✕  NO ES NORMAL',y=1440,at='moho',size=70)]),
+ dict(say="¿A ti te pasa cada mañana? Dímelo abajo.",
+      kw=["cada","mañana?","abajo."],
+      scene=[dict(type='illus',name='ve_pregunta',marks=dict(q='Dímelo')),
+             dict(type='pill',text='¿TE PASA CADA MAÑANA?',y=640,color='amber',size=40),
+             dict(type='pill',text='DÍMELO EN COMENTARIOS 👇',y=1440,at='Dímelo',color='blue')]),
+ dict(say="La Agencia de Protección Ambiental de Estados Unidos recomienda en casa una humedad de entre el treinta y el cincuenta por ciento.",
+      show="La Agencia de Protección Ambiental de Estados Unidos recomienda en casa una humedad de entre el 30 y el 50%.",
+      kw=["humedad","30","50%."],
+      scene=[dict(type='illus',name='ve_fuente',marks=dict(tre='30',cin='50')),
+             dict(type='badge',name='EPA',full='Agencia de Protección Ambiental de EE. UU.',flag='🇺🇸',y=720),
+             dict(type='stat',value='30–50 %',label='de humedad en casa',y=1330,at='50',color='green',size=120)],pause=0.3),
+ dict(say="Mientras duermes, al respirar sueltas vapor de agua. Cuando toca el cristal frío… se convierte en gotas.",
+      kw=["respirar","frío…","gotas."],
+      scene=[dict(type='illus',name='ve_vapor',marks=dict(res='respirar',cri='cristal',got='gotas'))]),
+ dict(say="Si pasa cada día, esa humedad trae hongos y moho, en el marco y en las paredes.",
+      kw=["cada","hongos","paredes."],
+      scene=[dict(type='illus',name='ve_moho',marks=dict(dia='cada',hon='hongos',par='marco'))]),
+ dict(say="Sécalo con un paño, ventila en las horas menos frías… y no tapes las rejillas.",
+      kw=["paño,","ventila","rejillas."],
+      scene=[dict(type='illus',name='ve_solucion',marks=dict(pan='paño',ven='ventila',rej='rejillas'))],pause=0.5),
+ dict(say="¿Y tú, cristales secos o chorreando? Te leo en comentarios.",
+      kw=["secos","chorreando?","comentarios."],
+      scene=[_vef(),dict(type='bubble',q='¿Secos ☀️ o chorreando 💧?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
+]
+FMT['36_ventanas_empanadas']='A'
