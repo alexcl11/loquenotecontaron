@@ -44,3 +44,8 @@ Ver pipeline/specs.py V['36_ventanas_empanadas'] (formato A, 7 segmentos; pregun
 ## Vídeo
 
 - videos/2026-11-26_ventanas_empanadas.mp4 · 40,2 s · formato A · 7 segmentos · ritmo.py OK (hueco máx. 3,2 s; 9 pulsos entre el s 3 y el 10)
+
+## Programación
+
+- Metricool: 2026-11-26 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=856377046106721984
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@29869438a87ec35b455f3923ebb28b3e0b518a0e/videos/2026-11-26_ventanas_empanadas.mp4 (40,2 s)
