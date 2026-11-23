@@ -72,7 +72,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 55 | Energía | El radiador eléctrico pequeño sale más barato que la calefacción de toda la casa | Depende | OCU, IDAE | PENDIENTE | 2 |
 | 56 | Energía | Las luces LED de Navidad disparan la factura | Mito (OCU: con LED, todo el mes < 1 €; Selectra: 100 LED ≈ 5 W vs 60 W, toda la Navidad 0,10 € vs 1,23 €) | OCU, Selectra | PROGRAMADO 2026-11-25 | — |
 | 57 | Hogar | El deshumidificador gasta más de lo que ahorra | Depende | OCU, fabricantes | PENDIENTE | 2 |
-| 58 | Hogar | Las ventanas empañadas por la mañana son normales y no importan | Mito (condensación y humedad) | CENEAM (MITECO), IDAE | PENDIENTE | 1 |
+| 58 | Hogar | Las ventanas empañadas por la mañana son normales y no importan | Mito (condensación y humedad) | CENEAM (MITECO), IDAE | EN CURSO 2026-11-26 | 1 |
 | 59 | Electrodomésticos | La secadora es un lujo carísimo | Depende (a verificar con kWh por ciclo) | OCU, IDAE | PENDIENTE | 2 |
 | 60 | Factura | El mercado libre siempre es más barato que el PVPC | Depende | CNMC | PENDIENTE | 1 |
 | 61 | Factura | Si cambias de compañía de luz, te quedas sin suministro unos días | Mito | CNMC | PENDIENTE | 2 |
