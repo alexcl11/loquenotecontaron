@@ -1447,7 +1447,7 @@ V['36_ventanas_empanadas']=[
  dict(say="La Agencia de Protección Ambiental de Estados Unidos recomienda en casa una humedad de entre el treinta y el cincuenta por ciento.",
       show="La Agencia de Protección Ambiental de Estados Unidos recomienda en casa una humedad de entre el 30 y el 50%.",
       kw=["humedad","30","50%."],
-      scene=[dict(type='illus',name='ve_fuente',marks=dict(tre='30',cin='50')),
+      scene=[dict(type='illus',name='ve_fuente',marks=dict(rec='recomienda',hum='humedad',tre='30',cin='50')),
              dict(type='badge',name='EPA',full='Agencia de Protección Ambiental de EE. UU.',flag='🇺🇸',y=720),
              dict(type='stat',value='30–50 %',label='de humedad en casa',y=1330,at='50',color='green',size=120)],pause=0.3),
  dict(say="Mientras duermes, al respirar sueltas vapor de agua. Cuando toca el cristal frío… se convierte en gotas.",
