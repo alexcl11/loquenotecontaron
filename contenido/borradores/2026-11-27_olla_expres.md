@@ -3,7 +3,7 @@
 - Tema: "La olla exprés no ahorra energía" (bloque Cocina, Prio 2, invierno = legumbres y guisos + dinero). En los 6 anteriores de publicados.md (21/11–26/11) hay 2 de cocina (sobras, descongelar) → toca cocina. Entre los Cocina de Prio 2 (#65, #66, #67, #71) se elige #67 por ser el de dinero directo con cifras verificables (temporada de cuchara).
 - Formato: B (el anterior, 2026-11-26 ventanas empañadas, fue A)
 - Fecha de publicación: 2026-11-27 18:00 Europe/Madrid
-- Estado: GUION
+- Estado: RENDER
 - Vídeo: V['37_olla_expres']
 
 ## Veredicto (previsto → real)
@@ -31,3 +31,14 @@ MITO. La olla a presión cocina entre un 50 y un 70 % más rápido (OCU) y, al r
 - Dato clave: entre un 50 y un 70 % más rápido (OCU 2025).
 - Apoyo 1: hervor 150 W en olla a presión frente a 850 W en olla abierta (IDAE, vía Selectra/OCU).
 - Apoyo 2: garbanzos 1 h 30 min en cacerola ≈ 32 céntimos vs olla 15 min ≈ 1 céntimo; un guiso a la semana ≈ 16 € al año (Selectra, oct. 2026).
+- Temperatura (OCU 2025): «el agua alcanza una temperatura de ebullición de hasta 120º».
+- Uso: OCU 2025 «no sobrepases el nivel máximo de llenado (⅔ de su capacidad)», «espera a que la presión se libere completamente antes de abrir»; Selectra «Sube el fuego al máximo hasta que llegue la presión y pásalo luego a fuego mínimo»; «dejar bajar la válvula antes de abrir».
+- Matiz: con tapa, la cazuela gasta «hasta un 25 % menos» (IDAE vía Selectra), «la olla sigue ganando».
+
+## Guion
+
+Ver pipeline/specs.py V['37_olla_expres'] (formato B, 10 segmentos, 73,8 s; pregunta temprana en el s 5,2). Sin siglas nuevas en PRON (OCU e IDAE ya estaban).
+
+## Escenas
+
+pipeline/ill_20261127.js (`op_*`) + kit nuevo pipeline/ill35.js (`expressPot`, `hobGlow`, `cutPot`, `barThermo`). 7 de 10 segmentos con escena ilustrada animada.

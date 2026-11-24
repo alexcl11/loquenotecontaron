@@ -11,14 +11,14 @@ ILL.op_fondo=(c,t)=>{ILL.cocina_fondo(c,t);};
 // gancho: garbanzos hora y media en la cazuela, el reloj corre; la olla exprés, guardada en la encimera; el gasto sube
 ILL.op_gancho=(c,t)=>{const s=c._s,M=c._m;const ga=M.gar?E(t,M.gar-0.2,0.4):0;const ho=M.hor?E(t,M.hor-0.2,0.4):0;const re=M.res?E(t,M.res-0.2,0.5):0;const fa=M.fac?E(t,M.fac-0.3,0.8):0;
  g.save();camLerp(t,s,5,[1.1,620,1010],[1.18,640,1000]);kitchen(t);
- wallClock(380,1010,58,t,ho>0?1.4:0.05);
- const o=opP({rh:[760,1130],lh:re>0?[lerp(500,330,ease(re)),lerp(1150,1120,ease(re))]:[500,1150],look:re>0.3?[-0.8,0.3]:[0.7,-0.2],mouth:fa>0.4?'worry':(re>0.3?'flat':'smile'),brow:re>0.3?1:0});
+ wallClock(1040,870,50,t,ho>0?1.4:0.05);
+ const o=opP({rh:[760,1130],lh:re>0?[lerp(500,315,ease(re)),lerp(1150,1110,ease(re))]:[500,1150],look:re>0.3?[-0.8,0.3]:[0.7,-0.2],mouth:fa>0.4?'worry':(re>0.3?'flat':'smile'),brow:re>0.3?1:0});
  person(o,t);opCazuela(t,{fire:1});counterFront();
  g.save();g.globalAlpha=0.6+0.4*re;expressPot(230,1180,0.55,t,{lid:1});g.restore();hands(o);
- const [px,py]=scr(OP_POT[0],960),[ex,ey]=scr(230,1060),[cx,cy]=scr(380,1010);g.restore();
+ const [px,py]=scr(OP_POT[0],960),[ex,ey]=scr(230,1060),[cx,cy]=scr(1040,870);g.restore();
  labelTag('🫘 GARBANZOS',Math.min(px,860),Math.max(py-120,650),ga,C.amber);
- labelTag('⏱ 1 H 30 MIN',cx+20,cy-110,ho,C.red);
- labelTag('LA OLLA EXPRÉS, GUARDADA',Math.max(ex+80,300),ey-150,re*(1-fa),C.blue);
+ labelTag('⏱ 1 H 30 MIN',Math.min(cx-60,900),cy-95,ho,C.red);
+ labelTag('LA OLLA EXPRÉS, GUARDADA',Math.max(ex+60,280),1330,re,C.blue);
  costMeter(1010,1360,220,fa,C.red);};
 // pregunta temprana: saca la olla exprés y la enseña a cámara
 ILL.op_pregunta=(c,t)=>{const s=c._s,M=c._m;const up=ease(E(t,s,0.7));
@@ -57,7 +57,7 @@ ILL.op_vatios=(c,t)=>{const s=c._s,M=c._m;opDark();const mi=M.min?E(t,M.min-0.3,
  if(w8>0)txt('850 W',280,1440,96,C.red,900,'center',w8);};
 // un guiso de garbanzos a la semana → ≈ 16 € al año (Selectra): semanas que pasan y monedas a la hucha
 ILL.op_ano=(c,t)=>{const s=c._s,M=c._m;const se=M.sem||s+0.4;const e16=M.e16?E(t,M.e16-0.2,0.5):0;
- g.save();cam(1.2,620,1110);kitchen(t,{stove:false});calendarPad(900,700,0.75,1+Math.floor(cl((t-se)/3)*6)*7,(t>se?((t-se)/0.6)%1:0));
+ g.save();cam(1.2,620,1110);kitchen(t,{stove:false});calendarPad(900,700,0.75,String((Math.floor(cl((t-se)/3)*6)*7)%31+1),(t>se?((t-se)/0.6)%1:0));
  const drop=(t-s)%0.9/0.9;const hy=950-Math.sin(drop*Math.PI)*25;
  const o=opP({x:500,lh:[420,1165],rh:[700,hy],look:[0.9,0.5],mouth:'smile'});person(o,t);
  const fill=lerp(0.05,0.9,ease(E(t,s+0.3,(c._e||s+5)-s-0.3)));coinJar(720,1178,0.9,fill,t);
@@ -77,10 +77,9 @@ ILL.op_uso=(c,t)=>{const s=c._s,M=c._m;const ll=M.lle?E(t,M.lle-0.2,0.5):0;const
  const [vx,vy]=scr(r.valve[0],r.valve[1]);g.restore();
  // panel de pasos (abajo) + aviso del paso actual (arriba)
  const st=[[ll,'🫘 MÁX. ⅔ DE LLENO'],[E(t,fu-0.2,0.4),'🔥 FUERTE HASTA QUE SUBA'],[E(t,mi-0.2,0.4),'↓ LUEGO, AL MÍNIMO'],[wa,'✋ NO ABRIR HASTA QUE BAJE']];
- let cur=-1;st.forEach((x,i)=>{if(x[0]>0)cur=i;});
- if(cur>=0){const nx=cur<3?st[cur+1][0]:0;labelTag(st[cur][1],540,660,st[cur][0]*(1-nx),cur===3?C.red:(cur===2?C.blue:C.amber));}
+ labelTag('✓ ÚSALA BIEN',540,660,E(t,s+0.1,0.4),C.green);
  if(ring>0.5&&t<ab)labelTag('VÁLVULA ARRIBA',Math.min(vx,880),vy-60,E(t,fu+0.6,0.4),C.red);
- for(let i=0;i<=cur;i++)checkmarkMini(170+i*250,1450,st[i][0]);};
+ const cols=[C.amber,C.red,C.blue,C.red];st.forEach((x,i)=>labelTag(x[1],i%2?790:290,1390+(i>1?90:0),x[0],cols[i]));};
 // matiz: sin olla exprés, al menos tapa la cazuela (hasta −25 %)… pero la olla sigue ganando
 ILL.op_tapa=(c,t)=>{const s=c._s,M=c._m;const kt=(M.tap||s+0.8);const t0=kt-0.6,land=kt+0.3;const mv=ease(E(t,t0,land-t0));const on=t>=land;const back=ease(E(t,land+0.6,0.5));const p2=M.p25?E(t,M.p25-0.2,0.5):0;const ga=M.gan?E(t,M.gan-0.3,0.6):0;
  g.save();camLerp(t,s,5,[1.3,740,990],[1.36,760,990]);kitchen(t);
@@ -88,8 +87,8 @@ ILL.op_tapa=(c,t)=>{const s=c._s,M=c._m;const kt=(M.tap||s+0.8);const t0=kt-0.6,
  const hold=[lerp(790,TK[0],mv),lerp(880,TK[1],mv)];const rh=on?[lerp(TK[0],760,back),lerp(TK[1],1130,back)]:hold;
  const o=opP({rh,lh:[500,1150],look:on?[0.6,0.1]:[0.8,-0.2],mouth:'smile'});person(o,t);
  opCazuela(t,{lid:on?1:0,st:on?0:1-0.5*mv,fire:1});counterFront();if(!on)potLid(hold[0],hold[1],0.75,lerp(-0.25,0,mv));
- if(ga>0){g.save();g.globalAlpha=cl(ga*2);expressPot(560,1180,0.5*eob(ga)+0.001,t,{lid:1,ring:1,hiss:0.5});g.restore();}
- hands(o);const [ex,ey]=scr(560,1080);g.restore();
+ hands(o);g.restore();
+ if(ga>0){g.save();g.globalAlpha=cl(ga*2);expressPot(250,1500,0.55*eob(ga)+0.001,t,{lid:1,ring:1,hiss:0.5});g.restore();}
  labelTag('🍲 CON TAPA',540,650,on?E(t,land,0.4):0,C.amber);
  labelTag('HASTA −25 %',540,740,p2,C.green);
- labelTag('✓ PERO LA OLLA GANA',540,1450,ga,C.green);};
+ labelTag('✓ PERO LA OLLA GANA',650,1440,ga,C.green);};
