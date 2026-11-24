@@ -3,7 +3,7 @@
 - Tema: "La olla exprés no ahorra energía" (bloque Cocina, Prio 2, invierno = legumbres y guisos + dinero). En los 6 anteriores de publicados.md (21/11–26/11) hay 2 de cocina (sobras, descongelar) → toca cocina. Entre los Cocina de Prio 2 (#65, #66, #67, #71) se elige #67 por ser el de dinero directo con cifras verificables (temporada de cuchara).
 - Formato: B (el anterior, 2026-11-26 ventanas empañadas, fue A)
 - Fecha de publicación: 2026-11-27 18:00 Europe/Madrid
-- Estado: RENDER
+- Estado: PROGRAMADO
 - Vídeo: V['37_olla_expres']
 
 ## Veredicto (previsto → real)
