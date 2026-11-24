@@ -81,7 +81,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 64 | Cocina | Las sobras de Navidad aguantan una semana en la nevera | Mito (USDA FSIS y Clínica Mayo: 3 o 4 días; congeladas 3 o 4 meses) | USDA FSIS, Clínica Mayo | PROGRAMADO 2026-11-21 | — |
 | 65 | Cocina | El pavo o el pollo está hecho cuando el jugo sale transparente | Mito (temperatura interna) | USDA FSIS, AESAN | PENDIENTE | 2 |
 | 66 | Cocina | El horno con ventilador gasta más | Depende | OCU, IDAE | PENDIENTE | 2 |
-| 67 | Cocina | La olla exprés no ahorra energía | Mito (a verificar con cifra) | IDAE, OCU | PENDIENTE | 2 |
+| 67 | Cocina | La olla exprés no ahorra energía | Mito (OCU: 50–70 % más rápido; IDAE vía Selectra: hervor 150 W vs 850 W; garbanzos 0,01 € vs 0,32 €) | IDAE, OCU, Selectra | EN CURSO 2026-11-27 | 2 |
 | 68 | Cocina | Apagar la placa unos minutos antes de acabar es un truco que no funciona | Mito (calor residual; a verificar) | IDAE, OCU | PENDIENTE | 3 |
 | 69 | Cocina | Lavar la verdura con lejía o con vinagre la deja más segura | Mito | AESAN, Comunidad de Madrid (Salud) | PENDIENTE | 3 |
 | 70 | Cocina | Hay que sacar la carne de la nevera un buen rato antes de cocinarla | Mito | USDA FSIS, AESAN | PENDIENTE | 3 |
