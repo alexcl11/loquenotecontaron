@@ -1520,9 +1520,9 @@ FMT['37_olla_expres']='B'
 
 _pjf=lambda:dict(type='illus',name='pj_fondo')
 V['38_pavo_jugo']=[
- dict(say="¿Das el pollo por hecho cuando el jugo sale transparente? Ese truco falla… y te la juegas a una intoxicación.",
-      kw=["transparente?","falla…","intoxicación."],
-      scene=[dict(type='illus',name='pj_gancho',marks=dict(pin='jugo',cla='transparente',fal='falla',int='intoxicación')),
+ dict(say="¿Sacas el pollo cuando el jugo sale transparente? Te la juegas a una intoxicación.",
+      kw=["transparente?","juegas","intoxicación."],
+      scene=[dict(type='illus',name='pj_gancho',marks=dict(pin='jugo',cla='transparente',fal='juegas',int='intoxicación')),
              dict(type='stamp',text='✕  EL JUGO ENGAÑA',y=1440,at='intoxicación',size=70)]),
  dict(say="¿Tú lo miras así? Dímelo abajo.",
       kw=["miras","así?","abajo."],
@@ -1532,7 +1532,7 @@ V['38_pavo_jugo']=[
  dict(say="El Departamento de Agricultura de Estados Unidos lo deja claro: el color del jugo no es un indicador preciso. Lo seguro, setenta y cuatro grados por dentro.",
       show="El Departamento de Agricultura de Estados Unidos lo deja claro: el color del jugo no es un indicador preciso. Lo seguro, 74 grados por dentro.",
       kw=["color","preciso.","74"],
-      scene=[dict(type='illus',name='pj_fuente',marks=dict(col='color',pre='preciso',seg='seguro',set='74')),
+      scene=[dict(type='illus',name='pj_fuente',marks=dict(cl='claro',col='color',pre='preciso',seg='seguro',set='74')),
              dict(type='badge',name='USDA',full='Departamento de Agricultura de EE. UU. (FSIS)',flag='🇺🇸',y=720),
              dict(type='stat',value='74 °C',label='(165 °F) por dentro',y=1400,at='74',color='green',size=120)],pause=0.3),
  dict(say="El jugo puede salir claro, mientras lo más gordo de la pieza todavía no ha llegado a esa temperatura.",
