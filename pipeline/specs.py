@@ -1517,3 +1517,35 @@ V['37_olla_expres']=[
       scene=[_opf(),dict(type='bubble',q='¿Olla exprés ⚡ o cazuela 🍲?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
 FMT['37_olla_expres']='B'
+
+_pjf=lambda:dict(type='illus',name='pj_fondo')
+V['38_pavo_jugo']=[
+ dict(say="¿Das el pollo por hecho cuando el jugo sale transparente? Ese truco falla… y te la juegas a una intoxicación.",
+      kw=["transparente?","falla…","intoxicación."],
+      scene=[dict(type='illus',name='pj_gancho',marks=dict(pin='jugo',cla='transparente',fal='falla',int='intoxicación')),
+             dict(type='stamp',text='✕  EL JUGO ENGAÑA',y=1440,at='intoxicación',size=70)]),
+ dict(say="¿Tú lo miras así? Dímelo abajo.",
+      kw=["miras","así?","abajo."],
+      scene=[dict(type='illus',name='pj_pregunta',marks=dict(q='Dímelo',mi='miras')),
+             dict(type='pill',text='¿TÚ LO MIRAS ASÍ?',y=640,color='amber',size=40),
+             dict(type='pill',text='DÍMELO EN COMENTARIOS 👇',y=1440,at='Dímelo',color='blue')]),
+ dict(say="El Departamento de Agricultura de Estados Unidos lo deja claro: el color del jugo no es un indicador preciso. Lo seguro, setenta y cuatro grados por dentro.",
+      show="El Departamento de Agricultura de Estados Unidos lo deja claro: el color del jugo no es un indicador preciso. Lo seguro, 74 grados por dentro.",
+      kw=["color","preciso.","74"],
+      scene=[dict(type='illus',name='pj_fuente',marks=dict(col='color',pre='preciso',seg='seguro',set='74')),
+             dict(type='badge',name='USDA',full='Departamento de Agricultura de EE. UU. (FSIS)',flag='🇺🇸',y=720),
+             dict(type='stat',value='74 °C',label='(165 °F) por dentro',y=1400,at='74',color='green',size=120)],pause=0.3),
+ dict(say="El jugo puede salir claro, mientras lo más gordo de la pieza todavía no ha llegado a esa temperatura.",
+      kw=["claro,","gordo","temperatura."],
+      scene=[dict(type='illus',name='pj_corte',marks=dict(cla='claro',gor='gordo',tem='temperatura'))]),
+ dict(say="Usa un termómetro de cocina: pínchalo en lo más gordo del muslo y de la pechuga, sin tocar el hueso.",
+      kw=["termómetro","muslo","hueso."],
+      scene=[dict(type='illus',name='pj_termo',marks=dict(ter='termómetro',mus='muslo',pec='pechuga',hue='hueso'))]),
+ dict(say="¿No llega? Unos minutos más al horno… y vuelve a medir.",
+      kw=["minutos","horno…","medir."],
+      scene=[dict(type='illus',name='pj_horno',marks=dict(min='minutos',hor='horno',med='medir'))],pause=0.5),
+ dict(say="¿Y tú, jugo o termómetro? Te leo en comentarios.",
+      kw=["jugo","termómetro?","comentarios."],
+      scene=[_pjf(),dict(type='bubble',q='¿Jugo 💧 o termómetro 🌡️?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
+]
+FMT['38_pavo_jugo']='A'
