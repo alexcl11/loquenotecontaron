@@ -47,3 +47,8 @@ Ver pipeline/specs.py V['39_purgar_radiadores'] (formato B, 11 segmentos; pregun
 ## Vídeo
 
 - videos/2026-11-29_purgar_radiadores.mp4 · 73,3 s · formato B · 11 segmentos · ritmo.py OK (hueco máx. 3,7 s; 7 pulsos entre el s 3 y el 10)
+
+## Programación
+
+- Metricool: 2026-11-29 18:00 Europe/Madrid · IG Reel + TikTok + YouTube Short · https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=507696805743248958
+- Media: https://cdn.jsdelivr.net/gh/alexcl11/loquenotecontaron@ae33961e1e9680c043600d4e9a0858618fe3ae2e/videos/2026-11-29_purgar_radiadores.mp4 (73,3 s)
