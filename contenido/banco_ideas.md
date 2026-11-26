@@ -64,7 +64,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 47 | Cocina | Descongelar la carne en la encimera es lo normal | Mito (AESAN: entre 5 y 65 °C los microorganismos se reproducen más rápido; descongelar en la nevera) | AESAN, Maldita, Consumer | PROGRAMADO 2026-11-24 | — |
 | 48 | Cocina | El alcohol se evapora entero al cocinar | Mito | USDA (tabla de retención) | PENDIENTE | 3 |
 | 49 | Cocina | Las bayetas se limpian solas al secarse | Mito | AESAN, OCU | PENDIENTE | 4 |
-| 50 | Energía | Purgar los radiadores no sirve de nada | Mito (MITECO-CENEAM: potencial de ahorro 5 %, cada año al principio de la temporada fría; OCU: bolsas de aire que bajan el rendimiento, presión 1–1,5 bar) | MITECO (CENEAM), OCU, Repsol | EN CURSO 2026-11-29 | 1 |
+| 50 | Energía | Purgar los radiadores no sirve de nada | Mito (MITECO-CENEAM: potencial de ahorro 5 %, cada año al principio de la temporada fría; OCU: bolsas de aire que bajan el rendimiento, presión 1–1,5 bar) | MITECO (CENEAM), OCU, Repsol | PROGRAMADO 2026-11-29 | — |
 | 51 | Energía | Encender y apagar la calefacción gasta más que dejarla encendida a poca temperatura | Mito (OCU: apagarla por la noche ahorra hasta un 67 %) | OCU, Maldita | PROGRAMADO 2026-11-22 | — |
 | 52 | Energía | Con 24–25 °C en casa se está «normal»; la temperatura recomendada es otra | Mito (a verificar: IDAE/MITECO dan un rango) | IDAE, MITECO | PENDIENTE | 1 |
 | 53 | Energía | Poner muebles o cortinas delante del radiador no pasa nada | Mito | IDAE, OCU | PENDIENTE | 2 |

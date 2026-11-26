@@ -55,7 +55,7 @@ ILL.pg_caldera=(c,t)=>{const s=c._s,M=c._m;pgDark();const ca=M.cal?E(t,M.cal-0.3
  if(fa>0){coinsFrom(540,880,t,M.fac,7,900,640);costMeter(950,1430,240,fa,C.red);}
  labelTag('SEGÚN REPSOL',540,1460,E(t,s+0.3,0.4),C.gray);};
 // arreglarlo es gratis y rápido: 5–10 minutos por radiador (Repsol)
-ILL.pg_tiempo=(c,t)=>{const s=c._s,M=c._m;ILL.pg_fondo(c,t);const gr=M.gra?E(t,M.gra-0.2,0.4):0;const mi=M.min?E(t,M.min-0.4,1.4):0;const ra=M.rad||s+99;
+ILL.pg_tiempo=(c,t)=>{const s=c._s,M=c._m;pgDark();const gr=M.gra?E(t,M.gra-0.2,0.4):0;const mi=M.min?E(t,M.min-0.4,1.4):0;const ra=M.rad||s+99;
  labelTag('💶 GRATIS',540,680,gr,C.green);
  stopwatch(540,950,170,ease(mi),'5–10 MIN',C.green,cl(mi*4));
  for(let i=0;i<3;i++){const k=E(t,ra-0.3+i*0.35,0.5);if(k<=0)continue;g.save();g.globalAlpha=cl(k*3);const x=110+i*310;
