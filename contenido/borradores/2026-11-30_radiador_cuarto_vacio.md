@@ -3,7 +3,7 @@
 - Tema: ¿Cerrar el radiador de la habitación que no usas ahorra? Sí: ajustar la temperatura de cada estancia ahorra; mejor bajarlo que cerrarlo del todo, con la puerta cerrada.
 - Bloque: Energía
 - Formato: A (el anterior, 29/11, fue B)
-- Estado: INVESTIGANDO
+- Estado: GUION
 
 ## Elección del tema
 Prio 1 pendientes: #2, #7, #52, #60. #2 (30 °C calienta antes) y #52 (19–21 °C) ya salen en el vídeo del 29/10 (#3, `08_calefaccion`); #60 es el mismo mito que el #38 (23/11). Pasan a Prio 6 con nota. Queda #7. Cocina en los últimos 6: 24, 27, 28 → 3, regla cumplida.

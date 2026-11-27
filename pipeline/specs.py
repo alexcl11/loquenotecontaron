@@ -1595,3 +1595,35 @@ V['39_purgar_radiadores']=[
       scene=[_pgf(),dict(type='bubble',q='¿Purgas 🔧 o nunca 🙈?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
 ]
 FMT['39_purgar_radiadores']='B'
+
+_rvf=lambda:dict(type='illus',name='rv_fondo')
+V['40_radiador_cuarto_vacio']=[
+ dict(say="¿Calientas igual el cuarto que no usas, porque cerrar el radiador «no sirve de nada»? Esa habitación vacía… la pagas tú.",
+      kw=["cuarto","radiador","pagas"],
+      scene=[dict(type='illus',name='rv_gancho',marks=dict(cua='cuarto',cer='cerrar',nos='sirve',vac='vacía',pag='pagas')),
+             dict(type='stamp',text='✕  LA PAGAS TÚ',y=1450,at='pagas')]),
+ dict(say="¿Tú lo cierras o lo dejas puesto? Dímelo abajo.",
+      kw=["cierras","puesto?","abajo."],
+      scene=[dict(type='illus',name='rv_pregunta',marks=dict(cie='cierras',pue='puesto',q='Dímelo')),
+             dict(type='pill',text='¿LO CIERRAS O LO DEJAS PUESTO?',y=640,color='amber',size=40),
+             dict(type='pill',text='DÍMELO EN COMENTARIOS 👇',y=1440,at='Dímelo',color='blue')]),
+ dict(say="El Ministerio para la Transición Ecológica lo dice claro: ajustar la temperatura de cada habitación tiene un potencial de ahorro del diez al veinte por ciento.",
+      show="El Ministerio para la Transición Ecológica lo dice claro: ajustar la temperatura de cada habitación tiene un potencial de ahorro del 10 al 20 %.",
+      kw=["ajustar","habitación","10"],
+      scene=[dict(type='illus',name='rv_fuente',marks=dict(aju='ajustar',hab='habitación',pot='potencial',pct='diez')),
+             dict(type='badge',name='MITECO',full='Ministerio para la Transición Ecológica (CENEAM)',flag='🇪🇸',y=720),
+             dict(type='stat',value='10–20 %',label='de ahorro potencial en calefacción',y=1390,at='diez',color='green',size=120)],pause=0.3),
+ dict(say="No todas las habitaciones necesitan el mismo calor. Ajústalas una a una, y baja la temperatura media de la casa… sin pasar frío.",
+      kw=["mismo","media","frío."],
+      scene=[dict(type='illus',name='rv_estancias',marks=dict(tod='todas',mis='mismo',aju='Ajústalas',una='una',med='media',fri='frío'))]),
+ dict(say="Eso sí: no lo cierres del todo. La pared se queda helada, la humedad se condensa… y ahí sale el moho.",
+      kw=["todo.","helada,","moho."],
+      scene=[dict(type='illus',name='rv_moho',marks=dict(cie='cierres',hel='helada',hum='humedad',con='condensa',moh='moho'))]),
+ dict(say="Mejor bájalo, y cierra la puerta: así el calor del salón no se escapa a ese cuarto.",
+      kw=["bájalo,","puerta:","salón"],
+      scene=[dict(type='illus',name='rv_bajar',marks=dict(baj='bájalo',pue='puerta',sal='salón',esc='escapa'))],pause=0.4),
+ dict(say="¿Y tú, lo cierras o lo bajas? Te leo en comentarios.",
+      kw=["cierras","bajas?","comentarios."],
+      scene=[_rvf(),dict(type='bubble',q='¿Lo cierras 🔒 o lo bajas 🔽?',y=1020),dict(type='pill',text='TE LEO EN COMENTARIOS 👇',y=1430,at='leo',color='blue')]),
+]
+FMT['40_radiador_cuarto_vacio']='A'
