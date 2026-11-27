@@ -24,3 +24,6 @@ Prio 1 pendientes: #2, #7, #52, #60. #2 (30 °C calienta antes) y #52 (19–21 �
 
 ## Veredicto
 Previsto «Depende». Real: sí ahorra ajustar cada habitación (MITECO, 10–20 %); el matiz es cerrarlo del todo: mejor bajarlo y cerrar la puerta. Dato único en pantalla: 10–20 % (MITECO).
+
+## Metricool
+- Programado 2026-11-30 18:00 (IG Reel + TikTok + YouTube Short): https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=2556378937176375493
