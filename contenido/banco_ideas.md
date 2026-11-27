@@ -16,12 +16,12 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | # | Bloque | Mito o creencia | Veredicto previsto | Fuente para verificar | Estado | Prio |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Energía | Dejar el aire encendido todo el día gasta menos que apagarlo | Depende | IDAE | PENDIENTE | 6 |
-| 2 | Energía | Poner la calefacción a 30 °C calienta antes | Mito | IDAE | PENDIENTE | 1 |
+| 2 | Energía | Poner la calefacción a 30 °C calienta antes | Mito | IDAE | PENDIENTE (revisado 2026-11-27: ya contado en el vídeo del 29/10, #3, escena «a tope, que calienta antes»; Endesa 05/10/2026 y Selectra 20/10/2026 lo confirman; solo con ángulo nuevo) | 6 |
 | 3 | Energía | Un grado más de calefacción apenas se nota en la factura | Mito | IDAE | PROGRAMADO 2026-10-29 | — |
 | 4 | Energía | Los aparatos en standby no gastan | Depende | IDAE, REE | PROGRAMADO 2026-10-25 | — |
 | 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | Reglamento (UE) 2019/1782, Comisión Europea, Endesa | PROGRAMADO 2026-11-15 | — |
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 | — |
-| 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Depende | IDAE | PENDIENTE | 1 |
+| 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Sí ahorra, mejor bajarlo que cerrarlo del todo (MITECO-CENEAM: ajustar la temperatura en cada estancia, potencial 10–20 %; TarifaLuzHora: pared muy fría → condensación, puerta cerrada) | MITECO (CENEAM), TarifaLuzHora | EN CURSO 2026-11-30 | 1 |
 | 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | PROGRAMADO 2026-11-05 | — |
 | 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | PROGRAMADO 2026-11-09 | — |
 | 10 | Energía | El termo eléctrico encendido todo el día gasta menos | Depende | IDAE | PENDIENTE | 2 |
@@ -66,7 +66,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 49 | Cocina | Las bayetas se limpian solas al secarse | Mito | AESAN, OCU | PENDIENTE | 4 |
 | 50 | Energía | Purgar los radiadores no sirve de nada | Mito (MITECO-CENEAM: potencial de ahorro 5 %, cada año al principio de la temporada fría; OCU: bolsas de aire que bajan el rendimiento, presión 1–1,5 bar) | MITECO (CENEAM), OCU, Repsol | PROGRAMADO 2026-11-29 | — |
 | 51 | Energía | Encender y apagar la calefacción gasta más que dejarla encendida a poca temperatura | Mito (OCU: apagarla por la noche ahorra hasta un 67 %) | OCU, Maldita | PROGRAMADO 2026-11-22 | — |
-| 52 | Energía | Con 24–25 °C en casa se está «normal»; la temperatura recomendada es otra | Mito (a verificar: IDAE/MITECO dan un rango) | IDAE, MITECO | PENDIENTE | 1 |
+| 52 | Energía | Con 24–25 °C en casa se está «normal»; la temperatura recomendada es otra | Mito (a verificar: IDAE/MITECO dan un rango) | IDAE, MITECO | PENDIENTE (revisado 2026-11-27: los 19–21 °C del IDAE ya salen en el vídeo del 29/10, #3; solo con ángulo nuevo) | 6 |
 | 53 | Energía | Poner muebles o cortinas delante del radiador no pasa nada | Mito | IDAE, OCU | PENDIENTE | 2 |
 | 54 | Energía | La manta eléctrica gasta una fortuna | Mito (a verificar con vatios y coste) | OCU, fabricantes | PENDIENTE | 2 |
 | 55 | Energía | El radiador eléctrico pequeño sale más barato que la calefacción de toda la casa | Depende | OCU, IDAE | PENDIENTE | 2 |
@@ -74,7 +74,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 57 | Hogar | El deshumidificador gasta más de lo que ahorra | Depende | OCU, fabricantes | PENDIENTE | 2 |
 | 58 | Hogar | Las ventanas empañadas por la mañana son normales y no importan | Mito (EPA: humedad recomendada en casa 30–50 %; Gobierno Vasco: el vaho en cristales fríos genera hongos y mohos) | EPA, Gobierno Vasco, OCU | PROGRAMADO 2026-11-26 | — |
 | 59 | Electrodomésticos | La secadora es un lujo carísimo | Depende (a verificar con kWh por ciclo) | OCU, IDAE | PENDIENTE | 2 |
-| 60 | Factura | El mercado libre siempre es más barato que el PVPC | Depende | CNMC | PENDIENTE | 1 |
+| 60 | Factura | El mercado libre siempre es más barato que el PVPC | Depende | CNMC | PENDIENTE (revisado 2026-11-27: es el mismo mito que el #38, publicado el 23/11, con los mismos datos de la OCU; esperar a datos nuevos) | 6 |
 | 61 | Factura | Si cambias de compañía de luz, te quedas sin suministro unos días | Mito | CNMC | PENDIENTE | 2 |
 | 62 | Factura | Los fines de semana toda la luz es más barata | Depende (según tarifa y periodos) | CNMC | PENDIENTE | 2 |
 | 63 | Factura | El bono social eléctrico es solo para quien no trabaja | Mito (a verificar requisitos vigentes) | Ministerio para la Transición Ecológica, CNMC | PENDIENTE | 3 |
