@@ -21,7 +21,7 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 4 | Energía | Los aparatos en standby no gastan | Depende | IDAE, REE | PROGRAMADO 2026-10-25 | — |
 | 5 | Energía | El cargador enchufado sin móvil gasta mucho | Mito | Reglamento (UE) 2019/1782, Comisión Europea, Endesa | PROGRAMADO 2026-11-15 | — |
 | 6 | Energía | Apagar y encender un LED gasta más que dejarlo encendido | Mito | IDAE | PROGRAMADO 2026-10-23 | — |
-| 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Sí ahorra, mejor bajarlo que cerrarlo del todo (MITECO-CENEAM: ajustar la temperatura en cada estancia, potencial 10–20 %; TarifaLuzHora: pared muy fría → condensación, puerta cerrada) | MITECO (CENEAM), TarifaLuzHora | EN CURSO 2026-11-30 | 1 |
+| 7 | Energía | Cerrar radiadores de habitaciones vacías ahorra | Sí ahorra, mejor bajarlo que cerrarlo del todo (MITECO-CENEAM: ajustar la temperatura en cada estancia, potencial 10–20 %; TarifaLuzHora: pared muy fría → condensación, puerta cerrada) | MITECO (CENEAM), TarifaLuzHora | PROGRAMADO 2026-11-30 | — |
 | 8 | Energía | Ventilar en invierno tira el calor | Depende (cómo se ventila) | IDAE, CENEAM (MITECO) | PROGRAMADO 2026-11-05 | — |
 | 9 | Energía | Bajar persianas y cortinas por la noche no cambia nada | Mito | IDAE | PROGRAMADO 2026-11-09 | — |
 | 10 | Energía | El termo eléctrico encendido todo el día gasta menos | Depende | IDAE | PENDIENTE | 2 |
