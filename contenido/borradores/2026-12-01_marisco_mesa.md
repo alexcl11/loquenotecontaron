@@ -3,7 +3,7 @@
 - Tema: ¿El marisco cocido aguanta en la mesa toda la cena? No: máximo 2 horas fuera de la nevera; si va a estar más, sobre hielo.
 - Bloque: Cocina / seguridad alimentaria
 - Formato: B (el anterior, 30/11, fue A)
-- Estado: INVESTIGANDO
+- Estado: GUION (63,1 s, 10 segmentos)
 
 ## Elección del tema
 Cocina en los últimos 6 de publicados.md (25–30/11): 27 y 28 → 2 < 3, toca cocina. Cocina con menor Prio: #66 (horno con ventilador) y #71 (marisco), ambos Prio 2. Se elige #71: temporada de Navidad y seguridad alimentaria (el bloque que más se guarda y comparte). PENDIENTE con Prio ≤ 4: 20 (no hace falta ampliar el banco).
@@ -21,3 +21,6 @@ Cocina en los últimos 6 de publicados.md (25–30/11): 27 y 28 → 2 < 3, toca 
 
 ## Veredicto
 Previsto «Mito». Real: mito. Ni la FDA ni nadie da «toda la cena»: 2 horas fuera de la nevera como máximo; servir frío sobre hielo si va a estar más.
+
+## Guion (B, V['41_marisco_mesa'] en specs.py)
+Datos en pantalla (todos FDA): 2 h fuera de la nevera como máximo · bacterias crecen rápido entre 4 y 60 °C (40–140 °F) · nevera a 4 °C o menos · servir frío sobre hielo si va a estar más de 2 h · 1 h si hace más de 32 °C (90 °F). Cuenta: 21:00 → 24:00 = 3 h, una de más (ejemplo con la cifra de la FDA).
