@@ -3,7 +3,7 @@
 - Tema: ¿El marisco cocido aguanta en la mesa toda la cena? No: máximo 2 horas fuera de la nevera; si va a estar más, sobre hielo.
 - Bloque: Cocina / seguridad alimentaria
 - Formato: B (el anterior, 30/11, fue A)
-- Estado: ESCENAS (63,1 s, 10 segmentos; kit ill39.js, escenas ill_20261201.js)
+- Estado: PROGRAMADO (63,1 s; ritmo.py OK)
 
 ## Elección del tema
 Cocina en los últimos 6 de publicados.md (25–30/11): 27 y 28 → 2 < 3, toca cocina. Cocina con menor Prio: #66 (horno con ventilador) y #71 (marisco), ambos Prio 2. Se elige #71: temporada de Navidad y seguridad alimentaria (el bloque que más se guarda y comparte). PENDIENTE con Prio ≤ 4: 20 (no hace falta ampliar el banco).

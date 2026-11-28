@@ -35,9 +35,9 @@ ILL.mr_pregunta=(c,t)=>{const s=c._s,M=c._m;const up=ease(E(t,s+0.1,0.6));const 
  if(a2>0){g.save();g.globalAlpha=cl(a2*2);tileDraw('❄️',910,1000,150,a2,t,{border:C.blue});g.restore();}
  qMarks(540,800,t,sh);};
 // fuente: FDA → como mucho 2 horas fuera de la nevera (reloj que se llena hasta 2 h)
-ILL.mr_fuente=(c,t)=>{const s=c._s,M=c._m;ILL.mr_fondo(c,t);const ap=M.cla?ease(E(t,M.cla-0.2,0.5)):0;const ck=M.nun?ease(E(t,M.nun-0.2,0.5)):0;const h=M.dos?2*ease(E(t,M.dos-0.1,1.2)):0;
+ILL.mr_fuente=(c,t)=>{const s=c._s,M=c._m;ILL.mr_fondo(c,t);const ap=M.cla?ease(E(t,M.cla-0.2,0.5)):0;const ck=M.clk?ease(E(t,M.clk-0.2,0.5)):0;const pu=M.nun?Math.sin(Math.PI*E(t,M.nun-0.1,0.5)):0;const h=M.dos?2*ease(E(t,M.dos-0.1,1.2)):0;
  if(ap>0){g.save();g.globalAlpha=ap;seafoodPlatter(330,1170,0.95*lerp(0.8,1,ap),t);g.restore();}
- if(ck>0){g.save();g.globalAlpha=ck;limitClock(780,1050,125*eob(ck),h,t,{max:2});g.restore();}
+ if(ck>0){g.save();g.globalAlpha=ck;limitClock(780,1050,125*eob(ck)*(1+0.12*pu),h,t,{max:2});g.restore();}
  if(M.nev){const k=E(t,M.nev-0.1,0.4);if(k>0){g.save();g.globalAlpha=cl(k*2);tileDraw('❄️',560,960,96,k,t,{border:C.blue,x:k});g.restore();}}};
 // mecanismo 1: termómetro con la franja 4–60 °C y bacterias que se multiplican
 ILL.mr_franja=(c,t)=>{const s=c._s,M=c._m;ILL.mr_fondo(c,t);const ap=ease(E(t,s,0.5));const b1=M.cua?E(t,M.cua-0.2,1.0):0;const b2=M.ses?E(t,M.ses-0.2,0.8):0;

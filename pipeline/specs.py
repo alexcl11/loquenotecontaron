@@ -1642,7 +1642,7 @@ V['41_marisco_mesa']=[
  dict(say="La FDA, la agencia de alimentos de Estados Unidos, lo dice claro: el marisco, nunca más de dos horas fuera de la nevera.",
       show="La FDA, la agencia de alimentos de Estados Unidos, lo dice claro: el marisco, nunca más de 2 horas fuera de la nevera.",
       kw=["FDA,","nunca","2 horas"],
-      scene=[dict(type='illus',name='mr_fuente',marks=dict(cla='claro',nun='nunca',dos='2',nev='nevera')),
+      scene=[dict(type='illus',name='mr_fuente',marks=dict(cla='agencia',clk='claro',nun='nunca',dos='2',nev='nevera')),
              dict(type='badge',name='FDA',full='Administración de Alimentos y Medicamentos de EE. UU.',flag='🇺🇸',y=720),
              dict(type='stat',value='2 h',label='como máximo fuera de la nevera',y=1350,at='2',color='amber',size=130)],pause=0.3),
  dict(say="¿Por qué? Entre cuatro y sesenta grados, las bacterias que enferman se multiplican rápido.",
