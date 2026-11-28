@@ -85,5 +85,5 @@ Estado: `PUBLICADO <fecha>` · `PROGRAMADO <fecha>` · `PENDIENTE`. El veredicto
 | 68 | Cocina | Apagar la placa unos minutos antes de acabar es un truco que no funciona | Mito (calor residual; a verificar) | IDAE, OCU | PENDIENTE | 3 |
 | 69 | Cocina | Lavar la verdura con lejía o con vinagre la deja más segura | Mito | AESAN, Comunidad de Madrid (Salud) | PENDIENTE | 3 |
 | 70 | Cocina | Hay que sacar la carne de la nevera un buen rato antes de cocinarla | Mito | USDA FSIS, AESAN | PENDIENTE | 3 |
-| 71 | Cocina | El marisco de Nochebuena aguanta fuera de la nevera mientras se sirve | Mito (a verificar tiempos) | AESAN | PENDIENTE | 2 |
+| 71 | Cocina | El marisco de Nochebuena aguanta fuera de la nevera mientras se sirve | Mito (a verificar tiempos) | AESAN | EN CURSO 2026-12-01 | 2 |
 
