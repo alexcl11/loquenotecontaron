@@ -24,3 +24,6 @@ Previsto «Mito». Real: mito. Ni la FDA ni nadie da «toda la cena»: 2 horas f
 
 ## Guion (B, V['41_marisco_mesa'] en specs.py)
 Datos en pantalla (todos FDA): 2 h fuera de la nevera como máximo · bacterias crecen rápido entre 4 y 60 °C (40–140 °F) · nevera a 4 °C o menos · servir frío sobre hielo si va a estar más de 2 h · 1 h si hace más de 32 °C (90 °F). Cuenta: 21:00 → 24:00 = 3 h, una de más (ejemplo con la cifra de la FDA).
+
+## Metricool
+- Programado 2026-12-01 18:00 (IG Reel + TikTok + YouTube Short): https://app.metricool.com/planner/calendar?blogId=7574060&openWithPostUuid=7089865134933166752
